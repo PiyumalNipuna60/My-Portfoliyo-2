@@ -1,3 +1,7 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+
 :root {
     --bg-black-900: #f2f2fc;
     --bg-black-100: #fdf9ff;
@@ -7,10 +11,9 @@
 }
 
 body {
-    margin: 0;
-    padding: 0;
     line-height: 1.5;
     font-size: 16px;
+    font-family: 'Poppins',sans-serif;
 }
 
 * {
@@ -23,6 +26,10 @@ body {
 
 ::before, ::after {
     box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
 }
 
 .section {
@@ -44,6 +51,122 @@ body {
     position: fixed;
     left: 0;
     top: 0;
+    padding: 30px;
     height: 100%;
+    border-right: 1px solid var(--bg-black-50);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     z-index: 10;
+}
+
+.aside .logo{
+    position: absolute;
+    top: 50px;
+    font-size: 30px;
+    text-transform: capitalize;
+}
+.aside .logo a{
+    color: var(--text-black-900);
+    font-weight: 700;
+    padding: 15px 20px;
+    font-size: 30px;
+    letter-spacing: 5px;
+    position: relative;
+}
+
+.aside .logo a span{
+    font-family: 'Clicker Script',cursive;
+    /*font-family: 40px;*/
+}
+
+.aside .logo a::before{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-bottom: 5px solid var(--skin-color);
+    border-left: 5px solid var(--skin-color);
+    bottom: 0;
+    left: 0;
+}
+
+.aside .logo a::after{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-top: 5px solid var(--skin-color);
+    border-right: 5px solid var(--skin-color);
+    top: 0;
+    right: 0;
+}
+
+.aside .nav-toggler{
+    height: 40px;
+    width: 45px;
+    border: 1px solid var(--bg-black-50);
+    cursor: pointer;
+    position: fixed;
+    left: 300px;
+    top: 20px;
+    border-radius: 5px;
+    background: var(--bg-black-100);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.aside .nav-toggler span{
+    height: 2px;
+    width: 18px;
+    background: var(--skin-color);
+    display: inline-block;
+    position: relative;
+}
+
+.aside .nav-toggler span::before{
+    content: "";
+    width: 18px;
+    height: 2px;
+    background: var(--skin-color);
+    position: absolute;
+    top: -6px;
+    left: 0;
+}
+
+.aside .nav-toggler span::after{
+    content: "";
+    width: 18px;
+    height: 2px;
+    background: var(--skin-color);
+    position: absolute;
+    top: 6px;
+    left: 0;
+}
+
+.aside .nav{
+    margin-top: 20px;
+}
+
+.aside .nav li{
+    margin-bottom: 20px;
+    display: block;
+}
+
+.aside .nav li a{
+    font-size: 16px;
+    font-weight: 600;
+    display: block;
+    border-bottom: 1px solid var(--bg-black-50);
+    color: var(--text-black-900);
+    padding: 5px 15px;
+}
+
+.aside .nav li a.active{
+    color: var(--skin-color);
+}
+
+.aside .nav li a i{
+    margin-right: 15px;
 }
