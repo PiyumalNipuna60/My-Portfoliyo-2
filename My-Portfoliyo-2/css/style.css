@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
 
@@ -13,7 +12,7 @@
 body {
     line-height: 1.5;
     font-size: 16px;
-    font-family: 'Poppins',sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 * {
@@ -28,7 +27,7 @@ body {
     box-sizing: border-box;
 }
 
-ul{
+ul {
     list-style: none;
 }
 
@@ -39,41 +38,45 @@ ul{
     padding: 0 30px;
     opacity: 1;
 }
-.hidden{
+
+.hidden {
     display: none !important;
 }
 
-.main-content{
+.main-content {
     padding-left: 270px;
 }
 
-.padd-15{
+.padd-15 {
     padding-right: 15px;
     padding-left: 15px;
 }
 
-.container{
+.container {
     max-width: 1100px;
     width: 100%;
     margin: auto;
 }
 
-.section .container{
+.section .container {
     padding-top: 60px;
     padding-bottom: 70px;
 }
-.section-title{
+
+.section-title {
     flex: 0 0 100%;
     max-width: 100%;
     margin-bottom: 60px;
 }
-.section-title h2{
+
+.section-title h2 {
     font-size: 40px;
     color: var(--text-black-900);
     font-weight: 700;
     position: relative;
 }
-.section-title h2:before{
+
+.section-title h2:before {
     content: "";
     height: 4px;
     width: 50px;
@@ -82,7 +85,8 @@ ul{
     top: 100%;
     left: 0;
 }
-.section-title h2:after{
+
+.section-title h2:after {
     content: "";
     height: 4px;
     width: 25px;
@@ -94,7 +98,7 @@ ul{
 }
 
 
-.row{
+.row {
     display: flex;
     flex-wrap: wrap;
     margin-left: -15px;
@@ -102,7 +106,7 @@ ul{
     position: relative;
 }
 
-.btn{
+.btn {
     font-size: 16px;
     font-weight: 500;
     padding: 12px 35px;
@@ -112,9 +116,10 @@ ul{
     white-space: nowrap;
     border: none;
     background: var(--skin-color);
-    transition: all 0.3s ease ;
+    transition: all 0.3s ease;
 }
-.btn:hover{
+
+.btn:hover {
     transform: scale(1.05);
 }
 
@@ -134,13 +139,14 @@ ul{
     z-index: 10;
 }
 
-.aside .logo{
+.aside .logo {
     position: absolute;
     top: 50px;
     font-size: 30px;
     text-transform: capitalize;
 }
-.aside .logo a{
+
+.aside .logo a {
     color: var(--text-black-900);
     font-weight: 700;
     padding: 15px 20px;
@@ -149,12 +155,12 @@ ul{
     position: relative;
 }
 
-.aside .logo a span{
-    font-family: 'Clicker Script',cursive;
+.aside .logo a span {
+    font-family: 'Clicker Script', cursive;
     font-size: 40px;
 }
 
-.aside .logo a::before{
+.aside .logo a::before {
     content: "";
     position: absolute;
     width: 20px;
@@ -165,7 +171,7 @@ ul{
     left: 0;
 }
 
-.aside .logo a::after{
+.aside .logo a::after {
     content: "";
     position: absolute;
     width: 20px;
@@ -176,7 +182,7 @@ ul{
     right: 0;
 }
 
-.aside .nav-toggler{
+.aside .nav-toggler {
     height: 40px;
     width: 45px;
     border: 1px solid var(--bg-black-50);
@@ -191,7 +197,7 @@ ul{
     justify-content: center;
 }
 
-.aside .nav-toggler span{
+.aside .nav-toggler span {
     height: 2px;
     width: 18px;
     background: var(--skin-color);
@@ -199,7 +205,7 @@ ul{
     position: relative;
 }
 
-.aside .nav-toggler span::before{
+.aside .nav-toggler span::before {
     content: "";
     width: 18px;
     height: 2px;
@@ -209,7 +215,7 @@ ul{
     left: 0;
 }
 
-.aside .nav-toggler span::after{
+.aside .nav-toggler span::after {
     content: "";
     width: 18px;
     height: 2px;
@@ -219,16 +225,16 @@ ul{
     left: 0;
 }
 
-.aside .nav{
+.aside .nav {
     margin-top: 20px;
 }
 
-.aside .nav li{
+.aside .nav li {
     margin-bottom: 20px;
     display: block;
 }
 
-.aside .nav li a{
+.aside .nav li a {
     font-size: 16px;
     font-weight: 600;
     display: block;
@@ -237,85 +243,124 @@ ul{
     padding: 5px 15px;
 }
 
-.aside .nav li a.active{
+.aside .nav li a.active {
     color: var(--skin-color);
 }
 
-.aside .nav li a i{
+.aside .nav li a i {
     margin-right: 15px;
 }
 
 
 /*=====================Home section=====================*/
-.home{
+.home {
     min-height: 100vh;
     display: flex;
     color: var(--text-black-900);
 }
 
-.home .home-info{
+.home .home-info {
     flex: 0 0 60%;
     max-width: 60%;
 }
 
-h3.hello{
+h3.hello {
     font-size: 28px;
     margin: 15px 0;
 }
-h3.hello span{
-    font-family: 'Clicker Script',cursive;
+
+h3.hello span {
+    font-family: 'Clicker Script', cursive;
     font-size: 30px;
     font-weight: 700;
     color: var(--skin-color);
 }
 
-h3.my-profession{
+h3.my-profession {
     font-size: 30px;
     margin: 15px 0;
 }
 
-.tying{
+.tying {
     color: var(--skin-color);
 }
-.home-info p{
+
+.home-info p {
     margin-bottom: 70px;
     font-size: 20px;
     color: var(--text-black-700);
 }
 
-.home .home-img{
+.home .home-img {
     flex: 0 0 40%;
     max-width: 40%;
     position: relative;
     text-align: center;
 }
-.home-img::after{
+
+.home-img::after {
     content: "";
     position: absolute;
     height: 80px;
     width: 80px;
-    border-bottom:10px solid var(--skin-color);
-    border-right:10px solid var(--skin-color);
+    border-bottom: 10px solid var(--skin-color);
+    border-right: 10px solid var(--skin-color);
     right: 20px;
     bottom: -40px;
 }
-.home-img::before{
+
+.home-img::before {
     content: "";
     position: absolute;
     height: 80px;
     width: 80px;
-    border-top:10px solid var(--skin-color);
-    border-left:10px solid var(--skin-color);
+    border-top: 10px solid var(--skin-color);
+    border-left: 10px solid var(--skin-color);
     left: -20px;
     top: -40px;
 }
-.home .home-img img{
+
+.home .home-img img {
     margin: auto;
     border-radius: 8px;
     height: 400px;
 }
 
 /*=====================About section=====================*/
+.about .about-content {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.about .about-content .about-text {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.about .about-content .about-text h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-family: 700;
+    color: var(--text-black-900);
+}
+.about .about-content .about-text h3 span{
+    color: var(--skin-color);
+}
+.about .about-content .about-text p {
+    font-size: 16px;
+    line-height: 25px;
+    color: var(--text-black-700);
+}
+.about .about-content .personal-info{
+    flex: 0 0 50%;
+    max-width: 60%;
+    margin-top: 40px;
+}
+.about .about-content .skills{
+    flex: 0 0 40%;
+    max-width: 40%;
+    margin-top: 40px;
+}
 
 
 
