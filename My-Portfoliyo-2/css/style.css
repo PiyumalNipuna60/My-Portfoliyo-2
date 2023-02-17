@@ -123,6 +123,10 @@ ul {
     transform: scale(1.05);
 }
 
+.shadow-dark{
+    box-shadow: 0 0 20px rgba(48,46,77,15);
+}
+
 /*=====================aside=====================*/
 .aside {
     width: 270px;
@@ -395,28 +399,33 @@ h3.my-profession {
     max-width: 40%;
     margin-top: 40px;
 }
-.about .about-content .skills .skill-item{
+
+.about .about-content .skills .skill-item {
     flex: 0 0 100%;
     max-width: 100%;
 }
-.about .about-content .skills .skill-item h5{
+
+.about .about-content .skills .skill-item h5 {
     line-height: 40px;
     font-weight: 400;
     font-size: 16px;
     color: var(--text-black-900);
     text-transform: capitalize;
 }
-.about .about-content .skills .skill-item .progress{
+
+.about .about-content .skills .skill-item .progress {
     background-color: var(--bg-black-50);
     height: 7px;
     border-radius: 4px;
     width: 100%;
     position: relative;
 }
-.about .about-content .skills .skill-item{
+
+.about .about-content .skills .skill-item {
     margin-bottom: 10px;
 }
-.about .about-content .skills .skill-item .progress .progress-in{
+
+.about .about-content .skills .skill-item .progress .progress-in {
     position: absolute;
     left: 0;
     height: 100%;
@@ -424,7 +433,8 @@ h3.my-profession {
     border-radius: 4px;
     background-color: var(--skin-color);
 }
-.about .about-content .skills  .skill-item .skill-percent{
+
+.about .about-content .skills .skill-item .skill-percent {
     position: absolute;
     right: 0;
     color: var(--text-black-900);
@@ -432,6 +442,40 @@ h3.my-profession {
     font-weight: 400;
     line-height: 40px;
 }
+
+.about .about-content .education,
+.about .about-content .experience {
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-top: 30px;
+    background-color: red;
+}
+
+.about .about-content .experience {
+    background-color: rosybrown;
+}
+
+.about .about-content h3.title {
+    font-size: 24px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    color: var(--text-black-900);
+}
+
+.about .about-content .timeline-box {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.about .about-content .timeline {
+    background-color: var(--bg-black-100);
+    padding: 30px 15px;
+    border: 1px solid var(--bg-black-50);
+    border-radius: 10px;
+    width: 100%;
+    position: relative;
+}
+
 
 
 
