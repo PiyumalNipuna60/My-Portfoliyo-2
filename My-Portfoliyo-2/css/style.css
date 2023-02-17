@@ -65,8 +65,34 @@ ul{
 .section-title{
     flex: 0 0 100%;
     max-width: 100%;
-    background-color: red;
+    margin-bottom: 60px;
 }
+.section-title h2{
+    font-size: 40px;
+    color: var(--text-black-900);
+    font-weight: 700;
+    position: relative;
+}
+.section-title h2:before{
+    content: "";
+    height: 4px;
+    width: 50px;
+    background-color: var(--skin-color);
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+.section-title h2:after{
+    content: "";
+    height: 4px;
+    width: 25px;
+    background-color: var(--skin-color);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 8px;
+}
+
 
 .row{
     display: flex;
@@ -289,6 +315,7 @@ h3.my-profession{
     height: 400px;
 }
 
-/*=====================Home section=====================*/
+/*=====================About section=====================*/
+
 
 
