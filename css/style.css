@@ -755,26 +755,17 @@ h3.my-profession {
 
 @media (max-width: 767px) {
 
-    /*.portfolio .portfolio-item,*/
-    /*.service .service-item,*/
-    /*.about .about-content .experience,*/
-    /*.about .about-content .education,*/
-    /*.about .about-content .skills,*/
-    /*.about .about-content .personal-info{*/
-    /*    flex: 0 0 100%;*/
-    /*    max-width: 100%;*/
-    /*}*/
-
-    .about .about-content .experience{
-        background-color: red;
-    }
-
+    .contact .contact-form .col-6,
     .contact .contact-info-item,
     .portfolio .portfolio-item,
-    .service .service-item{
-        background-color: green;
+    .service .service-item,
+    .about .about-content .experience,
+    .about .about-content .education,
+    .about .about-content .skills,
+    .about .about-content .personal-info{
+        flex: 0 0 100%;
+        max-width: 100%;
     }
-
 }
 
 
