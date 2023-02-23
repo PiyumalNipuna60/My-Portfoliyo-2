@@ -9,6 +9,15 @@
     <!------- CSS File-------->
     <link href="css/style.css" rel="stylesheet">
     <link href="css/color-1.css" rel="stylesheet">
+
+    <!--style-switcher-->
+    <link href="css/style-switcher.css" rel="stylesheet">
+    <link href="css/color-1.css" class="alternate-style" title="color-1" rel="stylesheet" disabled>
+    <link href="css/color-2.css" class="alternate-style" title="color-2" rel="stylesheet" disabled>
+    <link href="css/color-3.css" class="alternate-style" title="color-3" rel="stylesheet" disabled>
+    <link href="css/color-4.css" class="alternate-style" title="color-4" rel="stylesheet" disabled>
+    <link href="css/color-5.css" class="alternate-style" title="color-5" rel="stylesheet" disabled>
+
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 </head>
 <body>
@@ -455,33 +464,33 @@
                         <div class="row">
                             <div class="form-item col-6 padd-15">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="name">
+                                    <input class="form-control" placeholder="name" type="text">
                                 </div>
                             </div>
                             <div class="form-item col-6 padd-15">
                                 <div class="form-group">
-                                    <input type="email" class="form-control" placeholder="Email">
+                                    <input class="form-control" placeholder="Email" type="email">
                                 </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="form-item col-12 padd-15">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Subject">
+                                    <input class="form-control" placeholder="Subject" type="text">
                                 </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="form-item col-12 padd-15">
                                 <div class="form-group">
-                                    <textarea name="" class="form-control" id="" placeholder="Massage"></textarea>
+                                    <textarea class="form-control" id="" name="" placeholder="Massage"></textarea>
                                 </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="form-item col-12 padd-15">
                                 <div class="form-group">
-                                    <button type="submit" class="btn">Send Massage</button>
+                                    <button class="btn" type="submit">Send Massage</button>
                                 </div>
                             </div>
                         </div>
@@ -501,7 +510,7 @@
 <!--=======Style Switcher Start=====-->
 <div class="style-switcher">
     <div class="style-switcher-toggler s-icon">
-        <i class="fas fa-cog fa-skin"></i>
+        <i class="fas fa-cog fa-spin"></i>
     </div>
     <div class="day-night s-icon">
         <i class="fas fa-moon"></i>
