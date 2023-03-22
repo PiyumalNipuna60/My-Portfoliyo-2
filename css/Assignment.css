@@ -1,0 +1,64 @@
+
+/*===========Project=============*/
+.assignment .container {
+    padding-bottom: 40px;
+}
+
+.assignment .assignment-heading {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 40px;
+}
+
+.assignment .assignment-heading h2 {
+    color: var(--text-black-900);
+    font-weight: 500;
+}
+
+.assignment .assignment-item {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    margin-bottom: 30px;
+}
+
+.assignment .assignment-item-inner {
+    border: 6px solid var(--bg-black-100);
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.assignment .assignment-item-inner .assignment-img img {
+    width: 100%;
+    display: block;
+}
+
+
+.assignment-nav {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.assignment-nav li a.assignment-active {
+    color: var(--skin-color);
+}
+
+.assignment-nav li{
+    display: inline;
+}
+
+
+ .assignment-nav li a {
+    font-size: 16px;
+    font-weight: 600;
+    /*border-bottom: 1px solid var(--bg-black-50);*/
+    color: var(--text-black-900);
+    padding: 5px 15px;
+}
+
+ .aassignment-nav li:nth-child(1) a:active{
+     color: var(--skin-color)!important;
+ }
+.aassignment-nav li:nth-child(2) a:active{
+    color: var(--skin-color)!important;
+}
