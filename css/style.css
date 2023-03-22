@@ -539,7 +539,7 @@ h3.my-profession {
     color: var(--text-black-700);
 }
 
-/*Service*/
+/*==========Service===============*/
 .service .container {
     padding-bottom: 40px;
 }
@@ -602,7 +602,7 @@ h3.my-profession {
     line-height: 25px;
 }
 
-/*Project*/
+/*===========Project=============*/
 .portfolio .container {
     padding-bottom: 40px;
 }
@@ -637,7 +637,7 @@ h3.my-profession {
 }
 
 
-/*Contact*/
+/*=======Contact========*/
 .contact-title {
     color: var(--skin-color);
     text-align: center;
