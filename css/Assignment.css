@@ -24,10 +24,24 @@
 }
 
 .assignment .assignment-item-inner {
-    border: 6px solid var(--bg-black-100);
+    border-left: 6px solid var(--skin-color);
     border-radius: 10px;
     overflow: hidden;
     cursor: pointer;
+    border-bottom-right-radius: 23%;
+    border-top-left-radius: 23%;
+}
+
+.assignment .assignment-item-inner::before  {
+    content: "";
+    position: absolute;
+    width: 53px;
+    height: 53px;
+
+    border-bottom: 5px solid var(--skin-color);
+    border-right: 5px solid var(--skin-color);
+    bottom: 0;
+    right: 0;
 }
 
 .assignment .assignment-item-inner .assignment-img img {
