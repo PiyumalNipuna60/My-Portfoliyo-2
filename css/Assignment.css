@@ -1,5 +1,3 @@
-
-/*===========Project=============*/
 .assignment .container {
     padding-bottom: 40px;
 }
@@ -21,6 +19,10 @@
     margin-bottom: 30px;
 }
 
+.assignment-title{
+    margin-bottom: 32px;
+}
+
 .assignment .assignment-item-inner {
     border: 6px solid var(--bg-black-100);
     border-radius: 10px;
@@ -31,6 +33,8 @@
 .assignment .assignment-item-inner .assignment-img img {
     width: 100%;
     display: block;
+    border-bottom-right-radius: 23%;
+    border-top-left-radius: 23%;
 }
 
 
@@ -48,7 +52,7 @@
 }
 
 
- .assignment-nav li a {
+.assignment-nav li a {
     font-size: 16px;
     font-weight: 600;
     /*border-bottom: 1px solid var(--bg-black-50);*/
@@ -56,9 +60,16 @@
     padding: 5px 15px;
 }
 
- .aassignment-nav li:nth-child(1) a:active{
-     color: var(--skin-color)!important;
- }
+.aassignment-nav li:nth-child(1) a:active{
+    color: var(--skin-color)!important;
+}
 .aassignment-nav li:nth-child(2) a:active{
     color: var(--skin-color)!important;
 }
+
+
+/*<ul class="assignment-nav">*/
+/*<li><a class="" href="#"> CSS</a></li>*/
+/*<li><a href="#"> POS</a></li>*/
+/*<li><a href="#"> Game</a></li>*/
+/*</ul>*/

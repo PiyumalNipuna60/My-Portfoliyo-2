@@ -10,6 +10,7 @@
     <link href="css/style.css" rel="stylesheet">
     <link href="css/Assignment.css" rel="stylesheet">
     <link href="css/color/color-1.css" rel="stylesheet">
+    <link href="assets/JS/swiper.min.css" rel="stylesheet">
 
     <!--style-switcher-->
     <link href="css/style-switcher.css" rel="stylesheet">
@@ -433,23 +434,60 @@
                 </div>
 
                 <div class="row">
-                    <!--project Item start-->
+                    <!--assignment Item start-->
                     <div class="assignment-item padd-15">
                         <div class="assignment-item-inner shadow-dark">
-                            <div class="assignment-hed">
-                                <ul class="assignment-nav">
-                                    <li><a class="" href="#"> CSS</a></li>
-                                    <li><a href="#"> POS</a></li>
-                                    <li><a href="#"> Game</a></li>
-
-                                </ul>
+                            <div class="assignment-img">
+                                <img alt="" src="image/project/portfolio-1.jpg">
                             </div>
-<!--                            <div class="assignment-img">-->
-<!--                                <img alt="" src="image/project/portfolio-1.jpg">-->
-<!--                            </div>-->
                         </div>
                     </div>
-                    <!--project Item End-->
+                    <!--assignment Item End-->
+                    <!--assignment Item start-->
+                    <div class="assignment-item padd-15">
+                        <div class="assignment-item-inner shadow-dark">
+                            <div class="assignment-img">
+                                <img alt="" src="image/project/portfolio-2.jpg">
+                            </div>
+                        </div>
+                    </div>
+                    <!--assignment Item End-->
+                    <!--assignment Item start-->
+                    <div class="assignment-item padd-15">
+                        <div class="assignment-item-inner shadow-dark">
+                            <div class="assignment-img">
+                                <img alt="" src="image/project/portfolio-3.jpg">
+                            </div>
+                        </div>
+                    </div>
+                    <!--assignment Item End-->
+                    <!--assignment Item start-->
+                    <div class="assignment-item padd-15">
+                        <div class="assignment-item-inner shadow-dark">
+                            <div class="assignment-img">
+                                <img alt="" src="image/project/portfolio-4.jpg">
+                            </div>
+                        </div>
+                    </div>
+                    <!--assignment Item End-->
+                    <!--assignment Item start-->
+                    <div class="assignment-item padd-15">
+                        <div class="assignment-item-inner shadow-dark">
+                            <div class="assignment-img">
+                                <img alt="" src="image/project/portfolio-5.jpg">
+                            </div>
+                        </div>
+                    </div>
+                    <!--assignment Item End-->
+                    <!--assignment Item start-->
+                    <div class="assignment-item padd-15">
+                        <div class="assignment-item-inner shadow-dark">
+                            <div class="assignment-img">
+                                <img alt="" src="image/project/portfolio-6.jpg">
+                            </div>
+                        </div>
+                    </div>
+                    <!--assignment Item End-->
 
                 </div>
             </div>
@@ -571,5 +609,24 @@
 <!------- js File-------->
 <script src="js/script.js"></script>
 <script src="js/style-switcher.js"></script>
+<script src="assets/JS/swiper.min.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        effect: 'coverflow',
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        coverflowEffect: {
+            rotate: 10,
+            stretch: 0,
+            depth: 100,
+            modifier: 5,
+            slideShadows: true,
+        },
+        pagination: {
+            el: '.swiper-pagination',
+        },
+    });
+</script>
 </body>
 </html>
