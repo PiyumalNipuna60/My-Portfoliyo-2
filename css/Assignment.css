@@ -14,8 +14,8 @@
 }
 
 .assignment .assignment-item {
-    flex: 0 0 33.33%;
-    max-width: 33.33%;
+    flex: 0 0 24.33%;
+    max-width: 31.33%;
     margin-bottom: 30px;
 }
 
@@ -53,7 +53,7 @@
 
 
 .assignment-nav li a {
-    font-size: 16px;
+    font-size: 24px;
     font-weight: 600;
     /*border-bottom: 1px solid var(--bg-black-50);*/
     color: var(--text-black-900);
