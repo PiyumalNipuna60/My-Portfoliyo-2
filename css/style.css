@@ -550,6 +550,13 @@ h3.my-profession {
     max-width: 33.33%;
 }
 
+.service .service-item .service-item-inner:hover {
+
+    flex: 0 0 33.33%;
+    background-color: yellow;
+}
+
+
 .service .service-item .service-item-inner {
     background-color: var(--bg-black-100);
     border: 1px solid var(--bg-black-50);
@@ -589,7 +596,7 @@ h3.my-profession {
 }
 
 .service .service-item .service-item-inner h4 {
-    font-size: 10px;
+    font-size: 24px;
     margin-bottom: 15px;
     color: var(--text-black-900);
     font-weight: 700;
