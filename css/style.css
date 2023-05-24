@@ -245,8 +245,8 @@ ul {
     display: block;
 }
 
-.aside .nav li:hover i{
-    color: #ec1839;
+.aside .nav li:hover a{
+    color: var(--skin-color);
 }
 
 .aside .nav li a {
@@ -271,7 +271,7 @@ ul {
 }
 
 .aside .nav li a:hover i{
-    color: red;
+    color: var(--skin-color);
 }
 
 
