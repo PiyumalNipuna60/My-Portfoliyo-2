@@ -89,5 +89,10 @@
 /*</ul>*/
 
 .seeMore{
-    background-color: var(--skin-color);
+    background-color: ;
+    width: 6%;
+    height: 2rem;
+    border-radius: 11%;
+    border: burlywood;
+
 }
