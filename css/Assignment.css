@@ -87,3 +87,7 @@
 /*<li><a href="#"> POS</a></li>*/
 /*<li><a href="#"> Game</a></li>*/
 /*</ul>*/
+
+.seeMore{
+    background-color: var(--skin-color);
+}
