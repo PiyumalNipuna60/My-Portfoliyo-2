@@ -282,7 +282,7 @@ h3.hello {
 
 h3.hello span {
     font-family: 'Clicker Script', cursive;
-    font-size: 30px;
+    font-size: 50px;
     font-weight: 700;
     color: var(--skin-color);
 }
@@ -335,6 +335,13 @@ h3.my-profession {
     margin: auto;
     border-radius: 8px;
     height: 400px;
+}
+
+#social_media{
+    background-color: #ec1839;
+    position: relative;
+    left: 20rem;
+    top: 5rem;
 }
 
 /*=====================About section=====================*/
