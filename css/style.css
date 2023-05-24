@@ -245,6 +245,10 @@ ul {
     display: block;
 }
 
+.aside .nav li:hover i{
+    color: #ec1839;
+}
+
 .aside .nav li a {
     font-size: 16px;
     font-weight: 600;
@@ -257,9 +261,17 @@ ul {
 .aside .nav li a.active {
     color: var(--skin-color);
 }
+.aside .nav li a i.active {
+    color: var(--skin-color);
+}
+
 
 .aside .nav li a i {
     margin-right: 15px;
+}
+
+.aside .nav li a:hover i{
+    color: red;
 }
 
 
