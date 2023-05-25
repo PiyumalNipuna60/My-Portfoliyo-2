@@ -14,8 +14,8 @@
 }
 
 .assignment .assignment-item {
-    flex: 0 0 24.33%;
-    max-width: 31.33%;
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
     margin-bottom: 30px;
 }
 
@@ -25,7 +25,6 @@
 
 .assignment .assignment-item-inner {
     border-left: 6px solid var(--skin-color);
-    border-radius: 10px;
     overflow: hidden;
     cursor: pointer;
     border-bottom-right-radius: 23%;
@@ -74,11 +73,11 @@
     padding: 5px 15px;
 }
 
-.aassignment-nav li:nth-child(1) a:active {
+.assignment-nav li:nth-child(1) a:active {
     color: var(--skin-color) !important;
 }
 
-.aassignment-nav li:nth-child(2) a:active {
+.assignment-nav li:nth-child(2) a:active {
     color: var(--skin-color) !important;
 }
 
@@ -132,7 +131,7 @@
 }
 
 #cssAssignment{
-    display: none;
+
 }
 
 
@@ -140,6 +139,7 @@
 /*========================   pos   ========================*/
 
 #posAssignment{
+    display: none;
 }
 
 

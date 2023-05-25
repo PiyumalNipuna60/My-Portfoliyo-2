@@ -574,7 +574,6 @@ h3.my-profession {
 }
 
 .service .service-item .service-item-inner:hover {
-
     flex: 0 0 33.33%;
     background-color: yellow;
 }
@@ -784,6 +783,8 @@ h3.my-profession {
 
     .assignment .assignment-item{
         background-color: #37b182;
+        flex: 0 0 50%;
+        max-width: 50%;
     }
 
     .home .home-info{
