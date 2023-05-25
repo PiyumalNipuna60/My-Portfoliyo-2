@@ -781,12 +781,6 @@ h3.my-profession {
         max-width: 50%;
     }
 
-    .assignment .assignment-item{
-        background-color: #37b182;
-        flex: 0 0 50%;
-        max-width: 50%;
-    }
-
     .home .home-info{
         flex: 0 0 100%;
         max-width: 100%;
@@ -801,7 +795,6 @@ h3.my-profession {
     .contact .contact-form .col-6,
     .contact .contact-info-item,
     .portfolio .portfolio-item,
-    .assignment .assignment-item,
     .service .service-item,
     .about .about-content .experience,
     .about .about-content .education,

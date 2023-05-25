@@ -99,9 +99,9 @@
 
 .seeMore button {
     margin-top: 4%;
-    width: 8%;
+    width: 10%;
     height: 2rem;
-    border-radius: 14px;
+    border-radius: 14%;
     padding-top: 0.5%;
     border: 2px solid var(--skin-color);
     font-size: 0.8rem;
@@ -110,9 +110,9 @@
 }
 
 .seeMore button:hover {
-    width: 12%;
+    width: 14%;
     height: 2.5rem;
-    border-radius: 12px;
+    border-radius: 12%;
     padding-top: 1%;
     border: 2px solid var(--skin-color);
     align-items: center;
@@ -149,3 +149,28 @@
     display: none;
 }
 
+
+
+
+/*=======media Quary========*/
+
+
+@media (max-width: 991px) {
+    .assignment .assignment-item{
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .assignment .buttons{
+        width: 5%;
+        r
+    }
+}
+
+@media (max-width: 767px) {
+
+    .assignment .assignment-item{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
