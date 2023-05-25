@@ -776,7 +776,8 @@ h3.my-profession {
 @media (max-width: 991px) {
     .contact .contact-info-item,
     .portfolio .portfolio-item,
-    .service .service-item{
+    .service .service-item,
+    .assignment .assignment-item{
         flex: 0 0 50%;
         max-width: 50%;
     }
@@ -795,6 +796,7 @@ h3.my-profession {
     .contact .contact-form .col-6,
     .contact .contact-info-item,
     .portfolio .portfolio-item,
+    .assignment .assignment-item,
     .service .service-item,
     .about .about-content .experience,
     .about .about-content .education,
