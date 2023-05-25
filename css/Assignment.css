@@ -19,7 +19,7 @@
     margin-bottom: 30px;
 }
 
-.assignment-title{
+.assignment-title {
     margin-bottom: 32px;
 }
 
@@ -32,7 +32,7 @@
     border-top-left-radius: 23%;
 }
 
-.assignment .assignment-item-inner::before  {
+.assignment .assignment-item-inner::before {
     content: "";
     position: absolute;
     width: 53px;
@@ -61,7 +61,7 @@
     color: var(--skin-color);
 }
 
-.assignment-nav li{
+.assignment-nav li {
     display: inline;
 }
 
@@ -74,11 +74,12 @@
     padding: 5px 15px;
 }
 
-.aassignment-nav li:nth-child(1) a:active{
-    color: var(--skin-color)!important;
+.aassignment-nav li:nth-child(1) a:active {
+    color: var(--skin-color) !important;
 }
-.aassignment-nav li:nth-child(2) a:active{
-    color: var(--skin-color)!important;
+
+.aassignment-nav li:nth-child(2) a:active {
+    color: var(--skin-color) !important;
 }
 
 
@@ -88,11 +89,46 @@
 /*<li><a href="#"> Game</a></li>*/
 /*</ul>*/
 
-.seeMore{
-    background-color: ;
-    width: 6%;
-    height: 2rem;
-    border-radius: 11%;
-    border: burlywood;
 
+.seeMore {
+    /* background-color: red; */
+    justify-content: center;
+    /* align-items: center; */
+    /* flex: auto; */
+    display: flex;
 }
+
+.seeMore button {
+    width: 7%;
+    height: 2rem;
+    border-radius: 14px;
+    /* margin-top: 1px; */
+    padding-top: 5px;
+    border: 2px solid var(--skin-color);
+}
+
+.seeMore button:hover {
+    width: 12%;
+    height: 2.5rem;
+    border-radius: 14px;
+    /* margin-top: 1px; */
+    padding-top: 5px;
+    border: 2px solid var(--skin-color);
+}
+
+.seeMore div{
+    width: 69%;
+    height: 181%;
+    /*background-image: url("/assets/icon/nexticon5.gif");*/
+}
+
+.seeMore img{
+    width: 138%;
+    /* display: none; */
+    height: 160%;
+    position: relative;
+    top: -39px;
+    right: -64px;
+}
+
+
