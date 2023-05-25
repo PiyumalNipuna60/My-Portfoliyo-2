@@ -782,6 +782,10 @@ h3.my-profession {
         max-width: 50%;
     }
 
+    .assignment .assignment-item{
+        background-color: #37b182;
+    }
+
     .home .home-info{
         flex: 0 0 100%;
         max-width: 100%;
