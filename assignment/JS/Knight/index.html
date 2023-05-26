@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Knight-Rider</title>
+
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+
+        }
+
+        #mainSec{
+            border: 1px solid #533554;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            margin: auto;
+            width: 1400px;
+            height: 686px;
+            background-color: rgba(0, 0, 0, 0.93);
+            box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px, rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+        }
+
+        #container {
+            display: flex;
+            height: 70px;
+        }
+
+        #container > div {
+            width: 90%;
+            height: 100%;
+            border: 1px solid white;
+        }
+
+        button {
+            width: 125px;
+            height: 40px;
+            border-radius: 20%;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+            margin-left: 10px;
+        }
+
+        .button-29 {
+            align-items: center;
+            appearance: none;
+            background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+            border: 0;
+            border-radius: 6px;
+            box-shadow: rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, rgba(58, 65, 111, .5) 0 -3px 0 inset;
+            box-sizing: border-box;
+            color: #fff;
+            cursor: pointer;
+            display: inline-flex;
+            font-family: "JetBrains Mono", monospace;
+            height: 48px;
+            justify-content: center;
+            line-height: 1;
+            list-style: none;
+            overflow: hidden;
+            padding-left: 16px;
+            padding-right: 16px;
+            position: relative;
+            text-align: left;
+            text-decoration: none;
+            transition: box-shadow .15s, transform .15s;
+            user-select: none;
+            -webkit-user-select: none;
+            touch-action: manipulation;
+            white-space: nowrap;
+            will-change: box-shadow, transform;
+            font-size: 18px;
+        }
+
+        .button-29:focus {
+            box-shadow: #FF0000 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #FF0000 0 -3px 0 inset;
+        }
+
+        .button-29:hover {
+            box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #FF0000 0 -3px 0 inset;
+            transform: translateY(-2px);
+        }
+
+        .button-29:active {
+            box-shadow: #FF0000 0 3px 7px inset;
+            transform: translateY(2px);
+        }
+
+
+    </style>
+
+</head>
+<body>
+
+<main id="mainSec">
+
+    <section class="container-fluid">
+        <section class="row mt-5">
+            <div class="col-12">
+                <h1 class="text-center text-white">Knight-Rider</h1>
+            </div>
+        </section>
+        <section class="row mt-5">
+            <section class="col-12" id="container">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </section>
+        </section>
+        <section class="row justify-content-center mt-5">
+            <div class="col-3 d-flex justify-content-around">
+                <button class="button-29" id="btnStart" role="button">Start</button>
+                <button class="button-29" id="btnEnd" role="button">End</button>
+            </div>
+        </section>
+    </section>
+
+</main>
+
+
+
+<script src="assets/js/jquery-3.6.1.min.js"></script>
+<script>
+
+    let audio1 = new Audio();
+    audio1.src="assets/audio/knightRiderSound.mp3";
+    audio1.play();
+
+
+    var initArray = [];
+    var leftColors = ['white', 'white', 'white', 'white', 'white', 'white', '#d3c5c5', '#be7474', '#"cd4a4a"', '#b83030', '#c52525', '#dc1e1e'];
+    var rightColors = ['white', 'white', 'white', 'white', 'white', 'white', '#dc1e1e', '#c52525', '#b83030', '#cd4a4a', '#be7474', '#d3c5c5'];
+
+    // renderKnightRider();
+
+    function animateRight() {
+        let firstValue = initArray.shift();
+        initArray.push(firstValue);
+    }
+
+    function animateLeft() {
+        let lastColor = initArray.pop();
+        initArray.unshift(lastColor);
+    }
+
+    var count = 0;
+
+    function animate() {
+        count++;
+        if (count <= leftColors.length) {
+            initArray = leftColors;
+            animateLeft();
+        } else {
+            if (count >= (leftColors.length * 2)) {
+                count = 0;
+            }
+            initArray = rightColors;
+            animateRight();
+        }
+    }
+
+
+    function renderKnightRider() {
+        $("#container").empty();
+        for (let i = 0; i < (initArray.length) / 2; i++) {
+            $("#container").append(`<div style="background-color: ${initArray[i]}"></div>`)
+        }
+        animate();
+    }
+
+    var id;
+    $("#btnStart").click(function () {
+        clearInterval(id);
+        id=setInterval(renderKnightRider, 50);
+        audio1.play();
+    });
+
+    $("#btnEnd").click(function () {
+        clearInterval(id);
+        audio1.pause();
+    });
+
+
+</script>
+</body>
+</html>
