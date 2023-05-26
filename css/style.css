@@ -265,10 +265,6 @@ ul {
 .aside .nav li a.active {
     color: var(--skin-color);
 }
-.aside .nav li a i.active {
-    color: var(--skin-color);
-}
-
 
 .aside .nav li a i {
     margin-right: 15px;
