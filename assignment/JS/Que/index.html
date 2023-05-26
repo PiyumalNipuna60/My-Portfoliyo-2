@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Js Que</title>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+
+        body {
+            background-color: #3A86FF;
+        }
+
+        #mainSec {
+            border: 1px solid #533554;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            margin: auto;
+            width: 1400px;
+            height: 686px;
+            background-color: white;
+            box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px, rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+        }
+
+        #container {
+            height: 80px;
+            width: 90vw;
+            border-bottom: 2px dashed red;
+            display: flex;
+            justify-content: flex-end;
+            top: 74px;
+            position: relative;
+        }
+
+        #container > div {
+            width: 116px;
+            height: 70px;
+            background-color: red;
+            color: white;
+            position: relative;
+            border: 1px solid #584b4b;
+            border-radius: 10px;
+            margin-right: -101px;
+            right: 236px;
+        }
+
+        #container > img {
+            width: 130px;
+            height: 150px;
+            position: relative;
+            right: 104px;
+            top: -158px;
+
+        }
+
+        #container > div > h1 {
+            font-size: 25px;
+            width: max-content;
+            height: max-content;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        main {
+            position: relative;
+        }
+
+        #img {
+            height: 110px;
+            width: 110px;
+            background: url("assets/img/img.png");
+            position: absolute;
+            top: 44px;
+            right: 0;
+            background-size: cover;
+        }
+
+    </style>
+</head>
+<body>
+
+<main id="mainSec">
+
+    <section class="container-fluid">
+        <section class="row mt-3">
+            <section class="col-4">
+                <div class="mb-3">
+                    <label class="form-label">Name</label>
+                    <input class="form-control" id="txtName" type="text">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Color</label>
+                    <input class="form-control" id="txtColor" type="color">
+                </div>
+                <div>
+                    <button class="btn btn-danger" id="btnAdd">Add to Que</button>
+                </div>
+            </section>
+        </section>
+
+        <main>
+            <section class="mt-5" id="container">
+            </section>
+            <section id="img">
+
+            </section>
+        </main>
+
+    </section>
+
+</main>
+
+
+<script src="assets/js/jquery-3.6.1.min.js"></script>
+<script>
+
+    var queData = {
+        person: [
+            {image: "src=assets/img/man.gif", name: "Kamal", color: 'red'},
+            {image: "src=assets/img/man.gif", name: "Sadun", color: 'green'},
+            {image: "src=assets/img/man.gif", name: "Kavidu", color: 'yellow'},
+            {image: "src=assets/img/man.gif", name: "Pasidu", color: 'blue'},
+            {image: "src=assets/img/man.gif", name: "Nipuna", color: '#3dd5f3'}
+        ],
+        nextPerson: function () {
+            var lastPerson = this.person.pop();
+            this.person.unshift(lastPerson);
+        }
+    }
+
+    function runQue() {
+        $("#container").empty();
+        for (var i = 0; i < queData.person.length; i++) {
+            $("#container").append(`<img src="assets/img/man.gif"><div style="background-color : ${queData.person[i].color}"><h1>${queData.person[i].name}</h1></div>`)
+        }
+        queData.nextPerson();
+    }
+
+    setInterval(runQue, 500);
+
+    $("#btnAdd").click(function () {
+        let name = $("#txtName").val();
+        let color = $("#txtColor").val();
+        queData.person.unshift({name: name, color: color});
+    });
+
+
+</script>
+</body>
+</html>
