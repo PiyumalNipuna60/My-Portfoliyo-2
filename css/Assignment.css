@@ -14,8 +14,8 @@
 }
 
 .assignment .assignment-item {
-    flex: 0 0 33.33%;
-    max-width: 33.33%;
+    flex: 0 0 24.33%;
+    max-width: 31.33%;
     margin-bottom: 30px;
 }
 
@@ -160,11 +160,12 @@
         flex: 0 0 50%;
         max-width: 50%;
     }
-
-    .assignment .buttons{
-        width: 5%;
-        r
+    .seeMore button{
+        width: 12%;
+        padding-top: 1%;
     }
+
+
 }
 
 @media (max-width: 767px) {
@@ -172,5 +173,14 @@
     .assignment .assignment-item{
         flex: 0 0 100%;
         max-width: 100%;
+    }
+
+    .seeMore button{
+        background-color: #37b182;
+        width: 25%;
+        height: 2rem;
+        border-radius: 14%;
+        padding-top: 1.5%;
+
     }
 }
