@@ -1,0 +1,197 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Calculator</title>
+
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <!--link Bootstrap Framework-->
+    <link href="assets/styles/bootstrap-5.2.1-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/styles/fonts/css/all.min.css" rel="stylesheet">
+    <script src="assets/styles/jQuery/jquery-3.6.1.min.js"></script>
+    <style>
+        #back{
+            border: 2px solid red;
+            background-color: white;
+
+        }
+
+        #sec1 {
+            width: 20%;
+            height: 32%;
+            position: absolute;
+            left: 9%;
+            margin: auto;
+            background-repeat: no-repeat, repeat;
+            background-image: url(asset/image/8c1def6c5ac57eb9e6624d87eb2ce818.gif);
+        }
+
+        #sec2 {
+            width: 20%;
+            height: 32%;
+            position: absolute;
+            right: 10%;
+            bottom: 11rem;
+            margin: auto;
+            background-repeat: no-repeat, repeat;
+            background-image: url(asset/image/animated-thank-you-image-0078.gif);
+        }
+
+        @media all and (max-width: 768px){
+            #sec1 {
+                display: none;
+            }
+
+            #sec2 {
+               display: none;
+            }
+        }
+    </style>
+
+</head>
+<body class="bg-secondary">
+
+<div class="container-fluid ">
+    <div class="container d-flex flex-grow-1 flex-column mt-5">
+        <div class="container d-flex flex-grow-1 justify-content-center mt-5 " id="back">
+            <div id="sec1"></div>
+            <div id="sec2"></div>
+            <div class="col-12 col-md-5 col-lg-5 p-3 mt-3 rounded-3 m-4 " style="background-color: #34495e">
+                <div class="row mt-1 d-flex justify-content-around">
+                    <div class="col-12 col-md-12 col-lg-12">
+                        <div class="col-12 col-md-12 col-lg-12 bg-white rounded-2" style="height: 70px" type="text">
+                            <p id="history">0</p>
+                            <p class="d-flex justify-content-center" id="result">0</p>
+                        </div>
+                    </div>
+
+                    <div class="row gap-3 justify-content-around mt-3 ">
+                        <div class="row col-6 col-md-6 col-lg-6 ">
+                            <button class="btn btn-danger btn-lg" id="clear" type="button">C</button>
+                        </div>
+                        <div class="row col-3 col-md-3 col-lg-3">
+                            <button class="btn btn-dark btn-lg" id="backSpace" type="button"><i class="fa-solid fa-delete-left"></i>
+                            </button>
+                        </div>
+                        <div class="row col-3 col-md-3 col-lg-3 ">
+                            <button class="btn btn-dark btn-lg num" type="button">/</button>
+                        </div>
+                    </div>
+
+                    <div class="row gap-3 justify-content-around mt-3">
+                        <div class="row col-3 col-md-3 col-lg-3 ">
+                            <button class="btn btn-dark btn-lg num" type="button">7</button>
+                        </div>
+                        <div class="row col-3 col-md-3 col-lg-3 ">
+                            <button class="btn btn-dark btn-lg num" type="button">8</button>
+                        </div>
+                        <div class="row col-3 col-md-3 col-lg-3 ">
+                            <button class="btn btn-dark btn-lg num" type="button">9</button>
+                        </div>
+                        <div class="row col-3 col-md-3 col-lg-3 ">
+                            <button class="btn btn-dark btn-lg num" type="button">*</button>
+                        </div>
+                    </div>
+
+
+                    <div class="row gap-3 justify-content-around mt-3">
+                        <div class="row col-3 col-md-3 col-lg-3 ">
+                            <button class="btn btn-dark btn-lg num" type="button">4</button>
+                        </div>
+                        <div class="row col-3 col-md-3 col-lg-3 ">
+                            <button class="btn btn-dark btn-lg num" type="button">5</button>
+                        </div>
+                        <div class="row col-3 col-md-3 col-lg-3 ">
+                            <button class="btn btn-dark btn-lg num" type="button">6</button>
+                        </div>
+                        <div class="row col-3 col-md-3 col-lg-3 ">
+                            <button class="btn btn-dark btn-lg num" type="button">-</button>
+                        </div>
+                    </div>
+
+                    <div class="row gap-3 justify-content-around mt-3">
+                        <div class="row col-3 col-md-3 col-lg-3 ">
+                            <button class="btn btn-dark btn-lg num" type="button">1</button>
+                        </div>
+                        <div class="row col-3 col-md-3 col-lg-3 ">
+                            <button class="btn btn-dark btn-lg num" type="button">2</button>
+                        </div>
+                        <div class="row col-3 col-md-3 col-lg-3 ">
+                            <button class="btn btn-dark btn-lg num" type="button">3</button>
+                        </div>
+                        <div class="row col-3 col-md-3 col-lg-3 ">
+                            <button class="btn btn-dark btn-lg num" type="button">+</button>
+                        </div>
+                    </div>
+
+                    <div class="row gap-3 justify-content-around mt-3">
+                        <div class="row col-3 col-md-3 col-lg-3 ">
+                            <button class="btn btn-dark btn-lg num" type="button">0</button>
+                        </div>
+                        <div class="row col-3 col-md-3 col-lg-3 ">
+                            <button class="btn btn-dark btn-lg num" type="button">00</button>
+                        </div>
+                        <div class="row col-3 col-md-3 col-lg-3 ">
+                            <button class="btn btn-dark btn-lg num" type="button">.</button>
+                        </div>
+                        <div class="row col-3 col-md-3 col-lg-3 ">
+                            <button class="btn btn-primary btn-lg" id="equalTo" type="button">=</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+
+    let buttons = document.querySelectorAll('.num');
+    let result = document.querySelector('#result');
+    let clear = document.querySelector('#clear');
+    let history = document.querySelector('#history');
+    let equalTo = document.querySelector('#equalTo');
+    let backSpace = document.querySelector('#backSpace');
+
+
+    let value = "";
+
+    buttons.forEach((num, index) => {
+        num.addEventListener('click', function () {
+            let text = this.innerHTML;
+            value += text;
+            result.innerHTML = value;
+        });
+    });
+
+    /*equal to button action*/
+    equalTo.addEventListener('click', function () {
+        if (result.innerHTML !== "") {
+            history.innerHTML = result.innerHTML;
+            result.innerHTML = eval(result.innerHTML);
+            value = eval(result.innerHTML);
+        } else {
+            alert('please enter any Number');
+        }
+    });
+
+    /*clear all number*/
+    clear.addEventListener('click', function () {
+        result.innerHTML = "";
+        value = "";
+    });
+
+    /*delete single number*/
+    backSpace.addEventListener('click', function () {
+        result.innerHTML = result.innerHTML.substring(0, result.innerHTML.length - 1);
+        value = result.innerHTML;
+    });
+
+
+</script>
+
+
+</body>
+</html>
