@@ -350,7 +350,6 @@ h3.my-profession {
 }
 
 #social_media{
-    background-color: #ec1839;
     position: relative;
     left: 20%;
     top: 5rem;
@@ -359,10 +358,16 @@ h3.my-profession {
     display: flex;
 }
 
+#social_media a{
+    background-color: gray;
+    border: red;
+    border-radius: 36%;
+    margin: 2px;
+}
 
 #social_media a img{
-    width: 3rem;
-    height: 5rem;
+    width: 4rem;
+    height: 4rem;
 }
 
 /*=====================About section=====================*/
@@ -807,6 +812,27 @@ h3.my-profession {
     .about .about-content .personal-info{
         flex: 0 0 100%;
         max-width: 100%;
+    }
+
+    #social_media{
+        position: relative;
+        left: 10%;
+        top: 5rem;
+        height: auto;
+        width: auto;
+        display: flex;
+    }
+
+    #social_media a{
+        background-color: gray;
+        border: red;
+        border-radius: 36%;
+        margin: 2px;
+    }
+
+    #social_media a img{
+        width: 3rem;
+        height: 3rem;
     }
 }
 
