@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Light Effects</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+<main id="main" >
+    <section id="secM1" >
+        <div class="cube" id="sec1">
+            <div class="top"></div>
+            <div>
+                <span style="--i:0;"></span>
+                <span style="--i:1;"></span>
+                <span style="--i:2;"></span>
+                <span style="--i:3;"></span>
+            </div>
+        </div>
+    </section>
+    <section id="secM2">
+        <div class="cube2"  id="sec2">
+            <div class="top2"></div>
+            <div>
+                <span style="--i:0;"></span>
+                <span style="--i:1;"></span>
+                <span style="--i:2;"></span>
+                <span style="--i:3;"></span>
+            </div>
+        </div>
+    </section>
+    <section id="secM3">
+        <div class="cube3" id="sec3">
+            <div class="top3"></div>
+            <div>
+                <span style="--i:0;"></span>
+                <span style="--i:1;"></span>
+                <span style="--i:2;"></span>
+                <span style="--i:3;"></span>
+            </div>
+        </div>
+    </section>
+
+    <button id="btn"></button>
+
+    <script src="jquery-3.6.1.min.js"></script>
+    <script>
+        $("#btn").click(function () {
+            var x1 = document.getElementById("sec1");
+            x1.style.display = "block";
+
+            var y1 = document.getElementById("sec2");
+            y1.style.display = "none";
+
+            var z1 = document.getElementById("sec3");
+            z1.style.display = "none";
+        });
+
+
+        document.querySelector("#secM1").addEventListener("click", function () {
+            document.querySelector("#sec3").style.display='none';
+            document.querySelector("#sec1").style.display='inline-block';
+            document.querySelector("#sec2").style.display='inline-block';
+
+        });
+
+        document.querySelector("#secM2").addEventListener("click", function () {
+            document.querySelector("#sec3").style.display='inline-block';
+            document.querySelector("#sec1").style.display='inline-block';
+            document.querySelector("#sec2").style.display='inline-block';
+
+        });
+
+
+    </script>
+</main>
+</body>
+</html>
