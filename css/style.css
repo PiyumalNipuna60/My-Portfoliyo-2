@@ -8,7 +8,8 @@
     --text-black-900: #302e4d;
     --text-black-700: #504e70;
 }
-body.dark{
+
+body.dark {
     --bg-black-900: #151515;
     --bg-black-100: #222222;
     --bg-black-50: #393939;
@@ -245,7 +246,7 @@ ul {
     display: block;
 }
 
-.aside .nav li:hover a{
+.aside .nav li:hover a {
     color: var(--skin-color);
 }
 
@@ -270,7 +271,7 @@ ul {
     margin-right: 15px;
 }
 
-.aside .nav li a:hover i{
+.aside .nav li a:hover i {
     color: var(--skin-color);
 }
 
@@ -349,7 +350,7 @@ h3.my-profession {
     height: 400px;
 }
 
-#social_media{
+#social_media {
     position: relative;
     left: 20%;
     top: 5rem;
@@ -358,14 +359,14 @@ h3.my-profession {
     display: flex;
 }
 
-#social_media a{
+#social_media a {
     background-color: gray;
     border: red;
     border-radius: 36%;
     margin: 2px;
 }
 
-#social_media a img{
+#social_media a img {
     width: 4rem;
     height: 4rem;
 }
@@ -581,6 +582,33 @@ h3.my-profession {
     margin-bottom: 30px;
     flex: 0 0 33.33%;
     max-width: 33.33%;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+
+}
+
+.service .service-item::before {
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 100%;
+    background: linear-gradient(#00ccff,#d400d4);
+    animation: animate 4s linear infinite;
+}
+
+
+
+@keyframes animate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+
 }
 
 .service .service-item .service-item-inner:hover {
@@ -609,6 +637,7 @@ h3.my-profession {
     display: block;
     margin: 0 auto 30px;
     text-align: center;
+    z-index: 10;
 }
 
 .service .service-item .service-item-inner .icon .fa {
@@ -776,26 +805,28 @@ h3.my-profession {
     .main-content {
         padding-left: 0;
     }
-.about .about-content .personal-info .info-Item p span{
-    display: block;
-    margin-left: 0;
-}
+
+    .about .about-content .personal-info .info-Item p span {
+        display: block;
+        margin-left: 0;
+    }
 }
 
 @media (max-width: 991px) {
     .contact .contact-info-item,
     .portfolio .portfolio-item,
     .service .service-item,
-    .assignment .assignment-item{
+    .assignment .assignment-item {
         flex: 0 0 50%;
         max-width: 50%;
     }
 
-    .home .home-info{
+    .home .home-info {
         flex: 0 0 100%;
         max-width: 100%;
     }
-    .home .home-img{
+
+    .home .home-img {
         display: none;
     }
 }
@@ -809,12 +840,12 @@ h3.my-profession {
     .about .about-content .experience,
     .about .about-content .education,
     .about .about-content .skills,
-    .about .about-content .personal-info{
+    .about .about-content .personal-info {
         flex: 0 0 100%;
         max-width: 100%;
     }
 
-    #social_media{
+    #social_media {
         position: relative;
         left: 10%;
         top: 5rem;
@@ -823,14 +854,14 @@ h3.my-profession {
         display: flex;
     }
 
-    #social_media a{
+    #social_media a {
         background-color: gray;
         border: red;
         border-radius: 36%;
         margin: 2px;
     }
 
-    #social_media a img{
+    #social_media a img {
         width: 3rem;
         height: 3rem;
     }
