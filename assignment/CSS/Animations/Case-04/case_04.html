@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Car Animation</title>
+    <link href="/assets/lib/normalize.css" rel="stylesheet">
+    <meta content="width=device-width initial-scale=1" name="viewport">
+
+    <style>
+        main {
+            width: 1600px;
+            height: 730px;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            border-radius: 2px;
+            overflow: hidden;
+            background: url("assets/sky.jpg") center;
+            background-size: cover;
+        }
+
+        body{
+            overflow: hidden;
+        }
+
+        main > section:nth-child(1) > img:nth-child(2) {
+            width: 86px;
+            height: 86px;
+            z-index: 100;
+            margin-top: 412px;
+            position: absolute;
+            margin-left: 599px;
+            animation-name: wheel1;
+            animation: wheel1 1ms infinite;
+        }
+
+        @keyframes wheel1 {
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        main > section:nth-child(1) > img:nth-child(3) {
+            width: 86px;
+            height: 86px;
+            z-index: 100;
+            margin-top: 412px;
+            position: absolute;
+            margin-left: 882px;
+            animation-name: wheel1;
+            animation: wheel1 1ms infinite;
+        }
+
+        main > section:nth-child(1) > img:nth-child(1) {
+            padding-left: 10%;
+            z-index: 25;
+            width: 465px;
+            height: 200px;
+            left: 0;
+            right: 0;
+            position: absolute;
+            margin-left: 25%;
+            margin-top: 19%;
+        }
+
+        main>section:nth-child(2){
+            width: 400%;
+            height: 100%;
+            display: flex;
+            animation-name: carDrive;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+
+        }
+
+        @keyframes carDrive {
+            0% {
+                transform: translate(0)
+            }
+            25% {
+                transform: translate(-25%)
+            }
+            75% {
+                transform: translate(-50%)
+            }
+            100% {
+                transform: translate(-75%)
+            }
+        }
+
+        main>section:nth-child(2)>div{
+            height: 100%;
+            width: 100%;
+            position: absolute;
+        }
+
+        main>section:nth-child(2)>div:nth-child(1){
+            top: 380px;
+            height: 350px;
+            background: url("assets/road.jpg") center;
+            background-size: cover;
+        }
+
+        main>section:nth-child(2)>div:nth-child(5){
+            top: 380px;
+            height: 350px;
+            background: url("assets/road.jpg") center;
+            background-size: cover;
+        }
+
+        main>section:nth-child(2)>div:nth-child(2){
+            top: 182px;
+            height: 200px;
+            z-index: 20;
+            background: url("assets/city.png") center;
+        }
+
+        main>section:nth-child(2)>div:nth-child(3){
+            top: 182px;
+            height: 200px;
+            z-index: 20;
+            background: url("assets/city.png") center;
+        }
+
+        main>section:nth-child(2)>div:nth-child(4){
+            top: 182px;
+            height: 200px;
+            z-index: 20;
+            background: url("assets/city.png") center;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<main>
+    <section id="car">
+        <img alt="" src="assets/car.png">
+        <img alt="" src="assets/wheel.png">
+        <img alt="" src="assets/wheel.png">
+    </section>
+
+    <section>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+</main>
+
+</body>
+</html>
