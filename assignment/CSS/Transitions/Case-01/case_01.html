@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Transition - Navigation</title>
+    <link href="/assets/lib/normalize.css" rel="stylesheet">
+    <link href="assets/fonts/css/all.css" rel="stylesheet">
+
+
+    <style>
+
+        main{
+            width: 700px;
+            height: 400px;
+            position: relative;
+            top: 185px;
+            right: 640px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+        main>div{
+            position: relative;
+            left: 0;
+            height: 50px;
+            width: 100%;
+            background-color: #8281FF;
+            border-radius: 15px;
+            cursor: pointer;
+            transition-property: all;
+            transition-duration: 3s;
+        }
+
+        main>div>h2{
+            color: white;
+            position: absolute;
+            right: 150px;
+            top: 0;
+            bottom: 0;
+            height: max-content;
+            margin: auto;
+            font-size: 25px;
+        }
+
+        main>div>i{
+            color: white;
+            position: absolute;
+            right: 15px;
+            top: 0;
+            bottom: 0;
+            height: max-content;
+            margin: auto;
+            font-size:25px;
+        }
+
+        main>div:hover{
+            left: 300px;
+            transition-property: all;
+            transition-duration: 3s;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<main>
+    <div>
+        <h2>Menu One</h2>
+        <i class="fa-solid fa-address-book"></i>
+    </div>
+
+    <div>
+        <h2>Menu Two</h2>
+        <i class="fa-solid fa-truck-medical"></i>
+    </div>
+
+    <div>
+        <h2>Menu Three</h2>
+        <i class="fa-solid fa-globe"></i>
+    </div>
+
+    <div>
+        <h2>Menu Four</h2>
+        <i class="fa-solid fa-layer-group"></i>
+    </div>
+
+    <div>
+        <h2>Menu Five</h2>
+        <i class="fa-solid fa-cart-plus"></i>
+    </div>
+
+</main>
+
+</body>
+</html>
