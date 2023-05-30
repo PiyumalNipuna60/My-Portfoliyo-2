@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case 1 | Animations</title>
+    <link href="/assets/lib/normalize.css" rel="stylesheet">
+    <meta content="width=device-width initial-scale=1" name="viewport">
+  <style>
+      section{
+          position: absolute;
+          background-color: black;
+          border-radius: 10%;
+          width: 15%;
+          height: 14%;;
+          animation-name: animation;
+          animation-duration: 4s;
+          animation-iteration-count: infinite;
+          animation-direction: alternate;
+          border: 2px solid black;
+          margin: 0;
+          animation-timing-function: linear;
+      }
+
+      @keyframes animation {
+          0%{
+              top: 10%;
+              left: 5%;
+              margin: 0 0 0 0;
+              background-color: yellow;
+              transform: rotate(0deg);
+          }
+
+          25%{
+              top: 10%;
+              left: 46%;
+              margin: 0 0 0 500px;
+              background-color: blue;
+              transform: rotate(180deg);
+          }
+
+          50%{
+              top: 74%;
+              left: 59%;
+              background-color: orange;
+              transform: rotate(360deg);
+          }
+
+          75% {
+              top: 74%;
+              left: -6%;
+              background-color: red;
+              transform: rotate(180deg);
+          }
+
+          100% {
+              top: 5%;
+              left: 5%;
+              background-color: deeppink;
+              transform: rotate(360deg);
+          }
+      }
+
+  </style>
+
+
+
+</head>
+<body>
+<section></section>
+</body>
+</html>
