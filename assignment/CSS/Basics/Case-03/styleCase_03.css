@@ -70,7 +70,7 @@ section:first-child > div > pre {
 
 section:nth-child(2) > div > p {
     font-size: 50px;
-    position: absolute; sdk
+    position: absolute;
     left: 52px;
     right: 20px;
     top: 30px;
