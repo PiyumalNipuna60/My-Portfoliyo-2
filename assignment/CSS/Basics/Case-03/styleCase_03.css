@@ -1,0 +1,134 @@
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+#crcl-01 {
+    width: 240px;
+    height: 240px;
+    border: 15px solid grey;
+    position: fixed;
+    margin: auto;
+    border-radius: 50%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    z-index: 5;
+}
+
+#crcl-02 {
+    width: 215px;
+    height: 215px;
+    border: 15px solid red;
+    position: fixed;
+    margin: auto;
+    border-radius: 50%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    z-index: 5;
+}
+
+#crcl-03 {
+    width: 217px;
+    height: 217px;
+    position: absolute;
+    margin: auto;
+    background-color: cyan;
+    border-radius: 50%;
+    left: 0;
+    right: 15px;
+    bottom: 20px;
+    top: 150%;
+    z-index: 2;
+}
+
+section:first-child > div > pre {
+    position: absolute;
+    top: 50px;
+    bottom: 200px;
+    left: 20px;
+    right: 20px;
+    font-size: 33px;
+}
+
+#crcl-04 {
+    width: 217px;
+    height: 217px;
+    position: absolute;
+    margin: auto;
+    background-color: blueviolet;
+    border-radius: 50%;
+    left: 0;
+    right: 17px;
+    bottom: 16px;
+    top: -200%;
+    z-index: 2;
+}
+
+section:nth-child(2) > div > p {
+    font-size: 50px;
+    position: absolute; sdk
+    left: 52px;
+    right: 20px;
+    top: 30px;
+    bottom: 200px;
+}
+
+#crcl-05{
+    width: 217px;
+    height: 217px;
+    background-color: #ff4334;
+    border-radius: 50%;
+    position: absolute;
+    margin: auto;
+    top: 16px;
+    bottom: 0;
+    left: 0;
+    right: 17px;
+    z-index: 2;
+}
+
+section:nth-child(3)>div>pre{
+    font-size: 29px;
+    position: absolute;
+    top: 4px;
+    bottom: 20px;
+    left: 21px;
+    right: 200px;
+}
+
+body>main>section:nth-child(1){
+    position: absolute;
+    top: 0;
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+}
+
+body>main{
+    position: relative;
+    height: 100%;
+    width: 100%;
+
+}
+
+body>main>section:nth-child(2){
+    position: absolute;
+    top: 100%;
+    margin: 0;
+    border: 0;
+    display: inline-block;
+    height: 100vh;
+    width: 100vw;
+}
+
+body>main>section:nth-child(3){
+    position: absolute;
+    top: 200%;
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+}
