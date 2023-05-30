@@ -1,0 +1,26 @@
+main{
+
+    width : 1200px;
+    height: 600px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+}
+
+main>section{
+    /*border: 2px white;*/
+    margin: auto;
+
+}
+
+main>section>img{
+    margin-left: 3px;
+    width: 300px;
+    height: 200px;
+}
