@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Fixed Position</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="lib/normalize.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../../../assets/fonts/css/all.min.css">
+    <link href="../../../../assets/image/pic/NP.png" rel="icon">
+
+    <style>
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        #header_top {
+            background: white;
+            box-shadow: 0 -1px 8px 2px #1c1717e8;
+            height: 65px;
+            width: 100%;
+            position: fixed;
+        }
+
+        #header_top > img {
+            width: 190px;
+            position: fixed;
+            top: 20px;
+            left: 10px;
+
+        }
+
+        #header_top > nav {
+            position: fixed;
+            right: 40px;
+            top: 0;
+        }
+
+        #header_top > nav > ul > li {
+            display: inline-block;
+            cursor: pointer;
+            padding: 10px;
+            color: rgba(46, 41, 41, 0.96);
+        }
+
+        #header_top > nav > ul > li:hover {
+            color: red;
+        }
+
+        #header_top > nav > ul > li > a:hover {
+            color: red;
+            font-weight: bold;
+            /*font-size: 150%;*/
+        }
+
+        #side {
+            padding-top: 16px;
+            margin-top: 65px;
+            position: fixed;
+            top: 8px;
+            left: 8px;
+            bottom: 0;
+            background: #40036e;
+            display: flex;
+            justify-content: space-between;
+            z-index: 1000;
+            flex-flow: column;
+            width: 15rem;
+        }
+
+        header#side > nav.navbar > ul {
+            margin-top: 0;
+            padding-left: 10px;
+            padding-top: 17px;
+        }
+
+        header#side > nav.navbar > ul > li {
+            font-weight: bold;
+            padding: 7px;
+            color: white;
+        }
+
+        header#side > nav.navbar > ul > li > a{
+            color: white;
+        }
+
+        header#side > nav.navbar > ul > li:hover {
+            color: red;
+        }
+
+        header#side > nav.navbar > ul > li > a:hover {
+            color: red;
+            font-weight: bold;
+            font-size: 150%;
+        }
+
+        .home {
+            margin: auto;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            border: 2px solid black;
+        }
+
+        section > :nth-child(1) {
+            width: 25%;
+            height: 50%;
+            right: 100px;
+            bottom: 200px;
+            padding-left: 280px;
+            display: inline;
+            padding-top: 85px;
+        }
+
+        section > :nth-child(2) {
+            width: 25%;
+            height: 50%;
+            right: 100px;
+            bottom: 200px;
+            padding-left: 2px;
+            padding-top: 85px;
+            display: inline;
+        }
+
+        section > :nth-child(3) {
+            width: 25%;
+            height: 50%;
+            right: 100px;
+            bottom: 200px;
+            padding-left: 2px;
+            padding-top: 85px;
+        }
+
+        .text_content {
+            padding-left: 230px;
+            font-family: 'DynaPuff', cursive;
+        }
+
+    </style>
+
+
+</head>
+<body>
+
+<header id="header_top">
+    <img alt="Logo" src="assets/favicon.png">
+    <nav>
+        <ul>
+            <li><i class="fa-solid fa-house"></i><a href="#"> Home</a></li>
+            <li><i class="fa-solid fa-address-card"></i><a href="#"> About</a></li>
+            <li><i class="fa-solid fa-pen"></i><a href="#"> Skill</a></li>
+            <li><i class="fa-solid fa-clipboard"></i><a href="#"> Project</a></li>
+            <li><i class="fa-solid fa-earth-asia"></i><a href="#"> Service</a></li>
+            <li><i class="fa-solid fa-address-book"></i><a href="#"> Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<header id="side">
+    <nav class="navbar">
+        <ul>
+            <li><i class="fa-solid fa-house"></i><a href="#"><a> </a>Home</a></li>
+            <li><i class="fa-solid fa-address-card"></i><a href="#"> About</a></li>
+            <li><i class="fa-solid fa-pen"></i><a href="#">Skill</a></li>
+            <li><i class="fa-solid fa-clipboard"></i><a href="#">Project</a></li>
+            <li><i class="fa-solid fa-earth-asia"></i><a href="#">Service</a></li>
+            <li><i class="fa-solid fa-address-book"></i><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="home">
+    <img alt="" src="assets/gif.gif">
+    <img alt="" src="assets/gif.gif">
+    <img alt="" src="assets/gif.gif">
+
+    <pre class="text_content">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, molestiae nisi! Aliquam commodi iusto laudantium nihil sapiente similique sint sunt
+        voluptas voluptatum! Amet architecto aspernatur, cum facere maiores  class="text_content"velit veniam?</pre>
+
+
+    <pre class="text_content">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, molestiae nisi! Aliquam commodi iusto laudantium nihil sapiente similique sint sunt
+        voluptas voluptatum! Amet architecto aspernatur, cum facere maiores  class="text_content"velit veniam?</pre>
+
+
+    <pre class="text_content">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, molestiae nisi! Aliquam commodi iusto laudantium nihil sapiente similique sint sunt
+        voluptas voluptatum! Amet architecto aspernatur, cum facere maiores  class="text_content"velit veniam?</pre>
+
+    <pre class="text_content">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, molestiae nisi! Aliquam commodi iusto laudantium nihil sapiente similique sint sunt
+        voluptas voluptatum! Amet architecto aspernatur, cum facere maiores  class="text_content"velit veniam?</pre>
+
+    <pre class="text_content">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, molestiae nisi! Aliquam commodi iusto laudantium nihil sapiente similique sint sunt
+        voluptas voluptatum! Amet architecto aspernatur, cum facere maiores  class="text_content"velit veniam?</pre>
+
+    <pre class="text_content">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, molestiae nisi! Aliquam commodi iusto laudantium nihil sapiente similique sint sunt
+        voluptas voluptatum! Amet architecto aspernatur, cum facere maiores  class="text_content"velit veniam?</pre>
+
+
+    <pre class="text_content">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, molestiae nisi! Aliquam commodi iusto laudantium nihil sapiente similique sint sunt
+        voluptas voluptatum! Amet architecto aspernatur, cum facere maiores  class="text_content"velit veniam?</pre>
+
+
+    <pre class="text_content">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, molestiae nisi! Aliquam commodi iusto laudantium nihil sapiente similique sint sunt
+        voluptas voluptatum! Amet architecto aspernatur, cum facere maiores  class="text_content"velit veniam?</pre>
+
+
+    <pre class="text_content">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, molestiae nisi! Aliquam commodi iusto laudantium nihil sapiente similique sint sunt
+        voluptas voluptatum! Amet architecto aspernatur, cum facere maiores  class="text_content"velit veniam?</pre>
+
+    <pre class="text_content">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, molestiae nisi! Aliquam commodi iusto laudantium nihil sapiente similique sint sunt
+        voluptas voluptatum! Amet architecto aspernatur, cum facere maiores  class="text_content"velit veniam?</pre>
+
+    <pre class="text_content">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, molestiae nisi! Aliquam commodi iusto laudantium nihil sapiente similique sint sunt
+        voluptas voluptatum! Amet architecto aspernatur, cum facere maiores  class="text_content"velit veniam?</pre>
+
+    <pre class="text_content">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, molestiae nisi! Aliquam commodi iusto laudantium nihil sapiente similique sint sunt
+        voluptas voluptatum! Amet architecto aspernatur, cum facere maiores  class="text_content"velit veniam?</pre>
+
+    <pre class="text_content">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, molestiae nisi! Aliquam commodi iusto laudantium nihil sapiente similique sint sunt
+        voluptas voluptatum! Amet architecto aspernatur, cum facere maiores  class="text_content"velit veniam?</pre>
+
+
+    <pre class="text_content">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, molestiae nisi! Aliquam commodi iusto laudantium nihil sapiente similique sint sunt
+        voluptas voluptatum! Amet architecto aspernatur, cum facere maiores  class="text_content"velit veniam?</pre>
+
+
+    <pre class="text_content">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, molestiae nisi! Aliquam commodi iusto laudantium nihil sapiente similique sint sunt
+        voluptas voluptatum! Amet architecto aspernatur, cum facere maiores  class="text_content"velit veniam?</pre>
+
+    <pre class="text_content">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, molestiae nisi! Aliquam commodi iusto laudantium nihil sapiente similique sint sunt
+        voluptas voluptatum! Amet architecto aspernatur, cum facere maiores  class="text_content"velit veniam?</pre>
+
+    <pre class="text_content">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, molestiae nisi! Aliquam commodi iusto laudantium nihil sapiente similique sint sunt
+        voluptas voluptatum! Amet architecto aspernatur, cum facere maiores  class="text_content"velit veniam?</pre>
+
+    <pre class="text_content">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, molestiae nisi! Aliquam commodi iusto laudantium nihil sapiente similique sint sunt
+        voluptas voluptatum! Amet architecto aspernatur, cum facere maiores  class="text_content"velit veniam?</pre>
+
+
+    <pre class="text_content">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, molestiae nisi! Aliquam commodi iusto laudantium nihil sapiente similique sint sunt
+        voluptas voluptatum! Amet architecto aspernatur, cum facere maiores  class="text_content"velit veniam?</pre>
+
+
+    <pre class="text_content">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, molestiae nisi! Aliquam commodi iusto laudantium nihil sapiente similique sint sunt
+        voluptas voluptatum! Amet architecto aspernatur, cum facere maiores  class="text_content"velit veniam?</pre>
+
+
+    <pre class="text_content">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, molestiae nisi! Aliquam commodi iusto laudantium nihil sapiente similique sint sunt
+        voluptas voluptatum! Amet architecto aspernatur, cum facere maiores  class="text_content"velit veniam?</pre>
+
+    <pre class="text_content">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, molestiae nisi! Aliquam commodi iusto laudantium nihil sapiente similique sint sunt
+        voluptas voluptatum! Amet architecto aspernatur, cum facere maiores  class="text_content"velit veniam?</pre>
+
+    <pre class="text_content">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, molestiae nisi! Aliquam commodi iusto laudantium nihil sapiente similique sint sunt
+        voluptas voluptatum! Amet architecto aspernatur, cum facere maiores  class="text_content"velit veniam?</pre>
+
+    <pre class="text_content">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, molestiae nisi! Aliquam commodi iusto laudantium nihil sapiente similique sint sunt
+        voluptas voluptatum! Amet architecto aspernatur, cum facere maiores  class="text_content"velit veniam?</pre>
+
+    <pre class="text_content">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, molestiae nisi! Aliquam commodi iusto laudantium nihil sapiente similique sint sunt
+        voluptas voluptatum! Amet architecto aspernatur, cum facere maiores  class="text_content"velit veniam?</pre>
+
+
+    <pre class="text_content">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, molestiae nisi! Aliquam commodi iusto laudantium nihil sapiente similique sint sunt
+        voluptas voluptatum! Amet architecto aspernatur, cum facere maiores  class="text_content"velit veniam?</pre>
+
+
+    <pre class="text_content">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, molestiae nisi! Aliquam commodi iusto laudantium nihil sapiente similique sint sunt
+        voluptas voluptatum! Amet architecto aspernatur, cum facere maiores  class="text_content"velit veniam?</pre>
+
+    <pre class="text_content">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, molestiae nisi! Aliquam commodi iusto laudantium nihil sapiente similique sint sunt
+        voluptas voluptatum! Amet architecto aspernatur, cum facere maiores  class="text_content"velit veniam?</pre>
+
+    <pre class="text_content">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, molestiae nisi! Aliquam commodi iusto laudantium nihil sapiente similique sint sunt
+        voluptas voluptatum! Amet architecto aspernatur, cum facere maiores  class="text_content"velit veniam?</pre>
+
+    <pre class="text_content">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, molestiae nisi! Aliquam commodi iusto laudantium nihil sapiente similique sint sunt
+        voluptas voluptatum! Amet architecto aspernatur, cum facere maiores  class="text_content"velit veniam?</pre>
+
+
+    <pre class="text_content">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, molestiae nisi! Aliquam commodi iusto laudantium nihil sapiente similique sint sunt
+        voluptas voluptatum! Amet architecto aspernatur, cum facere maiores  class="text_content"velit veniam?</pre>
+
+
+    <pre class="text_content">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, molestiae nisi! Aliquam commodi iusto laudantium nihil sapiente similique sint sunt
+        voluptas voluptatum! Amet architecto aspernatur, cum facere maiores  class="text_content"velit veniam?</pre>
+
+
+    <pre class="text_content">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, molestiae nisi! Aliquam commodi iusto laudantium nihil sapiente similique sint sunt
+        voluptas voluptatum! Amet architecto aspernatur, cum facere maiores  class="text_content"velit veniam?</pre>
+
+    <pre class="text_content">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, molestiae nisi! Aliquam commodi iusto laudantium nihil sapiente similique sint sunt
+        voluptas voluptatum! Amet architecto aspernatur, cum facere maiores  class="text_content"velit veniam?</pre>
+
+    <pre class="text_content">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, molestiae nisi! Aliquam commodi iusto laudantium nihil sapiente similique sint sunt
+        voluptas voluptatum! Amet architecto aspernatur, cum facere maiores  class="text_content"velit veniam?</pre>
+
+    <pre class="text_content">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, molestiae nisi! Aliquam commodi iusto laudantium nihil sapiente similique sint sunt
+        voluptas voluptatum! Amet architecto aspernatur, cum facere maiores  class="text_content"velit veniam?</pre>
+
+    <pre class="text_content">
+        Piyumal Nipuna</pre>
+
+    <pre class="text_content">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, molestiae nisi! Aliquam commodi iusto laudantium nihil sapiente similique sint sunt
+        voluptas voluptatum! Amet architecto aspernatur, cum facere maiores  class="text_content"velit veniam?</pre>
+
+</section>
+</body>
+</html>
