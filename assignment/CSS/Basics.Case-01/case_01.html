@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>CSS Absolute Position</title>
+
+    <link href="../../../../assets/image/pic/NP.png" rel="icon">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="../../../../assets/lib/normalize.css" rel="stylesheet">
+
+
+    <style>
+
+        body {
+            margin: 0;
+           overflow: hidden;
+        }
+
+        div#rec01 {
+            width: 50%;
+            height: 50%;
+            background-color: crimson;
+            position: absolute;
+            margin: auto;
+        }
+
+        div#rec02 {
+            width: 50%;
+            height: 50%;
+            background-color: green;
+            position: absolute;
+            margin: auto;
+            left: 50%;
+        }
+
+        div#rec03 {
+            width: 50%;
+            height: 50%;
+            background-color: orange;
+            position: absolute;
+            margin: auto;
+            bottom: 0;
+        }
+
+        div#rec04 {
+            width: 50%;
+            height: 50%;
+            background-color: deeppink;
+            position: absolute;
+            margin: auto;
+            bottom: 0;
+            left: 50%;
+        }
+
+        div#middle_square {
+            width: 25%;
+            height: 45%;
+            background-color: white;
+            position: absolute;
+            margin: auto;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            top: 0;
+        }
+
+        div#middle_circle {
+            width: 12%;
+            height: 25%;
+            background-color: crimson;
+            position: absolute;
+            margin: auto;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            top: 0;
+            border-radius: 50%;
+        }
+
+        div#white_circle1 {
+            width: 18%;
+            height: 35%;
+            background-color: white;
+            position: absolute;
+            margin: auto;
+            border-radius: 50%;
+            left: 90%;
+            top: 83%;
+        }
+
+        div#white_circle2 {
+            width: 18%;
+            height: 35%;
+            background-color: white;
+            position: absolute;
+            margin: auto;
+            border-radius: 50%;
+            right: 90%;
+            top: 83%;
+        }
+
+        div#white_circle3 {
+            width: 18%;
+            height: 35%;
+            background-color: white;
+            position: absolute;
+            margin: auto;
+            border-radius: 50%;
+            right: 90%;
+            bottom: 83%;
+        }
+
+        div#white_circle4 {
+            width: 18%;
+            height: 35%;
+            background-color: white;
+            position: absolute;
+            margin: auto;
+            border-radius: 50%;
+            left: 90%;
+            bottom: 83%;
+        }
+
+        div#white_circle4 {
+            width: 18%;
+            height: 35%;
+            background-color: white;
+            position: absolute;
+            margin: auto;
+            border-radius: 50%;
+            left: 90%;
+            bottom: 83%;
+        }
+
+        div > div#full_circle1 {
+            width: 30%;
+            height: 55%;
+            background-color: white;
+            position: absolute;
+            margin: auto;
+            border-radius: 50%;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            top: 0;
+        }
+
+        div > div#full_circle2 {
+            width: 30%;
+            height: 55%;
+            background-color: white;
+            position: absolute;
+            margin: auto;
+            border-radius: 50%;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            top: 0;
+        }
+
+        div > div#full_circle3 {
+            width: 30%;
+            height: 55%;
+            background-color: white;
+            position: absolute;
+            margin: auto;
+            border-radius: 50%;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            top: 0;
+        }
+
+        div > div#full_circle4 {
+            width: 30%;
+            height: 55%;
+            background-color: white;
+            position: absolute;
+            margin: auto;
+            border-radius: 50%;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            top: 0;
+        }
+
+        #white_middle_circle1 {
+            width: 18%;
+            height: 35%;
+            background-color: white;
+            position: absolute;
+            margin: auto;
+            border-radius: 50%;
+            left: 41%;
+            bottom: 85%;
+        }
+
+        #white_middle_circle2 {
+            width: 18%;
+            height: 35%;
+            background-color: white;
+            position: absolute;
+            margin: auto;
+            border-radius: 50%;
+            left: 41%;
+            top: 85%;
+        }
+
+        #in_box01 {
+            width: 45%;
+            height: 45%;
+            background-color: crimson;
+            position: absolute;
+            margin: auto;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            top: 0;
+        }
+
+        #in_box02 {
+            width: 45%;
+            height: 45%;
+            background-color: crimson;
+            position: absolute;
+            margin: auto;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            top: 0;
+        }
+
+        #in_box03 {
+            width: 45%;
+            height: 45%;
+            background-color: crimson;
+            position: absolute;
+            margin: auto;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            top: 0;
+        }
+
+        #in_box04 {
+            width: 45%;
+            height: 45%;
+            background-color: crimson;
+            position: absolute;
+            margin: auto;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            top: 0;
+        }
+
+    </style>
+
+
+</head>
+<body>
+
+<main>
+    <section id="mainSec">
+        <div id="rec01">
+            <div id="full_circle1">
+                <div id="in_box01"></div>
+            </div>
+        </div>
+
+
+        <div id="rec02">
+            <div id="full_circle2">
+                <div id="in_box02"></div>
+            </div>
+        </div>
+
+        <div id="rec03">
+            <div id="full_circle3">
+                <div id="in_box03"></div>
+            </div>
+        </div>
+
+        <div id="rec04">
+            <div id="full_circle4">
+                <div id="in_box04"></div>
+            </div>
+        </div>
+
+
+        <div id="middle_square"></div>
+
+        <div id="middle_circle"></div>
+
+        <div id="white_circle1"></div>
+
+        <div id="white_circle2"></div>
+
+        <div id="white_circle3"></div>
+
+        <div id="white_circle4"></div>
+
+        <div id="white_middle_circle1"></div>
+
+        <div id="white_middle_circle2"></div>
+    </section>
+
+</main>
+
+
+</body>
+</html>
