@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>pos-system/home/customer</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="../bootstraps/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        #btnCusAdd>button:hover{
+            font-size: 150%;
+            font-weight: bold;
+            position: relative;
+            top: 15%;
+            width: 200%;
+            height: 200%;
+            background: #29fd53;
+            border-radius: 50%;
+            transition: 0.1s;
+        }
+
+        #btnCusModify>button:hover{
+            font-size: 150%;
+            font-weight: bold;
+            position: relative;
+            top: 15%;
+            width: 200%;
+            height: 200%;
+            background: #29fd53;
+            border-radius: 50%;
+            transition: 0.1s;
+        }
+
+        #btnCusLoadAll>button:hover{
+            font-size: 150%;
+            font-weight: bold;
+            position: relative;
+            top: 15%;
+            width: 200%;
+            height: 200%;
+            background: #29fd53;
+            border-radius: 50%;
+            transition: 0.1s;
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <nav class="navbar navbar-expand-lg  navbar-dark bg-primary">
+
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+
+                <img alt="" height="30" src="../asset/andy-hermawan-bVBvv5xlX3g-unsplash.jpg"
+                     style="margin-right: 5px"
+                     width="35">Piyumal Nipuna Pos System</a>
+
+            <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+                    class="navbar-toggler"
+                    data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse" type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a aria-current="page" class="nav-link border-end border-start border-dark border-opacity-50"
+                           href="../index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active border-end border-start text-danger border-dark border-opacity-50"
+                           href="#">Customers</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link border-end border-start border-dark border-opacity-50"
+                           href="Item.html">Items</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link border-end border-start border-dark border-opacity-50" href="order.html">Orders</a>
+                    </li>
+
+                </ul>
+
+                <div class="navbar-nav ">
+                    <a class="navbar-brand" href="../signIn.html">
+
+                        <img alt="" height="30" src="../asset/Sign-up.png"
+                             style="margin-right: 5%"
+                             width="35">Sign Up</a>
+                </div>
+                <div class="navbar-nav ">
+                    <a class="navbar-brand" href="../LoginForm.html">
+
+                        <img alt="" height="30" src="../asset/log-in.png"
+                             style="margin-right: 5%"
+                             width="35">Login In</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main style="width: 98vw;">
+    <br>
+    <section class="row justify-content-center">
+        <section class="col-11 col-sm-11 col-md-6 col-lg-6 col-xl-6 col-xxl-6 mx-auto" style="">
+            <div class=" border rounded border-dark ">
+                <nav class="border rounded bg-info">
+                    <h1 class="text-white fs-3">Search Customer</h1>
+                </nav>
+
+                <form class="mx-auto m-lg-2">
+                    <div class="row mb-2 mt-2">
+                        <label class="col-sm-3 col-form-label fw-bold" for="inputId">Id :</label>
+                        <div class="col-sm-9">
+                            <input class="form-control" id="inputId" placeholder="ex: C001" type="email">
+                        </div>
+                    </div>
+                    <div class="row mb-2">
+                        <label class="col-sm-3 col-form-label fw-bold" for="inputName">Name :</label>
+                        <div class="col-sm-9">
+                            <input class="form-control" id="inputName" placeholder="ex: Piyumal" type="email">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label class="col-sm-3 col-form-label fw-bold" for="inputContact">Contact :</label>
+                        <div class="col-sm-9">
+                            <input class="form-control" id="inputContact" placeholder="ex: 0767554903" type="email">
+                        </div>
+                    </div>
+
+                    <div class="position-relative">
+                        <button class="btn btn-primary mb-2" style="margin-left: 64%; width: 32%" type="button" id="btnSearchCus">Search
+                        </button>
+                    </div>
+
+                </form>
+            </div>
+        </section>
+
+        <section class="col-10 col-sm-10 col-md-4 col-lg-4 col-xl-4 col-xxl-4 pt-4 mb-3 mx-auto">
+
+            <div id="btnCusAdd" class="mb-2">
+                <button class="btn" data-bs-target="#exampleModal" data-bs-toggle="modal"
+                        style="width: 75%; height: 3rem; background-color: #06B618; box-shadow: 0 7px 8px 0 rgba(0 ,0 ,0, 0.5), 0 7px 35px 0 rgba(0, 0, 0,0.32);" type="button">Add Customer
+                </button>
+                <!--///////////////-->
+
+                <!-- Button trigger modal -->
+
+                <!-- Modal -->
+                <div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="exampleModal"
+                     tabindex="-1">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header bg-info">
+                                <h5 class="modal-title " id="exampleModalLabel">Add Customer</h5>
+                                <button aria-label="Close" class="btn-close" data-bs-dismiss="modal"
+                                        type="button"></button>
+                            </div>
+                            <div class="modal-body">
+
+                                <form class="mx-auto m-lg-2">
+                                    <div class="row mb-2 mt-2">
+                                        <label class="col-sm-3 col-form-label fw-bold" for="inputCusId">Cus: ID
+                                            :</label>
+                                        <div class="col-sm-9">
+                                            <input class="form-control" id="inputCusId" placeholder="C001"
+                                                   type="email">
+                                            <span class="control-error" id="lblCusID"></span>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-2">
+                                        <label class="col-sm-3 col-form-label fw-bold"
+                                               for="inputCusName">Name:</label>
+                                        <div class="col-sm-9">
+                                            <input class="form-control" id="inputCusName" placeholder="ex: Piyumal"
+                                                   type="email">
+                                            <span class="control-error" id="lblCusName"></span>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-2">
+                                        <label class="col-sm-3 col-form-label fw-bold" for="inputCusAddress">Address
+                                            :</label>
+                                        <div class="col-sm-9">
+                                            <input class="form-control" id="inputCusAddress" placeholder="ex: galle"
+                                                   type="email">
+                                            <span class="control-error" id="lblCusAddress"></span>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <label class="col-sm-3 col-form-label fw-bold" for="inputCusContact">Contact
+                                            :</label>
+                                        <div class="col-sm-9">
+                                            <input class="form-control" id="inputCusContact"
+                                                   placeholder="ex: 0767554903"
+                                                   type="email">
+                                            <span class="control-error" id="lblCuSalary"></span>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-secondary" data-bs-dismiss="modal" id="btnClose"
+                                        type="button">Close
+                                </button>
+                                <button class="btn btn-primary" id="btnSave" type="button">Save changes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- //////////////-->
+            </div>
+
+            <div id="btnCusModify" class="mb-2" style="padding-top: 3%;">
+                <button class="btn" data-bs-target="#exampleModal2" data-bs-toggle="modal"
+                        style="width: 75%; height: 3rem; background-color: #06B618; box-shadow: 0 7px 8px 0 rgba(0 ,0 ,0, 0.5), 0 7px 35px 0 rgba(0, 0, 0,0.32);" type="button">Modify Customer
+                </button>
+
+                <!-- Modal -->
+                <div aria-hidden="true" aria-labelledby="exampleModalLabel2" class="modal fade" id="exampleModal2"
+                     tabindex="-1">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header bg-info">
+                                <h5 class="modal-title " id="exampleModalLabel2">Modify Customer</h5>
+                                <button aria-label="Close" class="btn-close" data-bs-dismiss="modal"
+                                        type="button"></button>
+                            </div>
+                            <div class=" modal-body">
+
+                                <form class="mx-auto m-lg-2">
+                                    <div class="row mb-2 mt-2">
+                                        <label class="col-sm-3 col-form-label fw-bold" for="inputCusId2">Cus: ID
+                                            :</label>
+                                        <div class="col-sm-9">
+                                            <input class="form-control" id="inputCusId2" placeholder="ex: C001"
+                                                   type="email">
+                                            <span class="control-error" id=""></span>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-2">
+                                        <label class="col-sm-3 col-form-label fw-bold"
+                                               for="inputCusName2">Name:</label>
+                                        <div class="col-sm-9">
+                                            <input class="form-control" id="inputCusName2" placeholder="ex: Piyumal"
+                                                   type="text">
+                                            <span class="control-error" id="lblCusName2"></span>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-2">
+                                        <label class="col-sm-3 col-form-label fw-bold" for="inputCusAddress2">Address
+                                            :</label>
+                                        <div class="col-sm-9">
+                                            <input class="form-control" id="inputCusAddress2" placeholder="ex: galle"
+                                                   type="text">
+                                            <span class="control-error" id="lblCusAddress2"></span>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-3">
+                                        <label class="col-sm-3 col-form-label fw-bold" for="inputCusContact2">Contact
+                                            :</label>
+                                        <div class="col-sm-9">
+                                            <input class="form-control" id="inputCusContact2"
+                                                   placeholder="ex: 0767554903"
+                                                   type="text">
+                                            <span class="control-error" id="lblCusContact2"></span>
+                                        </div>
+                                    </div>
+                                </form>
+
+                            </div>
+                            <div>
+                                <button class="btn btn-secondary bg-danger" id="btnSearch2"
+                                        style="margin-left: 2rem;margin-bottom: 1rem;"
+                                        type="button">Search
+                                </button>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-secondary" data-bs-dismiss="modal" id="btnClose2" type="button">
+                                    Close
+                                </button>
+                                <button class="btn btn-primary" id="btnModify2" type="button">Save changes</button>
+                                <button class="btn btn-warning" id="btnDelete2" type="button">Delete Customer</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--//////////////&ndash;&gt;-->
+            </div>
+
+            <div id="btnCusLoadAll" class="mb-2" style="padding-top: 3%;">
+                <button class="btn" data-bs-target="#exampleModal3" data-bs-toggle="modal"
+                        style="width: 75%; height: 3rem; background-color: #06B618; box-shadow: 0 7px 8px 0 rgba(0 ,0 ,0, 0.5), 0 7px 35px 0 rgba(0, 0, 0,0.32);" type="button">Load All Customer
+                </button>
+
+                <!-- Modal -->
+                <div aria-hidden="true" aria-labelledby="exampleModalLabel3" class="modal fade" id="exampleModal3"
+                     tabindex="-1">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header bg-info">
+                                <h5 class="modal-title " id="exampleModalLabel3">Load All Customer</h5>
+                                <button aria-label="Close" class="btn-close" data-bs-dismiss="modal"
+                                        type="button"></button>
+                            </div>
+                            <div class=" modal-body">
+
+                                <table class="table table-bordered table-hover table-bordered border-dark modal-dialog-scrollable">
+                                    <thead class="bg-danger text-white">
+                                    <tr>
+                                        <th>Customer ID</th>
+                                        <th>Customer Name</th>
+                                        <th>Customer Contact</th>
+                                        <th>Customer Salary</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody id="tblAllCustomer2">
+
+<!--                                        <tr>
+                                            <td>C00-002</td>
+                                            <td>piyumal</td>
+                                            <td>0745845785</td>
+                                            <td>100000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>C00-003</td>
+                                            <td>Niuna</td>
+                                            <td>0767554309</td>
+                                            <td>30000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>C00-004</td>
+                                            <td>sadun</td>
+                                            <td>0710425254</td>
+                                            <td>200000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>C00-005</td>
+                                            <td>tharaka</td>
+                                            <td>0714525458</td>
+                                            <td>100000</td>
+                                        </tr>
+                                        <tr>
+                                            <td>C00-006</td>
+                                            <td>Malith</td>
+                                            <td>0742545854</td>
+                                            <td>30000</td>
+                                        </tr>-->
+
+                                    </tbody>
+                                </table>
+
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn btn-secondary" data-bs-dismiss="modal" id="btnClose3" type="button">
+                                    Close
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            </div>
+        </section>
+    </section>
+
+    <section class="pt-4 col-11 mx-auto">
+        <table class="table table-bordered table-hover table-bordered border-dark modal-dialog-scrollable">
+
+            <thead class="bg-danger text-white">
+            <tr>
+                <th>Customer ID</th>
+                <th>Customer Name</th>
+                <th>Customer Address</th>
+                <th>Customer Contact</th>
+            </tr>
+            </thead>
+            <tbody id="tblCustomer">
+<!--            <tr>
+                <td>C00-001</td>
+                <td>Dasun</td>
+                <td>0754585658</td>
+                <td>200000</td>
+            </tr>
+            <tr>
+                <td>C00-002</td>
+                <td>piyumal</td>
+                <td>0745845785</td>
+                <td>100000</td>
+            </tr>
+            <tr>
+                <td>C00-003</td>
+                <td>Niuna</td>
+                <td>0767554309</td>
+                <td>30000</td>
+            </tr>
+            <tr>
+                <td>C00-004</td>
+                <td>sadun</td>
+                <td>0710425254</td>
+                <td>200000</td>
+            </tr>
+            <tr>
+                <td>C00-005</td>
+                <td>tharaka</td>
+                <td>0714525458</td>
+                <td>100000</td>
+            </tr>
+            <tr>
+                <td>C00-006</td>
+                <td>Malith</td>
+                <td>0742545854</td>
+                <td>30000</td>
+            </tr>-->
+            </tbody>
+        </table>
+    </section>
+
+</main>
+<footer></footer>
+
+
+<script src="../bootstraps/js/bootstrap.min.js"></script>
+<script src="../bootstraps/js/jquery-3.6.1.min.js"></script>
+
+<script>
+    var customer = [];
+    $("#btnSave").click(function () {
+
+
+        let customerID = $("#inputCusId").val();
+        let customerName = $("#inputCusName").val();
+        let customerAddress = $("#inputCusAddress").val();
+        let customerContact = $("#inputCusContact").val();
+
+        var customerObject = {
+            id: customerID,
+            name: customerName,
+            address: customerAddress,
+            contact: customerContact
+        }
+        customer.push(customerObject);
+        console.log(customer);
+        getAllCustomer();
+        loadAllCustomers();
+        clearAllTexts();
+    });
+
+/*    getPreviousCustomersFromTable();
+    function getPreviousCustomersFromTable() {
+        // tabel customer
+
+        var customerObject2 = {
+
+            id: $(this).children(":eq(0)").text(),
+            name: $(this).children(":eq(1)").text(),
+            address: $(this).children(":eq(2)").text(),
+            contact: $(this).children(":eq(3)").text()
+        }
+
+        console.log(customerObject2)
+        customer.push()
+    }*/
+
+    /*------------gel All Customer--------------*/
+    loadAllCustomers();
+    function loadAllCustomers() {
+        $("#tblAllCustomer2").empty();
+
+        for (var customers of customer) {
+            var row = `<tr><td>${customers.id}</td><td>${customers.name}</td><td>${customers.address}</td><td>${customers.contact}</td></tr>`;
+
+            //then add it to the table body of customer table
+            $("#tblAllCustomer2").append(row);
+        }
+    }
+
+    function getAllCustomer() {
+        $("#tblCustomer").empty();
+
+        for (var customers of customer) {
+            console.log(customers);
+
+            var row = `<tr><td>${customers.id}</td><td>${customers.name}</td><td>${customers.address}</td><td>${customers.contact}</td></tr>`;
+
+            $("#tblCustomer").append(row);
+        }
+    }
+    /*--------------------------*/
+
+
+    $("#inputCusId,#inputCusName,#inputCusAddress,#inputCusContact,#inputCusId2,#inputCusName2,#inputCusAddress2,#inputCusContact2").on('keydown', function (event) {
+        if (event.key == "Tab") {
+            event.preventDefault();
+        }
+    });
+
+
+    $("#inputCusId").on('keydown', function (event) {
+        if (event.key == "Enter" && check(cusIDRegEx, $("#inputCusId"))) {
+            $("#inputCusName").focus();
+        } else {
+            focusText($("#inputCusId"));
+        }
+    });
+
+
+    $("#inputCusName").on('keydown', function (event) {
+        if (event.key == "Enter" && check(cusNameRegEx, $("#inputCusName"))) {
+            focusText($("#inputCusAddress"));
+        }
+    });
+
+
+    $("#inputCusAddress").on('keydown', function (event) {
+        if (event.key == "Enter" && check(cusAddressRegEx, $("#inputCusAddress"))) {
+            focusText($("#inputCusContact"));
+        }
+    });
+
+
+    $("#inputCusContact").on('keydown', function (event) {
+        if (event.key == "Enter" && check(cusSalaryRegEx, $("#inputCusContact"))) {
+            $("#btnSave").focus();
+            let res = confirm("Do you want to add this customer.?");
+            if (res) {
+                clearAllTexts();
+            }
+        }
+    });
+
+    /*--------------------*/
+
+    $("#inputCusId2").on('keydown', function (event) {
+        if (event.key == "Enter" && check(cusIDRegEx, $("#inputCusId2"))) {
+            $("#inputCusName2").focus();
+        } else {
+            focusText($("#inputCusId2"));
+        }
+    });
+
+
+    $("#inputCusName2").on('keydown', function (event) {
+        if (event.key == "Enter" && check(cusNameRegEx, $("#inputCusName2"))) {
+            focusText($("#inputCusAddress2"));
+        }
+    });
+
+
+    $("#inputCusAddress2").on('keydown', function (event) {
+        if (event.key == "Enter" && check(cusAddressRegEx, $("#inputCusAddress"))) {
+            focusText($("#inputCusContact"));
+        }
+    });
+
+
+    $("#inputCusContact2").on('keydown', function (event) {
+        if (event.key == "Enter" && check(cusSalaryRegEx, $("#inputCusContact2"))) {
+            $("#btnSave2").focus();
+            let res = confirm("Do you want to add this customer.?");
+            if (res) {
+                clearAllTexts();
+            }
+        }
+    });
+
+
+
+    /*----------search (eliye ekata)------------*/
+
+    $("#btnSearchCus").on("click",function () {
+        SearchCusFunction();
+    });
+
+    $("#inputId").on('keyup', function (event) {
+        if (event.code == "Enter") {
+            SearchCusFunction();
+        }
+    });
+
+
+    function SearchCusFunction(){
+        let typedId = $("#inputId").val();
+        let customer = searchCustomer(typedId);
+        if (customer != null) {
+            setTextfieldValues(customer.id, customer.name, customer.address, customer.contact);
+        } else {
+            alert("There is no cusotmer available for that " + typedId);
+            setTextfieldValues("", "", "", "");
+        }
+    }
+
+    function setTextfieldValues(id, name, address, contact) {
+        $("#inputId").val(id);
+        $("#inputName").val(name);
+        $("#inputContact").val(contact);
+    }
+
+
+    /*----------search (in search ekata)------------*/
+    $("#btnSearch2").on("click",function () {
+        SearchCusFunction2();
+    });
+
+
+
+    function SearchCusFunction2(){
+        let typedId = $("#inputCusId2").val();
+        let customer = searchCustomer(typedId);
+        if (customer != null) {
+            setTextfieldValues2(customer.id, customer.name, customer.address, customer.contact);
+        } else {
+            alert("There is no cusotmer available for that " + typedId);
+            setTextfieldValues2("", "", "", "");
+        }
+    }
+
+
+    function setTextfieldValues2(id, name, address, contact) {
+        $("#inputCusId2").val(id);
+        $("#inputCusName2").val(name);
+        $("#inputCusAddress2").val(address);
+        $("#inputCusContact2").val(contact);
+    }
+
+
+    function searchCustomer(cusID) {
+        for (let customers of customer) {
+            if (customers.id == cusID) {
+                return customers;
+            }
+        }
+        return null;
+    }
+
+
+   /*-----------Delete Customer----------------*/
+    $("#btnDelete2").on("click",function () {
+        let deleteID = $("#inputCusId2").val();
+
+        let option = confirm("Do you really want to delete customer id :" + deleteID);
+        if (option){
+            if (deleteCustomer(deleteID)) {
+                alert("Customer Successfully Deleted..");
+                setTextfieldValues2("", "", "", "");
+            } else {
+                alert("No such customer to delete. please check the id");
+            }
+        }
+    });
+
+    function deleteCustomer(customerID) {
+        let customers = searchCustomer(customerID);
+        if (customers != null) {
+            let indexNumber = customer.indexOf(customers);
+            customer.splice(indexNumber, 1);
+            getAllCustomer();
+            loadAllCustomers();
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    /*-----------Update Customer----------------*/
+
+    $("#btnModify2").on("click",function () {
+        let customerID = $("#inputCusId2").val();
+        let response = updateCustomer(customerID);
+        if (response) {
+            alert("Customer Updated Successfully");
+            setTextfieldValues2("", "", "", "");
+        } else {
+            alert("Update Failed..!");
+
+        }
+    });
+
+    function updateCustomer(customerID) {
+        let customer = searchCustomer(customerID);
+        if (customer != null) {
+            customer.id = $("#inputCusId2").val();
+            customer.name = $("#inputCusName2").val();
+            customer.address = $("#inputCusAddress2").val();
+            customer.salary = $("#inputCusContact2").val();
+            getAllCustomer();
+            loadAllCustomers();
+            return true;
+        } else {
+            return false;
+        }
+
+    }
+
+
+
+
+/*=========validation part================*/
+
+    $("#inputCusId").focus();
+    $("#inputCusId2").focus();
+
+    // customer reguler expressions
+    const cusIDRegEx = /^(C00-)[0-9]{1,3}$/;
+    const cusNameRegEx = /^[A-z ]{5,20}$/;
+    const cusAddressRegEx = /^[0-9/A-z. ,]{7,}$/;
+    const cusContactRegEx = /^[0-9]{10}[.]?[0-9]{1,2}$/;
+
+    const cusIDRegEx2 = /^(C00-)[0-9]{1,3}$/;
+    const cusNameRegEx2 = /^[A-z ]{5,20}$/;
+    const cusAddressRegEx2 = /^[0-9/A-z. ,]{7,}$/;
+    const cusContactRegEx2 = /^[0-9]{10}[.]?[0-9]{1,2}$/;
+
+    let customerValidations = [];
+    customerValidations.push({reg: cusIDRegEx, field: $('#inputCusId'),error:'Customer ID Pattern is Wrong : C00-001'});
+    customerValidations.push({reg: cusNameRegEx, field: $('#inputCusName'),error:'Customer Name Pattern is Wrong : Ex : Nipuna'});
+    customerValidations.push({reg: cusAddressRegEx, field: $('#inputCusAddress'),error:'Customer Address Pattern is Wrong : Ex : Galle 01'});
+    customerValidations.push({reg: cusContactRegEx, field: $('#inputCusContact'),error:'Customer Contact Pattern is Wrong : 0782545156'});
+
+    customerValidations.push({reg: cusIDRegEx2, field: $('#inputCusId2'),error:'Customer ID Pattern is Wrong : C00-001'});
+    customerValidations.push({reg: cusNameRegEx2, field: $('#inputCusName2'),error:'Customer Name Pattern is Wrong : Ex : Nipuna'});
+    customerValidations.push({reg: cusAddressRegEx2, field: $('#inputCusAddress2'),error:'Customer Address Pattern is Wrong : Ex : Galle 01'});
+    customerValidations.push({reg: cusContactRegEx2, field: $('#inputCusContact2'),error:'Customer Contact Pattern is Wrong : 0782545156'});
+
+
+    $("#inputCusId,#inputCusName,#inputCusAddress,#inputCusContact,#inputCusId2,#inputCusName2,#inputCusAddress2,#inputCusContact2").on('keyup', function (event) {
+        checkValidity();
+    });
+
+    $("#inputCusId,#inputCusName,#inputCusAddress,#inputCusContact,#inputCusId2,#inputCusName2,#inputCusAddress2,#inputCusContact2").on('blur', function (event) {
+        checkValidity();
+    });
+
+    function checkValidity() {
+        let errorCount=0;
+        for (let validation of customerValidations) {
+            if (check(validation.reg,validation.field)) {
+                textSuccess(validation.field,"");
+            } else {
+                errorCount=errorCount+1;
+                setTextError(validation.field,validation.error);
+            }
+        }
+        setButtonState(errorCount);
+
+    }
+
+    function check(regex, txtField) {
+        let inputValue = txtField.val();
+        return regex.test(inputValue) ? true : false;
+    }
+
+    function setTextError(txtField,error) {
+        if (txtField.val().length <= 0) {
+            defaultText(txtField,"");
+        } else {
+            txtField.css('border', '2px solid red');
+            txtField.parent().children('span').text(error);
+            txtField.parent().children('span').css('font-size','10px');
+            txtField.parent().children('span').css('color','red');
+        }
+    }
+
+    function textSuccess(txtField,error) {
+        if (txtField.val().length <= 0) {
+            defaultText(txtField,"");
+        } else {
+            txtField.css('border', '2px solid green');
+            txtField.parent().children('span').text(error);
+        }
+    }
+
+    function defaultText(txtField,error) {
+        txtField.css("border", "1px solid #ced4da");
+        txtField.parent().children('span').text(error);
+    }
+
+    function focusText(txtField) {
+
+    }
+
+
+    function clearAllTexts() {
+        $("#inputCusId").focus();
+        $("#inputCusId,#inputCusName,#inputCusAddress,#inputCusContact").val("");
+        checkValidity();
+    }
+
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>

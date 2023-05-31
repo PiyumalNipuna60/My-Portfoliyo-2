@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>pos-system-Frameworks/order</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="../bootstraps/css/bootstrap.min.css" rel="stylesheet">
+    <style type="text/css">
+        #OederOID {
+        }
+    </style>
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg  navbar-dark bg-primary">
+
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+
+                <img alt="" height="30" src="../asset/andy-hermawan-bVBvv5xlX3g-unsplash.jpg"
+                     style="margin-right: 5px"
+                     width="35">Piyumal Nipuna Pos System</a>
+
+            <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+                    class="navbar-toggler"
+                    data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse" type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a aria-current="page" class="nav-link border-end border-start border-dark border-opacity-50"
+                           href="../index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link border-end border-start border-dark border-opacity-50"
+                           href="Customer.html">Customers</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link border-end border-start border-dark border-opacity-50"
+                           href="Item.html">Items</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active border-end border-start text-danger border-dark border-opacity-50"
+                           href="order.html">Orders</a>
+                    </li>
+                </ul>
+                <div class="navbar-nav ">
+                    <a class="navbar-brand" href="../signIn.html">
+
+                        <img alt="" height="30" src="../asset/Sign-up.png"
+                             style="margin-right: 5%"
+                             width="35">Sign Up</a>
+                </div>
+                <div class="navbar-nav ">
+                    <a class="navbar-brand" href="../LoginForm.html">
+
+                        <img alt="" height="30" src="../asset/log-in.png"
+                             style="margin-right: 5%"
+                             width="35">Login In</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main style="width: 98vw;">
+    <section class="row" style="">
+        <section class="col-11 col-sm-11 col-md-7 col-lg-5 col-xl-4 col-xxl-4 mx-auto position-relative pt-4" style="">
+            <div class="col border rounded border-dark ">
+                <nav class="border rounded bg-info">
+                    <h1 class="text-white fs-3">Invoice Details</h1>
+                </nav>
+
+                <form class=" row mx-auto m-lg-2 ">
+                    <div class="col">
+                        <div class="row mb-2 mt-2">
+                            <label class="col-6 col-form-label fw-bold" for="OederOID">Oeder ID :</label>
+                            <div class="col-5" style="margin-left: -8%;">
+                                <input class="form-control" id="OederOID" placeholder="ex:O001" style="width: 168%;"
+                                       type="Id">
+                            </div>
+                        </div>
+                        <div class="row mb-2">
+                            <label class="col-6 col-form-label fw-bold" for="OrderCustomer">Customer :</label>
+                            <div class="col-5" style="margin-left: -8%;">
+                                <input class="form-control" id="OrderCustomer" placeholder="ex:type"
+                                       style="width: 168%;"
+                                       type="email">
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label class="col-6 col-form-label fw-bold" for="OrderCusName">Cus: Name :</label>
+                            <div class="col-5" style="margin-left: -8%;">
+                                <input class="form-control" id="OrderCusName" placeholder="ex:Piyumal"
+                                       style="width: 168%;"
+                                       type="email">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col ">
+                        <div class="row mb-2 mt-2">
+                            <label class="col-5 col-form-label fw-bold" for="OrderDate">Date :</label>
+                            <div class="col-5" style="margin-left: -8%;">
+                                <input class="form-control" id="OrderDate" placeholder="ex:0000/00/00"
+                                       style="width: 175%;"
+                                       type="Id">
+                            </div>
+                        </div>
+                        <div class="row mb-2">
+                            <label class="col-5 col-form-label fw-bold" for="OrderCusID">Cus: ID :</label>
+                            <div class="col-5" style="margin-left: -8%;">
+                                <input class="form-control" id="OrderCusID" placeholder="ex:C001" style="width: 175%;"
+                                       type="email">
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label class="col-5 col-form-label fw-bold" for="OrderCusSalary">Salary :</label>
+                            <div class="col-5" style="margin-left: -8%;">
+                                <input class="form-control" id="OrderCusSalary" placeholder="ex:0.00"
+                                       style="width: 175%;"
+                                       type="email">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label class="col-3 col-form-label fw-bold" for="OrderCusAddress">Address :</label>
+                        <div class="col-5" style="margin-left: -2%;">
+                            <input class="form-control" id="OrderCusAddress" placeholder="ex: Galle"
+                                   style="width: 175%;"
+                                   type="email">
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+            <div></div>
+        </section>
+
+
+        <section class="col-11 col-sm-11 col-md-7 col-lg-5 col-xl-4 col-xxl-4 mx-auto pt-4" style="">
+            <div class="col border rounded border-dark ">
+                <nav class="border rounded bg-info">
+                    <h1 class="text-white fs-3">Item Selector</h1>
+                </nav>
+
+                <form class=" row mx-auto m-lg-2 ">
+                    <div class="col">
+                        <div class="row mb-2 mt-2">
+                            <label class="col-6 col-form-label fw-bold" for="OrderItem">Item :</label>
+                            <div class="col-5" style="margin-left: -8%;">
+                                <input class="form-control" id="OrderItem" placeholder="ex: type" style="width: 168%;"
+                                       type="Id">
+                            </div>
+                        </div>
+                        <div class="row mb-2">
+                            <label class="col-6 col-form-label fw-bold" for="OrderIName">Item Name :</label>
+                            <div class="col-5" style="margin-left: -8%;">
+                                <input class="form-control" id="OrderIName" placeholder="ex: soya" style="width: 168%;"
+                                       type="email">
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label class="col-6 col-form-label fw-bold" for="OrderIQty">Qty :</label>
+                            <div class="col-5" style="margin-left: -8%;">
+                                <input class="form-control" id="OrderIQty" placeholder="ex: 0" style="width: 168%;"
+                                       type="email">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col ">
+                        <div class="row mb-2 mt-2">
+                            <label class="col-6 col-form-label fw-bold" for="OrderICode">Item Code :</label>
+                            <div class="col-5" style="margin-left: -8%;">
+                                <input class="form-control" id="OrderICode" placeholder="ex: I001" style="width: 155%;"
+                                       type="Id">
+                            </div>
+                        </div>
+                        <div class="row mb-2">
+                            <label class="col-5 col-form-label fw-bold" for="OrderIPrice">Price :</label>
+                            <div class="col-6" style="margin-left: -8%;">
+                                <input class="form-control" id="OrderIPrice" placeholder="ex: 0.00" style="width: 155%;"
+                                       type="email">
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <label class="col-5 col-form-label fw-bold" for="OrderIOQty">Ord: Qty :</label>
+                            <div class="col-6" style="margin-left: -8%;">
+                                <input class="form-control" id="OrderIOQty" placeholder="ex:0" style="width: 155%;"
+                                       type="email">
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="position-relative">
+                        <button class="btn btn-danger mb-2" id="btnAddOrder" style="margin-left: 64%; width: 32%"
+                                type="button">Add
+                            Item
+                        </button>
+                    </div>
+
+                </form>
+            </div>
+            <div></div>
+
+        </section>
+
+
+        <section class="col-11 col-sm-11 col-md-6 col-lg-5 col-xl-3 col-xxl-3 mx-auto pt-4" style="">
+            <div class="col border rounded border-dark ">
+                <div class="row" style="margin-left: 3%">
+                    <h1 class="text-primary  col-4" style="font-size: 200%">Total :</h1>
+                    <h1 class="text-primary   col-4" style="font-size: 175%">000.00Rs/=</h1>
+                </div>
+                <div class="row" style="margin-left: 3%">
+                    <h1 class="text-danger col-4" style="font-size: 175%">SubTotal :</h1>
+                    <h1 class="text-danger  col-4" style="font-size: 175%">000.00Rs/=</h1>
+                </div>
+                <hr style="border: 2px solid black; background-color: black; width: 80%; margin-left: 2rem">
+                <div class="row">
+                    <div class="col" style="margin-left: 5%;">
+                        <label class=" fw-bold" for="OrderCash">Cash :</label>
+                        <div class="col" style=" width: 60%;">
+                            <input class="form-control rounded-pill" id="OrderCash" placeholder="000.00"
+                                   style="width: 155%;"
+                                   type="email">
+                        </div>
+                    </div>
+
+                    <div class="col" style="margin-left: 5%;">
+                        <label class=" fw-bold" for="OrderDiscount">Discount :</label>
+                        <div class="col" style="margin-left: 0%; width: 60%;">
+                            <input class="form-control rounded-pill" id="OrderDiscount" placeholder="00"
+                                   style="width: 155%;"
+                                   type="email">
+                        </div>
+                    </div>
+
+                </div>
+                <div style="margin-left: 6%">
+
+                    <label class=" fw-bold" for="OrderBalance">Balance :</label>
+                    <div class="col-5" style="margin-left: 0%;">
+                        <input class="form-control rounded-pill" id="OrderBalance" placeholder="000.00Rs/="
+                               style="width: 155%;"
+                               type="email">
+                    </div>
+                </div>
+
+                <div class="position-relative">
+                    <button class="btn btn-danger mb-2 rounded-pill" style="margin-left: 64%; width: 32%" type="button" id="btnPurchase">
+                        Purchase
+                    </button>
+                </div>
+
+            </div>
+
+        </section>
+    </section>
+
+    <hr style="border: 2px solid;">
+    <section class="pt-4 col-11 mx-auto" style="">
+        <table class="table table-bordered table-hover table-bordered border-dark modal-dialog-scrollable">
+            <thead class="bg-danger text-white">
+            <tr>
+                <th>Item Code</th>
+                <th>Item Name</th>
+                <th>Price</th>
+                <th>QTS</th>
+                <th>Total</th>
+            </tr>
+            </thead>
+            <tbody id="orderTable">
+                <tr>
+                    <td>I001</td>
+                    <td>Parippu</td>
+                    <td>300</td>
+                    <td>1</td>
+                    <td>300</td>
+
+                </tr>
+                <tr>
+                    <td>I002</td>
+                    <td>Soya</td>
+                    <td>200</td>
+                    <td>2</td>
+                    <td>400</td>
+
+                </tr>
+                <tr>
+                    <td>I003</td>
+                    <td>Nooldes</td>
+                    <td>400</td>
+                    <td>3</td>
+                    <td>1200</td>
+                </tr>
+                <tr>
+                    <td>I004</td>
+                    <td>Milk</td>
+                    <td>100</td>
+                    <td>1</td>
+                    <td>100</td>
+                </tr>
+                <tr>
+                    <td>I005</td>
+                    <td>Soda</td>
+                    <td>250</td>
+                    <td>2</td>
+                    <td>500</td>
+                </tr>
+                <tr>
+                    <td>I006</td>
+                    <td>Rice</td>
+                    <td>200</td>
+                    <td>1</td>
+                    <td>200</td>
+                </tr>
+
+            </tbody>
+        </table>
+    </section>
+
+</main>
+
+<footer></footer>
+
+<script src="../bootstraps/js/bootstrap.min.js"></script>
+<script src="../bootstraps/js/jquery-3.6.1.min.js"></script>
+<script>
+    var order = [];
+    $("#btnAddOrder").click(function () {
+        let OId=$("#OederOID").val();
+        let date=$("#OrderDate").val();
+
+        let customerID = $("#OrderCusID").val();
+        let customerName = $("#OrderCusName").val();
+        let customerAddress = $("#OrderCusAddress").val();
+        let customerSalary = $("#OrderCusSalary").val();
+
+        let orderCode = $("#OrderICode").val();
+        let orderName = $("#OrderIName").val();
+        let orderQty = $("#OrderIQty").val();
+        let orderPrice = $("#OrderIPrice").val();
+        let orderOnQty = $("#OrderIOQty").val();
+
+        var orderObject = {
+
+            Oid:OId,
+            date:date,
+
+            id: customerID,
+            name: customerName,
+            address: customerAddress,
+            contact: customerSalary,
+
+            code: orderCode,
+            name: orderName,
+            qty: orderQty,
+            price: orderPrice,
+            orderQty: orderOnQty,
+            total: (orderPrice * orderOnQty)
+        }
+
+        order.push(orderObject);
+        console.log(order)
+        getLoadOrder();
+    });
+
+    function getLoadOrder() {
+        for (var orders of order) {
+            console.log(order);
+
+            var row = `<tr><td>${orders.code}</td><td>${orders.name}</td><td>${orders.price}</td><td>${orders.orderQty}</td><td>${orders.total}</td></tr>`;
+            $("#orderTable").append(row);
+        }
+    }
+
+    $("#OederOID,#OrderCustomer,#OrderCusName,#OrderDate,#OrderCusID,#OrderCusSalary,#OrderCusAddress").on('keydown', function (event) {
+        if (event.key == "Tab") {
+            event.preventDefault();
+        }
+    });
+
+    $("#OederOID").on('keydown', function (event) {
+        if (event.key == "Enter") {
+            $("#OrderCustomer").focus();
+        }
+    });
+
+    $("#OrderCustomer").on('keydown', function (event) {
+        if (event.key == "Enter") {
+            $("#OrderCusName").focus();
+        }
+    });
+
+    $("#OrderCusName").on('keydown', function (event) {
+        if (event.key == "Enter") {
+            $("#OrderDate").focus();
+        }
+    });
+
+    $("#OrderDate").on('keydown', function (event) {
+        if (event.key == "Enter") {
+            $("#OrderCusID").focus();
+        }
+    });
+
+    $("#OrderCusID").on('keydown', function (event) {
+        if (event.key == "Enter") {
+            $("#OrderCusSalary").focus();
+        }
+    });
+
+    $("#OrderCusSalary").on('keydown', function (event) {
+        if (event.key == "Enter") {
+            $("#OrderCusAddress").focus();
+        }
+    });
+
+    /* -----------*/
+
+    $("#OrderItem,#OrderICode,#OrderIName,#OrderIPrice,#OrderIQty,#OrderIOQty,#btnAddOrder").on('keydown', function (event) {
+        if (event.key == "Tab") {
+            event.preventDefault();
+        }
+    });
+
+    $("#OrderItem").on('keydown', function (event) {
+        if (event.key == "Enter") {
+            $("#OrderICode").focus();
+        }
+    });
+
+    $("#OrderICode").on('keydown', function (event) {
+        if (event.key == "Enter") {
+            $("#OrderIName").focus();
+        }
+    });
+
+    $("#OrderIName").on('keydown', function (event) {
+        if (event.key == "Enter") {
+            $("#OrderIPrice").focus();
+        }
+    });
+
+    $("#OrderIPrice").on('keydown', function (event) {
+        if (event.key == "Enter") {
+            $("#OrderIQty").focus();
+        }
+    });
+
+    $("#OrderIQty").on('keydown', function (event) {
+        if (event.key == "Enter") {
+            $("#OrderIOQty").focus();
+        }
+    });
+
+    $("#OrderIOQty").on('keydown', function (event) {
+        if (event.key == "Enter") {
+            $("#btnAddOrder").focus();
+        }
+    });
+
+    $("#OrderCash,#OrderDiscount,#OrderBalance,#btnPurchase").on('keydown', function (event) {
+        if (event.key == "Tab") {
+            event.preventDefault();
+        }
+    });
+
+    $("#OrderCash").on('keydown', function (event) {
+        if (event.key == "Enter") {
+            $("#OrderDiscount").focus();
+        }
+    });
+
+    $("#OrderDiscount").on('keydown', function (event) {
+        if (event.key == "Enter") {
+            $("#OrderBalance").focus();
+        }
+    });
+
+    $("#OrderBalance").on('keydown', function (event) {
+        if (event.key == "Enter") {
+            $("#btnPurchase").focus();
+        }
+    });
+
+</script>
+</body>
+</html>

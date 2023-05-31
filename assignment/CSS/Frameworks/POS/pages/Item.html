@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>pos-system-Frameworks/item</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="../bootstraps/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+
+        #btnItmAdd>button:hover{
+            font-size: 150%;
+            font-weight: bold;
+            position: relative;
+            top: 15%;
+            width: 200%;
+            height: 200%;
+            background: #29fd53;
+            border-radius: 50%;
+            transition: 0.1s;
+        }
+
+        #btnItmModify>button:hover{
+            font-size: 150%;
+            font-weight: bold;
+            position: relative;
+            top: 15%;
+            width: 200%;
+            height: 200%;
+            background: #29fd53;
+            border-radius: 50%;
+            transition: 0.1s;
+        }
+
+        #btnItmLoadAll>button:hover{
+            font-size: 150%;
+            font-weight: bold;
+            position: relative;
+            top: 15%;
+            width: 200%;
+            height: 200%;
+            background: #29fd53;
+            border-radius: 50%;
+            transition: 0.1s;
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <nav class="navbar navbar-expand-lg  navbar-dark bg-primary">
+
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+
+                <img alt="" height="30" src="../asset/andy-hermawan-bVBvv5xlX3g-unsplash.jpg"
+                     style="margin-right: 5px"
+                     width="35">Piyumal Nipuna Pos System</a>
+
+            <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+                    class="navbar-toggler"
+                    data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse" type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a aria-current="page" class="nav-link border-end border-start border-dark border-opacity-50"
+                           href="../index.html">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link border-end border-start border-dark border-opacity-50"
+                           href="Customer.html">Customers</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active border-end border-start text-danger border-dark border-opacity-50"
+                           href="Item.html">Items</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link border-end border-start border-dark border-opacity-50" href="order.html">Orders</a>
+                    </li>
+                </ul>
+                <div class="navbar-nav ">
+                    <a class="navbar-brand" href="../signIn.html">
+
+                        <img alt="" height="30" src="../asset/Sign-up.png"
+                             style="margin-right: 5%"
+                             width="35">Sign Up</a>
+                </div>
+                <div class="navbar-nav ">
+                    <a class="navbar-brand" href="../LoginForm.html">
+
+                        <img alt="" height="30" src="../asset/log-in.png"
+                             style="margin-right: 5%"
+                             width="35">Login In
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main style="width: 98vw;">
+    <br>
+    <section class="row justify-content-center">
+        <section class="col-11 col-sm-11 col-md-7 col-lg-7 col-xl-7 col-xxl-7 mx-auto" style="">
+            <div class=" border rounded border-dark ">
+                <nav class="border rounded bg-info">
+                    <h1 class="text-white fs-3">Search Item</h1>
+                </nav>
+
+                <form class="mx-auto m-lg-2 ">
+                    <div class="row mb-2 mt-2">
+                        <label class="col-sm-3 col-form-label fw-bold" for="inputId">Code :</label>
+                        <div class="col-sm-9">
+                            <input class="form-control" id="inputId" placeholder="Ex: I001" type="email">
+                        </div>
+                    </div>
+                    <div class="row mb-2">
+                        <label class="col-sm-3 col-form-label fw-bold" for="inputName">Name :</label>
+                        <div class="col-sm-9">
+                            <input class="form-control" id="inputName" placeholder="ex: nipuna" type="email">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label class="col-sm-3 col-form-label fw-bold" for="inputContact">Price :</label>
+                        <div class="col-sm-9">
+                            <input class="form-control" id="inputContact" placeholder="Ex:0.00" type="email">
+                        </div>
+                    </div>
+
+                    <div class="position-relative">
+                        <button class="btn btn-primary mb-2" style="margin-left: 64%; width: 32%" type="button">Search
+                        </button>
+                    </div>
+
+                </form>
+            </div>
+            <div></div>
+        </section>
+
+        <section class="col-10 col-sm-10 col-md-4 col-lg-4 col-xl-4 col-xxl-4 pt-4 mb-3 mx-auto" style="">
+            <div class="">
+
+                <div id="btnItmAdd" class="mb-2">
+                    <button class="btn" data-bs-target="#iexampleModal" data-bs-toggle="modal"
+                            style="width: 75%; height: 3rem; background-color: #06B618; box-shadow: 0 7px 8px 0 rgba(0 ,0 ,0, 0.5), 0 7px 35px 0 rgba(0, 0, 0,0.32);" type="button">Add Item
+                    </button>
+                    <!--///////////////-->
+
+                    <!-- Button trigger modal -->
+
+                    <!-- Modal -->
+                    <div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="iexampleModal"
+                         tabindex="-1">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header bg-info">
+                                    <h5 class="modal-title " id="exampleModalLabel">Add Item</h5>
+                                    <button aria-label="Close" class="btn-close" data-bs-dismiss="modal"
+                                            type="button"></button>
+                                </div>
+                                <div class="modal-body">
+
+                                    <form class="mx-auto m-lg-2">
+                                        <div class="row mb-2 mt-2">
+                                            <label class="col-sm-3 col-form-label fw-bold" for="inputItemCode">Code
+                                                :</label>
+                                            <div class="col-sm-9">
+                                                <input class="form-control" id="inputItemCode" placeholder="I001"
+                                                       type="email">
+                                            </div>
+                                        </div>
+                                        <div class="row mb-2">
+                                            <label class="col-sm-3 col-form-label fw-bold"
+                                                   for="inputItemName">Name:</label>
+                                            <div class="col-sm-9">
+                                                <input class="form-control" id="inputItemName" placeholder="Soya"
+                                                       type="email">
+                                            </div>
+                                        </div>
+                                        <div class="row mb-2">
+                                            <label class="col-sm-3 col-form-label fw-bold" for="inputItemQts">Qts
+                                                :</label>
+                                            <div class="col-sm-9">
+                                                <input class="form-control" id="inputItemQts" placeholder="0"
+                                                       type="email">
+                                            </div>
+                                        </div>
+                                        <div class="row mb-3">
+                                            <label class="col-sm-3 col-form-label fw-bold" for="inputItemPrice">Price
+                                                :</label>
+                                            <div class="col-sm-9">
+                                                <input class="form-control" id="inputItemPrice" placeholder="0.0"
+                                                       type="email">
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="modal-footer">
+                                    <button class="btn btn-secondary" data-bs-dismiss="modal" id="btnClose"
+                                            type="button">Close
+                                    </button>
+                                    <button class="btn btn-primary" id="btnSave" type="button">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- //////////////-->
+                </div>
+
+                <div id="btnItmModify" class="mb-2" style="padding-top: 3%;">
+                    <button class="btn" data-bs-target="#exampleModal2" data-bs-toggle="modal"
+                            style="width: 75%; height: 3rem; background-color: #06B618; box-shadow: 0 7px 8px 0 rgba(0 ,0 ,0, 0.5), 0 7px 35px 0 rgba(0, 0, 0,0.32);" type="button">Modify Item
+                    </button>
+
+                    <!-- Modal -->
+                    <div aria-hidden="true" aria-labelledby="exampleModalLabel2" class="modal fade" id="exampleModal2"
+                         tabindex="-1">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header bg-info">
+                                    <h5 class="modal-title " id="exampleModalLabel2">Modify Item</h5>
+                                    <button aria-label="Close" class="btn-close" data-bs-dismiss="modal"
+                                            type="button"></button>
+                                </div>
+                                <div class=" modal-body">
+
+                                    <form class="mx-auto m-lg-2">
+                                        <div class="row mb-2 mt-2">
+                                            <label class="col-sm-3 col-form-label fw-bold" for="inputItemCode2">Code
+                                                :</label>
+                                            <div class="col-sm-9">
+                                                <input class="form-control" id="inputItemCode2" placeholder="I001"
+                                                       type="email">
+                                            </div>
+                                        </div>
+                                        <div class="row mb-2">
+                                            <label class="col-sm-3 col-form-label fw-bold"
+                                                   for="inputItemName2">Name:</label>
+                                            <div class="col-sm-9">
+                                                <input class="form-control" id="inputItemName2" placeholder="Soya"
+                                                       type="email">
+                                            </div>
+                                        </div>
+                                        <div class="row mb-2">
+                                            <label class="col-sm-3 col-form-label fw-bold" for="inputItemQts2">Qts
+                                                :</label>
+                                            <div class="col-sm-9">
+                                                <input class="form-control" id="inputItemQts2" placeholder="0"
+                                                       type="email">
+                                            </div>
+                                        </div>
+                                        <div class="row mb-3">
+                                            <label class="col-sm-3 col-form-label fw-bold" for="inputItemPrice2">Price
+                                                :</label>
+                                            <div class="col-sm-9">
+                                                <input class="form-control" id="inputItemPrice2" placeholder="0.0"
+                                                       type="email">
+                                            </div>
+                                        </div>
+                                    </form>
+
+                                </div>
+                                <div>
+                                    <button class="btn btn-secondary bg-danger" id="btnSearch"
+                                            style="margin-left: 2rem;margin-bottom: 1rem;"
+                                            type="button">Search
+                                    </button>
+                                </div>
+                                <div class="modal-footer">
+                                    <button class="btn btn-secondary" data-bs-dismiss="modal" type="button">Close
+                                    </button>
+                                    <button class="btn btn-primary" type="button" id="btnSave2">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--//////////////&ndash;&gt;-->
+                </div>
+
+                <div id="btnItmLoadAll" class="mb-2" style="padding-top: 3%;">
+                    <button class="btn" data-bs-target="#exampleModal3" data-bs-toggle="modal"
+                            style="width: 75%; height: 3rem; background-color: #06B618; box-shadow: 0 7px 8px 0 rgba(0 ,0 ,0, 0.5), 0 7px 35px 0 rgba(0, 0, 0,0.32);" type="button">Modify Item
+                    </button>
+
+                    <!-- Modal -->
+                    <div aria-hidden="true" aria-labelledby="exampleModalLabel3" class="modal fade" id="exampleModal3"
+                         tabindex="-1">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header bg-info">
+                                    <h5 class="modal-title " id="exampleModalLabel3">All Item</h5>
+                                    <button aria-label="Close" class="btn-close" data-bs-dismiss="modal"
+                                            type="button"></button>
+                                </div>
+                                <div class=" modal-body">
+
+                                    <table class="table table-bordered table-hover table-bordered border-dark modal-dialog-scrollable">
+                                        <thead class="bg-danger text-white">
+                                        <tr>
+                                            <th>Item Code</th>
+                                            <th>Item Name</th>
+                                            <th>QTS</th>
+                                            <th>Price</th>
+                                        </tr>
+                                        </thead>
+                                        <tbdoy>
+                                            <tr>
+                                                <td>I001</td>
+                                                <td>Parippu</td>
+                                                <td>1</td>
+                                                <td>300</td>
+                                            </tr>
+                                            <tr>
+                                                <td>I002</td>
+                                                <td>Soya</td>
+                                                <td>1</td>
+                                                <td>200</td>
+                                            </tr>
+                                            <tr>
+                                                <td>I003</td>
+                                                <td>Nooldes</td>
+                                                <td>1</td>
+                                                <td>400</td>
+                                            </tr>
+                                            <tr>
+                                                <td>I004</td>
+                                                <td>Milk</td>
+                                                <td>1</td>
+                                                <td>100</td>
+                                            </tr>
+                                            <tr>
+                                                <td>I005</td>
+                                                <td>Soda</td>
+                                                <td>1</td>
+                                                <td>250</td>
+                                            </tr>
+                                            <tr>
+                                                <td>I006</td>
+                                                <td>Rice</td>
+                                                <td>1</td>
+                                                <td>200</td>
+                                            </tr>
+
+                                        </tbdoy>
+                                    </table>
+
+                                </div>
+                                <div class="modal-footer">
+                                    <button class="btn btn-secondary" data-bs-dismiss="modal" id="btnClose3"
+                                            type="button">Close
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--//////////////&ndash;&gt;-->
+                </div>
+
+            </div>
+        </section>
+    </section>
+
+    <section class="pt-4 col-11 mx-auto">
+
+        <table class="table table-bordered table-hover table-bordered border-dark modal-dialog-scrollable">
+            <thead class="bg-danger text-white">
+            <tr>
+                <th>Item Code</th>
+                <th>Item Name</th>
+                <th>QTS</th>
+                <th>Price</th>
+            </tr>
+            </thead>
+
+            </thead>
+            <tbody id="tblItem">
+            <tr>
+                <td>I001</td>
+                <td>Parippu</td>
+                <td>1</td>
+                <td>300</td>
+            </tr>
+            <tr>
+                <td>I002</td>
+                <td>Soya</td>
+                <td>1</td>
+                <td>200</td>
+            </tr>
+            <tr>
+                <td>I003</td>
+                <td>Nooldes</td>
+                <td>1</td>
+                <td>400</td>
+            </tr>
+            <tr>
+                <td>I004</td>
+                <td>Milk</td>
+                <td>1</td>
+                <td>100</td>
+            </tr>
+            <tr>
+                <td>I005</td>
+                <td>Soda</td>
+                <td>1</td>
+                <td>250</td>
+            </tr>
+            <tr>
+                <td>I006</td>
+                <td>Rice</td>
+                <td>1</td>
+                <td>200</td>
+            </tr>
+            </tbody>
+        </table>
+    </section>
+</main>
+
+<footer></footer>
+
+<script src="../bootstraps/js/bootstrap.min.js"></script>
+<script src="../bootstraps/js/jquery-3.6.1.min.js"></script>
+<script>
+    var item = [];
+    $("#btnSave").click(function () {
+        let itemCode = $("#inputItemCode").val();
+        let itemName = $("#inputItemName").val();
+        let itemQty = $("#inputItemQts").val();
+        let itemPrice = $("#inputItemPrice").val();
+
+        var itemObject = {
+            code: itemCode,
+            name: itemName,
+            qty: itemQty,
+            price: itemPrice
+        }
+
+        item.push(itemObject);
+        loadTable();
+    });
+
+    function loadTable() {
+        // $("#tblItem").empty();
+
+        for (var items of item) {
+            var row = `<tr><td>${items.code}</td><td>${items.name}</td><td>${items.qty}</td><td>${items.price}</td></tr>`;
+            $("#tblItem").append(row);
+        }
+    }
+
+    $("#inputItemCode,#inputItemName,#inputItemQts,#inputItemPrice,#inputItemCode2,#inputItemName2,#inputItemQts2,#inputItemPrice2").on('keydown', function (event) {
+        if (event.key == 'Tab') {
+            event.preventDefault();
+        }
+    });
+
+    $("#inputItemCode").on('keydown',function (event) {
+        if (event.key=="Enter"){
+            $("#inputItemName").focus();
+        }
+    });
+
+    $("#inputItemName").on('keydown',function (event) {
+        if (event.key=="Enter"){
+            $("#inputItemQts").focus();
+        }
+    });
+
+    $("#inputItemQts").on('keydown',function (event) {
+        if (event.key=="Enter"){
+            $("#inputItemPrice").focus();
+        }
+    });
+
+    $("#inputItemPrice").on('keydown',function (event) {
+        if (event.key=="Enter"){
+            $("#btnSave").focus();
+        }
+    });
+
+    /*----------------*/
+
+    $("#inputItemCode2").on('keydown',function (event) {
+        if (event.key=="Enter"){
+            $("#inputItemName2").focus();
+        }
+    });
+
+    $("#inputItemName2").on('keydown',function (event) {
+        if (event.key=="Enter"){
+            $("#inputItemQts2").focus();
+        }
+    });
+
+    $("#inputItemQts2").on('keydown',function (event) {
+        if (event.key=="Enter"){
+            $("#inputItemPrice2").focus();
+        }
+    });
+
+    $("#inputItemPrice2").on('keydown',function (event) {
+        if (event.key=="Enter"){
+            $("#btnSave2").focus();
+        }
+    });
+
+
+</script>
+</body>
+</html>
