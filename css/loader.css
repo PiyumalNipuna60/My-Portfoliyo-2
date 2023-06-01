@@ -1,258 +1,258 @@
-/**
- * @author : Pasan Pahasara
- * @since : 0.1.0
- **/
+/*!***/
+/* * @author : Pasan Pahasara*/
+/* * @since : 0.1.0*/
+/* **!*/
 
-/**
- * Loader Container Position And Customized.
- */
-body #loaderContainer{
-    background: #f5f5f5;
-    display: flex;
-    width: 100%;
-    height: 100vh;
-    position : fixed;
-    justify-content: center;
-    align-items: center;
-    padding: 0px;
-    margin: 0px;
-    z-index: 99999;
-    overflow: hidden;
-}
+/*!***/
+/* * Loader Container Position And Customized.*/
+/* *!*/
+/*body #loaderContainer{*/
+/*    background: #f5f5f5;*/
+/*    display: flex;*/
+/*    width: 100%;*/
+/*    height: 100vh;*/
+/*    position : fixed;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    padding: 0px;*/
+/*    margin: 0px;*/
+/*    z-index: 99999;*/
+/*    overflow: hidden;*/
+/*}*/
 
-/**
- * Added Loader Width And Height.
- */
-body .loader {
-    width: 112px;
-    height: 112px;
-}
+/*!***/
+/* * Added Loader Width And Height.*/
+/* *!*/
+/*body .loader {*/
+/*    width: 112px;*/
+/*    height: 112px;*/
+/*}*/
 
-/**
- * All Loader Boxes Added Border Radius And Customized.
- */
-body .loader .box1,
-body .loader .box2,
-body .loader .box3 {
-    border: 16px solid #333;
-    box-sizing: border-box;
-    position: absolute;
-    display: block;
-    border-radius: 24px;
-}
+/*!***/
+/* * All Loader Boxes Added Border Radius And Customized.*/
+/* *!*/
+/*body .loader .box1,*/
+/*body .loader .box2,*/
+/*body .loader .box3 {*/
+/*    border: 16px solid #333;*/
+/*    box-sizing: border-box;*/
+/*    position: absolute;*/
+/*    display: block;*/
+/*    border-radius: 24px;*/
+/*}*/
 
-/**
- * First Box Customized And Added Animation.
- */
-body .loader .box1 {
-    width: 112px;
-    height: 48px;
-    margin-top: 64px;
-    margin-left: 0px;
-    border-color: #444242;
-    animation: anime1 3s 0s forwards cubic-bezier(0.25, 0.1, 0.25, 1) infinite;
-}
+/*!***/
+/* * First Box Customized And Added Animation.*/
+/* *!*/
+/*body .loader .box1 {*/
+/*    width: 112px;*/
+/*    height: 48px;*/
+/*    margin-top: 64px;*/
+/*    margin-left: 0px;*/
+/*    border-color: #444242;*/
+/*    animation: anime1 3s 0s forwards cubic-bezier(0.25, 0.1, 0.25, 1) infinite;*/
+/*}*/
 
-/**
- * Second Box Customized And Added Animation.
- */
-body .loader .box2 {
-    width: 48px;
-    height: 48px;
-    margin-top: 0px;
-    margin-left: 0px;
-    border-color: #909597;
-    animation: anime2 3s 0s forwards cubic-bezier(0.25, 0.1, 0.25, 1) infinite;
-}
+/*!***/
+/* * Second Box Customized And Added Animation.*/
+/* *!*/
+/*body .loader .box2 {*/
+/*    width: 48px;*/
+/*    height: 48px;*/
+/*    margin-top: 0px;*/
+/*    margin-left: 0px;*/
+/*    border-color: #909597;*/
+/*    animation: anime2 3s 0s forwards cubic-bezier(0.25, 0.1, 0.25, 1) infinite;*/
+/*}*/
 
-/**
- * Third Box Customized And Added Animation.
- */
-body .loader .box3 {
-    width: 48px;
-    height: 48px;
-    margin-top: 0px;
-    margin-left: 64px;
-    border-color: #FFA500;
-    animation: anime3 3s 0s forwards cubic-bezier(0.25, 0.1, 0.25, 1) infinite;
-}
+/*!***/
+/* * Third Box Customized And Added Animation.*/
+/* *!*/
+/*body .loader .box3 {*/
+/*    width: 48px;*/
+/*    height: 48px;*/
+/*    margin-top: 0px;*/
+/*    margin-left: 64px;*/
+/*    border-color: #FFA500;*/
+/*    animation: anime3 3s 0s forwards cubic-bezier(0.25, 0.1, 0.25, 1) infinite;*/
+/*}*/
 
-/**
- * Added First Box Animation Keyframes.
- */
-@keyframes anime1 {
-    0% {
-        width: 112px;
-        height: 48px;
-        margin-top: 64px;
-        margin-left: 0px;
-    }
-    12.5% {
-        width: 48px;
-        height: 48px;
-        margin-top: 64px;
-        margin-left: 0px;
-    }
-    25% {
-        width: 48px;
-        height: 48px;
-        margin-top: 64px;
-        margin-left: 0px;
-    }
-    37.5% {
-        width: 48px;
-        height: 48px;
-        margin-top: 64px;
-        margin-left: 0px;
-    }
-    50% {
-        width: 48px;
-        height: 48px;
-        margin-top: 64px;
-        margin-left: 0px;
-    }
-    62.5% {
-        width: 48px;
-        height: 48px;
-        margin-top: 64px;
-        margin-left: 0px;
-    }
-    75% {
-        width: 48px;
-        height: 112px;
-        margin-top: 0px;
-        margin-left: 0px;
-    }
-    87.5% {
-        width: 48px;
-        height: 48px;
-        margin-top: 0px;
-        margin-left: 0px;
-    }
-    100% {
-        width: 48px;
-        height: 48px;
-        margin-top: 0px;
-        margin-left: 0px;
-    }
-}
+/*!***/
+/* * Added First Box Animation Keyframes.*/
+/* *!*/
+/*@keyframes anime1 {*/
+/*    0% {*/
+/*        width: 112px;*/
+/*        height: 48px;*/
+/*        margin-top: 64px;*/
+/*        margin-left: 0px;*/
+/*    }*/
+/*    12.5% {*/
+/*        width: 48px;*/
+/*        height: 48px;*/
+/*        margin-top: 64px;*/
+/*        margin-left: 0px;*/
+/*    }*/
+/*    25% {*/
+/*        width: 48px;*/
+/*        height: 48px;*/
+/*        margin-top: 64px;*/
+/*        margin-left: 0px;*/
+/*    }*/
+/*    37.5% {*/
+/*        width: 48px;*/
+/*        height: 48px;*/
+/*        margin-top: 64px;*/
+/*        margin-left: 0px;*/
+/*    }*/
+/*    50% {*/
+/*        width: 48px;*/
+/*        height: 48px;*/
+/*        margin-top: 64px;*/
+/*        margin-left: 0px;*/
+/*    }*/
+/*    62.5% {*/
+/*        width: 48px;*/
+/*        height: 48px;*/
+/*        margin-top: 64px;*/
+/*        margin-left: 0px;*/
+/*    }*/
+/*    75% {*/
+/*        width: 48px;*/
+/*        height: 112px;*/
+/*        margin-top: 0px;*/
+/*        margin-left: 0px;*/
+/*    }*/
+/*    87.5% {*/
+/*        width: 48px;*/
+/*        height: 48px;*/
+/*        margin-top: 0px;*/
+/*        margin-left: 0px;*/
+/*    }*/
+/*    100% {*/
+/*        width: 48px;*/
+/*        height: 48px;*/
+/*        margin-top: 0px;*/
+/*        margin-left: 0px;*/
+/*    }*/
+/*}*/
 
-/**
- * Added Second Box Animation Keyframes.
- */
-@keyframes anime2 {
-    0% {
-        width: 48px;
-        height: 48px;
-        margin-top: 0px;
-        margin-left: 0px;
-    }
-    12.5% {
-        width: 48px;
-        height: 48px;
-        margin-top: 0px;
-        margin-left: 0px;
-    }
-    25% {
-        width: 48px;
-        height: 48px;
-        margin-top: 0px;
-        margin-left: 0px;
-    }
-    37.5% {
-        width: 48px;
-        height: 48px;
-        margin-top: 0px;
-        margin-left: 0px;
-    }
-    50% {
-        width: 112px;
-        height: 48px;
-        margin-top: 0px;
-        margin-left: 0px;
-    }
-    62.5% {
-        width: 48px;
-        height: 48px;
-        margin-top: 0px;
-        margin-left: 64px;
-    }
-    75% {
-        width: 48px;
-        height: 48px;
-        margin-top: 0px;
-        margin-left: 64px;
-    }
-    87.5% {
-        width: 48px;
-        height: 48px;
-        margin-top: 0px;
-        margin-left: 64px;
-    }
-    100% {
-        width: 48px;
-        height: 48px;
-        margin-top: 0px;
-        margin-left: 64px;
-    }
-}
+/*!***/
+/* * Added Second Box Animation Keyframes.*/
+/* *!*/
+/*@keyframes anime2 {*/
+/*    0% {*/
+/*        width: 48px;*/
+/*        height: 48px;*/
+/*        margin-top: 0px;*/
+/*        margin-left: 0px;*/
+/*    }*/
+/*    12.5% {*/
+/*        width: 48px;*/
+/*        height: 48px;*/
+/*        margin-top: 0px;*/
+/*        margin-left: 0px;*/
+/*    }*/
+/*    25% {*/
+/*        width: 48px;*/
+/*        height: 48px;*/
+/*        margin-top: 0px;*/
+/*        margin-left: 0px;*/
+/*    }*/
+/*    37.5% {*/
+/*        width: 48px;*/
+/*        height: 48px;*/
+/*        margin-top: 0px;*/
+/*        margin-left: 0px;*/
+/*    }*/
+/*    50% {*/
+/*        width: 112px;*/
+/*        height: 48px;*/
+/*        margin-top: 0px;*/
+/*        margin-left: 0px;*/
+/*    }*/
+/*    62.5% {*/
+/*        width: 48px;*/
+/*        height: 48px;*/
+/*        margin-top: 0px;*/
+/*        margin-left: 64px;*/
+/*    }*/
+/*    75% {*/
+/*        width: 48px;*/
+/*        height: 48px;*/
+/*        margin-top: 0px;*/
+/*        margin-left: 64px;*/
+/*    }*/
+/*    87.5% {*/
+/*        width: 48px;*/
+/*        height: 48px;*/
+/*        margin-top: 0px;*/
+/*        margin-left: 64px;*/
+/*    }*/
+/*    100% {*/
+/*        width: 48px;*/
+/*        height: 48px;*/
+/*        margin-top: 0px;*/
+/*        margin-left: 64px;*/
+/*    }*/
+/*}*/
 
-/**
- * Added Third Box Animation Keyframes.
- */
-@keyframes anime3 {
-    0% {
-        width: 48px;
-        height: 48px;
-        margin-top: 0px;
-        margin-left: 64px;
-    }
-    12.5% {
-        width: 48px;
-        height: 48px;
-        margin-top: 0px;
-        margin-left: 64px;
-    }
-    25% {
-        width: 48px;
-        height: 112px;
-        margin-top: 0px;
-        margin-left: 64px;
-    }
-    37.5% {
-        width: 48px;
-        height: 48px;
-        margin-top: 64px;
-        margin-left: 64px;
-    }
-    50% {
-        width: 48px;
-        height: 48px;
-        margin-top: 64px;
-        margin-left: 64px;
-    }
-    62.5% {
-        width: 48px;
-        height: 48px;
-        margin-top: 64px;
-        margin-left: 64px;
-    }
-    75% {
-        width: 48px;
-        height: 48px;
-        margin-top: 64px;
-        margin-left: 64px;
-    }
-    87.5% {
-        width: 48px;
-        height: 48px;
-        margin-top: 64px;
-        margin-left: 64px;
-    }
-    100% {
-        width: 112px;
-        height: 48px;
-        margin-top: 64px;
-        margin-left: 0px;
-    }
-}
+/*!***/
+/* * Added Third Box Animation Keyframes.*/
+/* *!*/
+/*@keyframes anime3 {*/
+/*    0% {*/
+/*        width: 48px;*/
+/*        height: 48px;*/
+/*        margin-top: 0px;*/
+/*        margin-left: 64px;*/
+/*    }*/
+/*    12.5% {*/
+/*        width: 48px;*/
+/*        height: 48px;*/
+/*        margin-top: 0px;*/
+/*        margin-left: 64px;*/
+/*    }*/
+/*    25% {*/
+/*        width: 48px;*/
+/*        height: 112px;*/
+/*        margin-top: 0px;*/
+/*        margin-left: 64px;*/
+/*    }*/
+/*    37.5% {*/
+/*        width: 48px;*/
+/*        height: 48px;*/
+/*        margin-top: 64px;*/
+/*        margin-left: 64px;*/
+/*    }*/
+/*    50% {*/
+/*        width: 48px;*/
+/*        height: 48px;*/
+/*        margin-top: 64px;*/
+/*        margin-left: 64px;*/
+/*    }*/
+/*    62.5% {*/
+/*        width: 48px;*/
+/*        height: 48px;*/
+/*        margin-top: 64px;*/
+/*        margin-left: 64px;*/
+/*    }*/
+/*    75% {*/
+/*        width: 48px;*/
+/*        height: 48px;*/
+/*        margin-top: 64px;*/
+/*        margin-left: 64px;*/
+/*    }*/
+/*    87.5% {*/
+/*        width: 48px;*/
+/*        height: 48px;*/
+/*        margin-top: 64px;*/
+/*        margin-left: 64px;*/
+/*    }*/
+/*    100% {*/
+/*        width: 112px;*/
+/*        height: 48px;*/
+/*        margin-top: 64px;*/
+/*        margin-left: 0px;*/
+/*    }*/
+/*}*/
