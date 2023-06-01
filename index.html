@@ -11,6 +11,7 @@
     <link href="css/Assignment.css" rel="stylesheet">
     <link href="css/color/color-1.css" rel="stylesheet">
     <link href="assets/JS/swiper.min.css" rel="stylesheet">
+    <link href="css/loader.css" rel="stylesheet">
 
     <!--style-switcher-->
     <link href="css/style-switcher.css" rel="stylesheet">
@@ -770,23 +771,19 @@
         },
     });
 
-    document.addEventListener("DOMContentLoaded", function () {
-        document.getElementById("cssAssignment").style.display = 'inline-block';
-        document.getElementById("posAssignment").style.display = 'none';
-        document.getElementById("gameAssignment").style.display = 'none';
-    });
-    document.getElementById("cssAssi").addEventListener("click", function () {
-        document.getElementById("cssAssignment").style.display = 'inline-block';
-        document.getElementById("posAssignment").style.display = 'none';
-        document.getElementById("gameAssignment").style.display = 'none';
-
+    // execute after all the content fully loaded
+    $(window).on('load', function () {
+        $("#loaderContainer").fadeOut(100);
+        let style = document.createElement("style");
+        style.innerHTML = `body::-webkit-scrollbar {display: block;}`;
+        document.head.appendChild(style);
     });
 
-    document.getElementById("gameAssi").addEventListener("click", function () {
-        document.getElementById("cssAssignment").style.display = 'none';
-        document.getElementById("posAssignment").style.display = 'none';
-        document.getElementById("gameAssignment").style.display = 'inline-block';
-
+    // run after just creating the dom
+    $(document).ready(function () {
+        let style = document.createElement("style");
+        style.innerHTML = `body::-webkit-scrollbar {display: none;}`;
+        document.head.appendChild(style);
     });
 
 </script>
