@@ -350,25 +350,68 @@ h3.my-profession {
     height: 400px;
 }
 
-#social_media {
-    position: relative;
-    left: 20%;
-    top: 5rem;
-    height: 4rem;
-    width: auto;
-    display: flex;
-}
+/*#social_media {*/
+/*    position: relative;*/
+/*    left: 20%;*/
+/*    top: 5rem;*/
+/*    height: 4rem;*/
+/*    width: auto;*/
+/*    display: flex;*/
+/*}*/
 
-#social_media a {
-    background-color: gray;
-    border: red;
-    border-radius: 36%;
-    margin: 2px;
-}
+/*#social_media a {*/
+/*    background-color: gray;*/
+/*    border: red;*/
+/*    border-radius: 36%;*/
+/*    margin: 2px;*/
+/*}*/
+
+/*#social_media a:hover {*/
+/*    border-radius: 36%;*/
+/*}*/
 
 #social_media a img {
     width: 4rem;
     height: 4rem;
+}
+
+#nav{
+display: flex;
+gap: 15px;
+}
+
+#nav > div {
+    width: 67px;
+    height: 67px;
+    background: gray;
+    box-shadow: -3px -5px 29px #FFFFFF, 28px 28px 50px rgba(13, 39, 80, 0.16);
+    border-radius: 15px;
+}
+
+#nav:nth-child(2) > div > a > img {
+    position: relative;
+    left: 23%;
+    top: 23%;
+    font-size: 2.40em;
+    color: #909597;
+    cursor: pointer;
+    width: 5rem;
+    height: 5rem;
+}
+
+#nav:nth-child(2) > div:nth-child(1) > a > img {
+    font-size: 2.00em;
+    top: 29%;
+    left: 32%;
+    width: 5rem;
+    height: 5rem;
+}
+
+#nav > div:hover ,a > img:hover{
+    transition: all 0.5s ease;
+    -webkit-transform: scale(1.10);
+    transform: scale(1.20);
+    color: #FFA500 !important;
 }
 
 /*=====================About section=====================*/
