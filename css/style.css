@@ -350,34 +350,15 @@ h3.my-profession {
     height: 400px;
 }
 
-/*#social_media {*/
-/*    position: relative;*/
-/*    left: 20%;*/
-/*    top: 5rem;*/
-/*    height: 4rem;*/
-/*    width: auto;*/
-/*    display: flex;*/
-/*}*/
-
-/*#social_media a {*/
-/*    background-color: gray;*/
-/*    border: red;*/
-/*    border-radius: 36%;*/
-/*    margin: 2px;*/
-/*}*/
-
-/*#social_media a:hover {*/
-/*    border-radius: 36%;*/
-/*}*/
-
+/*===social media===*/
 #social_media a img {
     width: 4rem;
     height: 4rem;
 }
 
-#nav{
-display: flex;
-gap: 15px;
+#nav {
+    display: flex;
+    gap: 15px;
 }
 
 #nav > div {
@@ -386,6 +367,9 @@ gap: 15px;
     background: gray;
     box-shadow: -3px -5px 29px #FFFFFF, 28px 28px 50px rgba(13, 39, 80, 0.16);
     border-radius: 15px;
+    position: relative;
+    left: 54%;
+    top: 5rem;
 }
 
 #nav:nth-child(2) > div > a > img {
@@ -407,7 +391,7 @@ gap: 15px;
     height: 5rem;
 }
 
-#nav > div:hover ,a > img:hover{
+#nav > div:hover, a > img:hover {
     transition: all 0.5s ease;
     -webkit-transform: scale(1.10);
     transform: scale(1.20);
@@ -653,12 +637,11 @@ gap: 15px;
 }
 
 
-
-@keyframes animate{
-    0%{
+@keyframes animate {
+    0% {
         transform: rotate(0deg);
     }
-    100%{
+    100% {
         transform: rotate(360deg);
     }
 
@@ -750,6 +733,7 @@ gap: 15px;
     border-radius: 20px;
 
 }
+
 /*///////*/
 /*.portfolio .portfolio-item{*/
 /*    flex: 0 0 33.33%;*/
