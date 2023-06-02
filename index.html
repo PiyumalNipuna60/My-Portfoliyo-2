@@ -12,6 +12,7 @@
     <link href="css/color/color-1.css" rel="stylesheet">
     <link href="assets/JS/swiper.min.css" rel="stylesheet">
     <link href="css/loader.css" rel="stylesheet">
+    <link href="css/footer.css" rel="stylesheet">
 
     <!--style-switcher-->
     <link href="css/style-switcher.css" rel="stylesheet">
@@ -20,6 +21,11 @@
     <link href="css/color/color-3.css" class="alternate-style" title="color-3" rel="stylesheet" disabled>
     <link href="css/color/color-4.css" class="alternate-style" title="color-4" rel="stylesheet" disabled>
     <link href="css/color/color-5.css" class="alternate-style" title="color-5" rel="stylesheet" disabled>
+
+
+    <!-------------------------AOS----------------------->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 </head>
@@ -67,32 +73,57 @@
             <div class="container">
                 <div class="row">
                     <div class="home-info padd-15">
-                        <h3 class="hello">Hello, my name is <span class="name">Nipuna Piyumal</span></h3>
-                        <h3 class="my-profession">I'm a <span class="tying">Software Engineer</span></h3>
-                        <p>I'm a Software engineer & Full-Stack Developer. My expertise is to
+                        <h3 class="hello"  data-aos="fade-right" data-aos-duration="1000">Hello, my name is <span class="name">Nipuna Piyumal</span></h3>
+                        <h3 class="my-profession" data-aos="fade-left" data-aos-duration="1000">I'm a <span class="tying">Software Engineer</span></h3>
+                        <p data-aos="fade-zoom-in"
+                           data-aos-easing="ease-in-back"
+                           data-aos-delay="1300"
+                           data-aos-offset="0">I'm a Software engineer & Full-Stack Developer. My expertise is to
                             create and website design,java Develop and many more..</p>
-                        <a class="btn hire-me" href="#contact">Hire Me</a>
+                        <a class="btn hire-me"  data-aos="fade-up"
+                           data-aos-duration="1000"
+                           data-aos-delay="1300" href="#contact">Hire Me</a>
                     </div>
-                    <div class="home-img padd-15">
+                    <div data-aos="zoom-out-up" data-aos-duration="1000" data-aos-delay="500" class="home-img padd-15">
                         <img alt="my Image" src="assets/image/20210414_083713-01.jpeg">
                     </div>
 
                     <!------- social media Section Start-------->
                     <div id="social_media">
                         <nav id="nav">
-                            <div><a href="https://www.facebook.com/piyumal.nipuna" target="_blank">
+                            <div data-aos="fade-zoom-in"
+                            data-aos-easing="ease-in-back"
+                            data-aos-delay="1300"
+                                 data-aos-duration="500"
+                            data-aos-offset="0"><a href="https://www.facebook.com/piyumal.nipuna" target="_blank">
                                 <img src="assets/icon/social%20media/facebook.png">
                             </a></div>
-                            <div><a href="tel:+94767554903" target="_blank">
+                            <div data-aos="fade-zoom-in"
+                                 data-aos-easing="ease-in-back"
+                                 data-aos-delay="1100"
+                                 data-aos-duration="500"
+                                 data-aos-offset="0"><a href="tel:+94767554903" target="_blank">
                                 <img alt="WhatsApp" src="assets/icon/social%20media/whatsapp.png">
                             </a></div>
-                            <div><a href="https://github.com/PiyumalNipuna60" target="_blank">
+                            <div data-aos="fade-zoom-in"
+                                 data-aos-easing="ease-in-back"
+                                 data-aos-delay="900"
+                                 data-aos-duration="500"
+                                 data-aos-offset="0"><a href="https://github.com/PiyumalNipuna60" target="_blank">
                                 <img alt="GitHub" src="assets/icon/social%20media/github.png">
                             </a></div>
-                            <div><a href="https://www.instagram.com/piyumalnipuna" target="_blank">
+                            <div data-aos="fade-zoom-in"
+                                 data-aos-easing="ease-in-back"
+                                 data-aos-delay="1100"
+                                 data-aos-duration="500"
+                                 data-aos-offset="0"><a href="https://www.instagram.com/piyumalnipuna" target="_blank">
                                 <img src="assets/icon/social%20media/instergram.png">
                             </a></div>
-                            <div><a href="https://www.linkedin.com/in/nipuna-piyumal-257b37229/" target="_blank">
+                            <div data-aos="fade-zoom-in"
+                                 data-aos-easing="ease-in-back"
+                                 data-aos-delay="1300"
+                                 data-aos-duration="500"
+                                 data-aos-offset="0"><a href="https://www.linkedin.com/in/nipuna-piyumal-257b37229/" target="_blank">
                                 <img alt="LinkIn" src="assets/icon/social%20media/linkedin.png">
                             </a></div>
                         </nav>
@@ -109,7 +140,7 @@
             <div class="container">
                 <div class="row">
                     <div class="section-title padd-15">
-                        <h2>About Me</h2>
+                        <h2 data-aos="fade-right" data-aos-delay="500" data-aos-duration="300">About Me</h2>
                     </div>
                 </div>
                 <div class="row">
@@ -145,8 +176,8 @@
                                 </div>
                                 <div class="row">
                                     <div class="buttons padd-15">
-                                        <a class="btn" href="#">Download CV</a>
-                                        <a class="btn hire-me" href="#contact">Hire Me</a>
+                                        <a data-aos="zoom-in" data-aos-delay="900" class="btn" href="#">Download CV</a>
+                                        <a data-aos="zoom-in" data-aos-delay="1300" class="btn hire-me" href="#contact">Hire Me</a>
                                     </div>
                                 </div>
                             </div>
@@ -188,8 +219,8 @@
                                     <div class="skill-item padd-15">
                                         <h5>JAVA</h5>
                                         <div class="progress">
-                                            <div class="progress-in" style="width: 80%;">
-                                                <div class="skill-percent">80%</div>
+                                            <div class="progress-in"  style="width: 80%;">
+                                                <div  class="skill-percent">80%</div>
                                             </div>
                                         </div>
                                     </div>
@@ -202,18 +233,28 @@
                             <div class="education padd-15">
                                 <h3 class="title">Education</h3>
                                 <div class="row">
-                                    <div class="timeline-box padd-15">
+                                    <div class="timeline-box padd-15" data-aos="zoom-in-down">
                                         <div class="timeline shadow-dark">
 
                                             <!--                                timeline item-->
-                                            <div class="timeline-item">
+                                            <div class="timeline-item"
+                                                 data-aos="fade-up"
+                                                 data-aos-easing="ease-in-back"
+                                                 data-aos-delay="1200"
+                                                 data-aos-duration="500"
+                                                 data-aos-offset="0">
                                                 <div class="circle-dot"></div>
                                                 <h3 class="timeline-date">
                                                     <i class="fa fa-calendar"></i>2021 - Present</h3>
                                                 <h4 class="timeline-title">Bsc(Hons). in Computer Science</h4>
                                                 <p class="timeline-text">IJSE - Institute Of Software Engineering.</p>
                                             </div>
-                                            <div class="timeline-item">
+                                            <div class="timeline-item"
+                                                 data-aos="fade-up"
+                                                 data-aos-easing="ease-in-back"
+                                                 data-aos-delay="800"
+                                                 data-aos-duration="500"
+                                                 data-aos-offset="0">
                                                 <div class="circle-dot"></div>
                                                 <h3 class="timeline-date">
                                                     <i class="fa fa-calendar"></i>2018 - 2020</h3>
@@ -221,7 +262,12 @@
                                                 <p class="timeline-text">G/Allsaint collage.complete my Advance Level
                                                     examination and Passed</p>
                                             </div>
-                                            <div class="timeline-item">
+                                            <div class="timeline-item"
+                                                 data-aos="fade-up"
+                                                 data-aos-easing="ease-in-back"
+                                                 data-aos-delay="500"
+                                                 data-aos-duration="500"
+                                                 data-aos-offset="0">
                                                 <div class="circle-dot"></div>
                                                 <h3 class="timeline-date">
                                                     <i class="fa fa-calendar"></i>2011 - 2017</h3>
@@ -229,7 +275,12 @@
                                                 <p class="timeline-text">v/Agrabodhy maha vidyalaya. complete my
                                                     Ordinary Level examination and Passed</p>
                                             </div>
-                                            <div class="timeline-item">
+                                            <div class="timeline-item"
+                                                 data-aos="fade-up"
+                                                 data-aos-easing="ease-in-back"
+                                                 data-aos-delay="200"
+                                                 data-aos-duration="500"
+                                                 data-aos-offset="0">
                                                 <div class="circle-dot"></div>
                                                 <h3 class="timeline-date">
                                                     <i class="fa fa-calendar"></i>2006 - 2011</h3>
@@ -247,18 +298,28 @@
                             <div class="experience padd-15">
                                 <h3 class="title">Experience</h3>
                                 <div class="row">
-                                    <div class="timeline-box padd-15">
+                                    <div class="timeline-box padd-15" data-aos="zoom-in-down">
                                         <div class="timeline shadow-dark">
 
                                             <!--             timeline item-->
-                                            <div class="timeline-item">
+                                            <div class="timeline-item"
+                                                 data-aos="fade-up"
+                                                 data-aos-easing="ease-in-back"
+                                                 data-aos-delay="2800"
+                                                 data-aos-duration="500"
+                                                 data-aos-offset="0">
                                                 <div class="circle-dot"></div>
                                                 <h3 class="timeline-date">
                                                     <i class="fa fa-calendar"></i>2021 - Present</h3>
                                                 <h4 class="timeline-title">Bsc(Hons). in Computer Science</h4>
                                                 <p class="timeline-text">IJSE - Institute Of Software Engineering.</p>
                                             </div>
-                                            <div class="timeline-item">
+                                            <div class="timeline-item"
+                                                 data-aos="fade-up"
+                                                 data-aos-easing="ease-in-back"
+                                                 data-aos-delay="2400"
+                                                 data-aos-duration="500"
+                                                 data-aos-offset="0">
                                                 <div class="circle-dot"></div>
                                                 <h3 class="timeline-date">
                                                     <i class="fa fa-calendar"></i>2018 - 2020</h3>
@@ -266,7 +327,12 @@
                                                 <p class="timeline-text">G/Allsaint collage.complete my Advance Level
                                                     examination and Passed</p>
                                             </div>
-                                            <div class="timeline-item">
+                                            <div class="timeline-item"
+                                                 data-aos="fade-up"
+                                                 data-aos-easing="ease-in-back"
+                                                 data-aos-delay="2000"
+                                                 data-aos-duration="500"
+                                                 data-aos-offset="0">
                                                 <div class="circle-dot"></div>
                                                 <h3 class="timeline-date">
                                                     <i class="fa fa-calendar"></i>2011 - 2017</h3>
@@ -274,7 +340,12 @@
                                                 <p class="timeline-text">v/Agrabodhy maha vidyalaya. complete my
                                                     Ordinary Level examination and Passed</p>
                                             </div>
-                                            <div class="timeline-item">
+                                            <div class="timeline-item"
+                                                 data-aos="fade-up"
+                                                 data-aos-easing="ease-in-back"
+                                                 data-aos-delay="1600"
+                                                 data-aos-duration="500"
+                                                 data-aos-offset="0">
                                                 <div class="circle-dot"></div>
                                                 <h3 class="timeline-date">
                                                     <i class="fa fa-calendar"></i>2006 - 2011</h3>
@@ -299,13 +370,17 @@
         <section class="service section " id="service">
             <div class="container">
                 <div class="row">
-                    <div class="section-title padd-15">
+                    <div class="section-title padd-15"
+                         data-aos="fade-right" data-aos-delay="500" data-aos-duration="300">
                         <h2>Service</h2>
                     </div>
                 </div>
                 <div class="row">
                     <!--Service Item start-->
-                    <div class="service-item padd-15">
+                    <div class="service-item padd-15"
+                         data-aos="flip-left"
+                         data-aos-easing="ease-out-cubic"
+                         data-aos-delay="50">
                         <div class="service-item-inner">
                             <div class="icon">
                                 <i class="fa fa-mobile-alt"></i>
@@ -316,7 +391,10 @@
                     </div>
                     <!--Service Item End-->
                     <!--Service Item start-->
-                    <div class="service-item padd-15">
+                    <div class="service-item padd-15"
+                         data-aos="flip-left"
+                         data-aos-easing="ease-out-cubic"
+                         data-aos-delay="200">
                         <div class="service-item-inner">
                             <div class="icon">
                                 <i class="fa fa-laptop-code"></i>
@@ -327,7 +405,10 @@
                     </div>
                     <!--Service Item End-->
                     <!--Service Item start-->
-                    <div class="service-item padd-15">
+                    <div class="service-item padd-15"
+                         data-aos="flip-left"
+                         data-aos-easing="ease-out-cubic"
+                         data-aos-delay="300">
                         <div class="service-item-inner">
                             <div class="icon">
                                 <i class="fa fa-palette"></i>
@@ -338,7 +419,10 @@
                     </div>
                     <!--Service Item End-->
                     <!--Service Item start-->
-                    <div class="service-item padd-15">
+                    <div class="service-item padd-15"
+                         data-aos="flip-left"
+                         data-aos-easing="ease-out-cubic"
+                         data-aos-delay="400">
                         <div class="service-item-inner">
                             <div class="icon">
                                 <i class="fa fa-code"></i>
@@ -349,7 +433,10 @@
                     </div>
                     <!--Service Item End-->
                     <!--Service Item start-->
-                    <div class="service-item padd-15">
+                    <div class="service-item padd-15"
+                         data-aos="flip-left"
+                         data-aos-easing="ease-out-cubic"
+                         data-aos-delay="500">
                         <div class="service-item-inner">
                             <div class="icon">
                                 <i class="fa fa-search"></i>
@@ -360,7 +447,10 @@
                     </div>
                     <!--Service Item End-->
                     <!--Service Item start-->
-                    <div class="service-item padd-15">
+                    <div class="service-item padd-15"
+                         data-aos="flip-left"
+                         data-aos-easing="ease-out-cubic"
+                         data-aos-delay="600">
                         <div class="service-item-inner">
                             <div class="icon">
                                 <i class="fa fa-bullhorn"></i>
@@ -381,7 +471,8 @@
         <section class="portfolio section " id="portfolio">
             <div class="container">
                 <div class="row">
-                    <div class="portfolio-title section-title padd-15">
+                    <div class="portfolio-title section-title padd-15"
+                         data-aos="fade-right" data-aos-delay="500" data-aos-duration="300">
                         <h2>Project</h2>
                     </div>
                 </div>
@@ -393,7 +484,10 @@
 
                 <div class="row">
                     <!--project Item start-->
-                    <div class="portfolio-item padd-15">
+                    <div class="portfolio-item padd-15"
+                         data-aos-duration="1000"
+                         data-aos-delay="500"
+                         data-aos="fade-down-right">
                         <div class="portfolio-item-inner shadow-dark">
                             <div class="portfolio-img">
                                 <img alt="" src="assets/project/portfolio-1.jpg">
@@ -402,7 +496,10 @@
                     </div>
                     <!--project Item End-->
                     <!--project Item start-->
-                    <div class="portfolio-item padd-15">
+                    <div class="portfolio-item padd-15"
+                         data-aos-duration="1000"
+                         data-aos-delay="500"
+                         data-aos="zoom-out-down">
                         <div class="portfolio-item-inner shadow-dark">
                             <div class="portfolio-img">
                                 <img alt="" src="assets/project/portfolio-2.jpg">
@@ -411,7 +508,10 @@
                     </div>
                     <!--project Item End-->
                     <!--project Item start-->
-                    <div class="portfolio-item padd-15">
+                    <div class="portfolio-item padd-15"
+                         data-aos-duration="1000"
+                         data-aos-delay="500"
+                         data-aos="fade-down-left">
                         <div class="portfolio-item-inner shadow-dark">
                             <div class="portfolio-img">
                                 <img alt="" src="assets/project/portfolio-3.jpg">
@@ -420,7 +520,10 @@
                     </div>
                     <!--project Item End-->
                     <!--project Item start-->
-                    <div class="portfolio-item padd-15">
+                    <div class="portfolio-item padd-15"
+                         data-aos-duration="1000"
+                         data-aos-delay="500"
+                         data-aos="fade-up-right">
                         <div class="portfolio-item-inner shadow-dark">
                             <div class="portfolio-img">
                                 <img alt="" src="assets/project/portfolio-4.jpg">
@@ -429,7 +532,10 @@
                     </div>
                     <!--project Item End-->
                     <!--project Item start-->
-                    <div class="portfolio-item padd-15">
+                    <div class="portfolio-item padd-15"
+                         data-aos-duration="1000"
+                         data-aos-delay="500"
+                         data-aos="zoom-out-up">
                         <div class="portfolio-item-inner shadow-dark">
                             <div class="portfolio-img">
                                 <img alt="" src="assets/project/portfolio-5.jpg">
@@ -438,7 +544,10 @@
                     </div>
                     <!--project Item End-->
                     <!--project Item start-->
-                    <div class="portfolio-item padd-15">
+                    <div class="portfolio-item padd-15"
+                         data-aos-duration="1000"
+                         data-aos-delay="500"
+                         data-aos="fade-up-left">
                         <div class="portfolio-item-inner shadow-dark">
                             <div class="portfolio-img">
                                 <img alt="" src="assets/project/portfolio-6.jpg">
@@ -450,14 +559,15 @@
                 </div>
             </div>
         </section>
-        <!------- Project Section Start-------->
+        <!------- Project Section End-------->
 
 
         <!------- assignment Section Start-------->
         <section class="assignment section " id="assignment">
             <div class="container">
                 <div class="row">
-                    <div class="assignment-title section-title padd-15">
+                    <div class="assignment-title section-title padd-15"
+                         data-aos="fade-right" data-aos-delay="500" data-aos-duration="300">
                         <h2>Assignment</h2>
                     </div>
                 </div>
@@ -475,7 +585,7 @@
 
                 <!------- css Start-------->
                 <div id="cssAssignment">
-                    <div class="row">
+                    <div class="row" id="content01">
                         <!--assignment Item start-->
                         <div class="assignment-item padd-15">
                             <div class="assignment-item-inner shadow-dark">
@@ -549,9 +659,89 @@
                         </div>
                         <!--assignment Item End-->
 
+
+
+                    </div>
+
+                    <div class="row" style="display: none" id="content02">
+                        <!--assignment Item start-->
+                        <div class="assignment-item padd-15">
+                            <div class="assignment-item-inner shadow-dark">
+                                <div class="assignment-img">
+                                    <img alt="" src="assets/project/portfolio-1.jpg">
+                                </div>
+                            </div>
+                        </div>
+                        <!--assignment Item End-->
+                        <!--assignment Item start-->
+                        <div class="assignment-item padd-15">
+                            <div class="assignment-item-inner shadow-dark">
+                                <div class="assignment-img">
+                                    <img alt="" src="assets/project/portfolio-2.jpg">
+                                </div>
+                            </div>
+                        </div>
+                        <!--assignment Item End-->
+                        <!--assignment Item start-->
+                        <div class="assignment-item padd-15">
+                            <div class="assignment-item-inner shadow-dark">
+                                <div class="assignment-img">
+                                    <img alt="" src="assets/project/portfolio-3.jpg">
+                                </div>
+                            </div>
+                        </div>
+                        <!--assignment Item End-->
+                        <!--assignment Item start-->
+                        <div class="assignment-item padd-15">
+                            <div class="assignment-item-inner shadow-dark">
+                                <div class="assignment-img">
+                                    <img alt="" src="assets/project/portfolio-4.jpg">
+                                </div>
+                            </div>
+                        </div>
+                        <!--assignment Item End-->
+                        <!--assignment Item start-->
+                        <div class="assignment-item padd-15">
+                            <div class="assignment-item-inner shadow-dark">
+                                <div class="assignment-img">
+                                    <img alt="" src="assets/project/portfolio-5.jpg">
+                                </div>
+                            </div>
+                        </div>
+                        <!--assignment Item End-->
+                        <!--assignment Item start-->
+                        <div class="assignment-item padd-15">
+                            <div class="assignment-item-inner shadow-dark">
+                                <div class="assignment-img">
+                                    <img alt="" src="assets/project/portfolio-6.jpg">
+                                </div>
+                            </div>
+                        </div>
+                        <!--assignment Item End-->
+                        <!--assignment Item start-->
+                        <div class="assignment-item padd-15">
+                            <div class="assignment-item-inner shadow-dark">
+                                <div class="assignment-img">
+                                    <img alt="" src="assets/project/portfolio-5.jpg">
+                                </div>
+                            </div>
+                        </div>
+                        <!--assignment Item End-->
+                        <!--assignment Item start-->
+                        <div class="assignment-item padd-15">
+                            <div class="assignment-item-inner shadow-dark">
+                                <div class="assignment-img">
+                                    <img alt="" src="assets/project/portfolio-6.jpg">
+                                </div>
+                            </div>
+                        </div>
+                        <!--assignment Item End-->
+
+
+
                     </div>
                     <div class="seeMore">
-                        <button >See more...
+                        <button id="seeMore">See more...
                             <div>
                                 <img src="assets/icon/output-onlinegiftools%20(1).gif">
                             </div>
@@ -637,7 +827,8 @@
         <section class="contact section " id="contact">
             <div class="container">
                 <div class="row">
-                    <div class="section-title padd-15">
+                    <div class="section-title padd-15"
+                         data-aos="fade-right" data-aos-delay="500" data-aos-duration="300">
                         <h2>Contact Me</h2>
                     </div>
                 </div>
@@ -725,6 +916,76 @@
 <!------- main-container End-------->
 
 
+<!------- footer-container Start-------->
+<footer>
+    <h1 class="thanks_msg"
+        data-aos="fade-up"
+        data-aos-duration="3000">Thank You</h1>
+    <div class="social_icon">
+        <div class="wrapper">
+            <div class="button"
+                 data-aos="fade-zoom-in"
+                 data-aos-easing="ease-in-back"
+                 data-aos-delay="1100"
+                 data-aos-duration="500"
+                 data-aos-offset="0">
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                </div>
+                <a href="https://www.facebook.com/piyumal.nipuna" target="_blank"><span>Facebook</span></a>
+            </div>
+            <div class="button"
+                 data-aos="fade-zoom-in"
+                 data-aos-easing="ease-in-back"
+                 data-aos-delay="600"
+                 data-aos-duration="500"
+                 data-aos-offset="0">
+                <div class="icon">
+                    <i class="fab fa-instagram"></i>
+                </div>
+                <a href="https://www.instagram.com/piyumalnipuna" target="_blank"><span>Instagram</span></a>
+            </div>
+            <div class="button"
+                 data-aos="fade-zoom-in"
+                 data-aos-easing="ease-in-back"
+                 data-aos-delay="200"
+                 data-aos-duration="500"
+                 data-aos-offset="0">
+                <div class="icon">
+                    <i class="fab fa-linkedin"></i>
+                </div>
+                <a href="https://www.linkedin.com/in/nipuna-piyumal-257b37229/"
+                   target="_blank"><span>LinkedIn</span></a>
+            </div>
+            <div class="button"
+                 data-aos="fade-zoom-in"
+                 data-aos-easing="ease-in-back"
+                 data-aos-delay="600"
+                 data-aos-duration="500"
+                 data-aos-offset="0">
+                <div class="icon">
+                    <i class="fab fa-github"></i>
+                </div>
+                <a href="https://github.com/PiyumalNipuna60" target="_blank"><span>GitHub</span></a>
+            </div>
+            <div class="button"
+                 data-aos="fade-zoom-in"
+                 data-aos-easing="ease-in-back"
+                 data-aos-delay="1100"
+                 data-aos-duration="500"
+                 data-aos-offset="0">
+                <div class="icon">
+                    <i class="fab fa-twitter"></i>
+                </div>
+                <a href="tel:+94767554903" target="_blank"><span>Whatsapp</span></a>
+
+            </div>
+        </div>
+        <h3>© 2023. All rights reserved.</h3>
+    </div>
+</footer>
+<!------- footer-container End-------->
+
 <!--=======Style Switcher Start=====-->
 <div class="style-switcher">
     <div class="style-switcher-toggler s-icon">
@@ -751,6 +1012,14 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
 <!--jQuery-->
 <script src="js/jquery-3.6.1.min.js"></script>
+
+
+<!-------------------------------------AOS---------------------------------->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
 <script>
 
     var swiper = new Swiper('.swiper-container', {
@@ -770,7 +1039,21 @@
         },
     });
 
+let seeMoreBtn = document.querySelector('#seeMore');
+let currentItem=3;
 
+seeMoreBtn.onclick = () =>{
+    console.log("ok")
+    let boxs=[...document.querySelectorAll('.row')];
+    for (var i = currentItem; i <currentItem+3 ; i++) {
+        boxs[i].style.display = 'inline-block';
+    }
+    currentItem += 3;
+
+    if (currentItem >= boxs.length){
+        seeMoreBtn.style.display = 'none';
+    }
+}
 
 </script>
 </body>

@@ -364,12 +364,18 @@ h3.my-profession {
 #nav > div {
     width: 67px;
     height: 67px;
-    background: gray;
-    box-shadow: -3px -5px 29px #FFFFFF, 28px 28px 50px rgba(13, 39, 80, 0.16);
+    background: var(--text-black-700);
+    box-shadow: -3px -5px 10px #FFFFFF, 1px 0px 50px var(--text-black-700);
     border-radius: 15px;
     position: relative;
     left: 54%;
     top: 5rem;
+}
+
+#nav > div:hover {
+
+    background: var(--skin-color);
+
 }
 
 #nav:nth-child(2) > div > a > img {
@@ -887,6 +893,12 @@ h3.my-profession {
         display: block;
         margin-left: 0;
     }
+
+    #nav > div {
+        position: relative;
+        left: 3rem;
+        top: 2rem;
+    }
 }
 
 @media (max-width: 991px) {
@@ -906,6 +918,12 @@ h3.my-profession {
     .home .home-img {
         display: none;
     }
+
+    #nav > div {
+        position: relative;
+        left: 3rem;
+        top: 2rem;
+    }
 }
 
 @media (max-width: 767px) {
@@ -922,25 +940,10 @@ h3.my-profession {
         max-width: 100%;
     }
 
-    #social_media {
+    #nav > div {
         position: relative;
-        left: 10%;
-        top: 5rem;
-        height: auto;
-        width: auto;
-        display: flex;
-    }
-
-    #social_media a {
-        background-color: gray;
-        border: red;
-        border-radius: 36%;
-        margin: 2px;
-    }
-
-    #social_media a img {
-        width: 3rem;
-        height: 3rem;
+        left: 1rem;
+        top: 4rem;
     }
 }
 
