@@ -21,6 +21,7 @@ body {
     line-height: 1.5;
     font-size: 16px;
     font-family: 'Poppins', sans-serif;
+
 }
 
 * {
@@ -352,8 +353,8 @@ h3.my-profession {
 
 /*===social media===*/
 #social_media a img {
-    width: 4rem;
-    height: 4rem;
+    width: 5rem;
+    height: 5rem;
 }
 
 #nav {
@@ -364,8 +365,8 @@ h3.my-profession {
 #nav > div {
     width: 67px;
     height: 67px;
-    background: var(--text-black-700);
-    box-shadow: -3px -5px 10px #FFFFFF, 1px 0px 50px var(--text-black-700);
+    /*background: var(--text-black-700);*/
+    /*box-shadow: -3px -5px 10px #FFFFFF, 1px 0px 50px var(--text-black-700);*/
     border-radius: 15px;
     position: relative;
     left: 54%;
@@ -374,7 +375,7 @@ h3.my-profession {
 
 #nav > div:hover {
 
-    background: var(--skin-color);
+    /*background: var(--skin-color);*/
 
 }
 
@@ -398,7 +399,7 @@ h3.my-profession {
 }
 
 #nav > div:hover, a > img:hover {
-    transition: all 0.5s ease;
+    transition: all 0.4s ease;
     -webkit-transform: scale(1.10);
     transform: scale(1.20);
     color: #FFA500 !important;
@@ -654,8 +655,13 @@ h3.my-profession {
 }
 
 .service .service-item .service-item-inner:hover {
-    flex: 0 0 33.33%;
-    background-color: yellow;
+    flex: 0 0 35.33%;
+    width: 105%;
+    height: 105%;
+    box-sizing: border-box;
+    transition: all 0.3s ease-out;
+    background-color: var(--bg-black-50);
+    border-radius: 20px;
 }
 
 
@@ -706,6 +712,13 @@ h3.my-profession {
     text-transform: capitalize;
 }
 
+.service .service-item .service-item-inner:hover h4 {
+    font-size: 26px;
+    margin-bottom: 15px;
+    color: var(--skin-color);
+    font-weight: 700;
+}
+
 .service .service-item .service-item-inner p {
     font-size: 16px;
     color: var(--text-black-700);
@@ -713,6 +726,7 @@ h3.my-profession {
 }
 
 /*===========Project=============*/
+
 .portfolio .container {
     padding-bottom: 40px;
 }
@@ -736,8 +750,7 @@ h3.my-profession {
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    border-radius: 20px;
-
+    border-radius: 10px;
 }
 
 /*///////*/
