@@ -150,6 +150,7 @@
     float: left;
     box-sizing: border-box;
     cursor: pointer;
+    padding-right: 7%;
 }
 
 .card-inner {
