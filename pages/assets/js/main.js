@@ -1,7 +1,3 @@
-/*!
- * @author : Pasan Pahasara
- * @since : 0.1.0
- **/
 
 /**
  * Easy selector helper function
@@ -44,6 +40,7 @@ window.addEventListener('load', () => {
         on('click', '#portfolio-filters li', function (e) {
             e.preventDefault();
             portfolioFilters.forEach(function (el) {
+                console.log("ok");
                 el.classList.remove('filter-active');
             });
             this.classList.add('filter-active');
@@ -58,6 +55,7 @@ window.addEventListener('load', () => {
     }
 
 });
+
 
 /**
  * Initiate portfolio details lightbox
