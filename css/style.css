@@ -631,8 +631,8 @@ h3.my-profession {
 }
 
 .about .about-content .skills .skill-item h5 {
-    line-height: 40px;
-    font-weight: 400;
+    line-height: 34px;
+    font-weight: bold;
     font-size: 16px;
     color: var(--text-black-900);
     text-transform: capitalize;
@@ -647,8 +647,14 @@ h3.my-profession {
 }
 
 .about .about-content .skills .skill-item {
-    margin-bottom: 10px;
+    margin-bottom: 18px;
 }
+
+.skill-percent{
+    margin-top: 2%;
+}
+
+
 
 .about .about-content .skills .skill-item .progress .progress-in {
     position: absolute;

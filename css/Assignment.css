@@ -139,7 +139,7 @@
     gap: 40px;
     align-items: center;
     justify-content: center;
-    margin-left: 67px;
+    margin-left: 14px;
     margin-right: 67px;
     flex-wrap: wrap;
 }
@@ -269,7 +269,11 @@
 
 }
 
-@media (max-width: 767px) {
+@media (max-width: 375px) {
 
+
+    .card{
+        width: 297px;
+    }
 
 }
