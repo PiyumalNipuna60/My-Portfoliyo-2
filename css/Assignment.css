@@ -13,123 +13,6 @@
     font-weight: 500;
 }
 
-/*.assignment .assignment-item {*/
-/*    flex: 0 0 24.33%;*/
-/*    max-width: 31.33%;*/
-/*    margin-bottom: 30px;*/
-/*}*/
-
-/*.assignment-title {*/
-/*    margin-bottom: 32px;*/
-/*}*/
-
-/*.assignment .assignment-item-inner {*/
-/*    border-left: 6px solid var(--skin-color);*/
-/*    overflow: hidden;*/
-/*    cursor: pointer;*/
-/*    border-bottom-right-radius: 23%;*/
-/*    border-top-left-radius: 23%;*/
-/*}*/
-
-/*.assignment .assignment-item-inner::before {*/
-/*    content: "";*/
-/*    position: absolute;*/
-/*    width: 53px;*/
-/*    height: 53px;*/
-
-/*    border-bottom: 5px solid var(--skin-color);*/
-/*    border-right: 5px solid var(--skin-color);*/
-/*    bottom: 0;*/
-/*    right: 0;*/
-/*}*/
-
-/*.assignment .assignment-item-inner .assignment-img img {*/
-/*    width: 100%;*/
-/*    display: block;*/
-/*    border-bottom-right-radius: 23%;*/
-/*    border-top-left-radius: 23%;*/
-/*}*/
-
-
-/*.assignment-nav {*/
-/*    margin-top: 20px;*/
-/*    text-align: center;*/
-/*}*/
-
-/*.assignment-nav li a.assignment-active {*/
-/*    color: var(--skin-color);*/
-/*}*/
-
-/*.assignment-nav li {*/
-/*    display: inline;*/
-/*}*/
-
-
-/*.assignment-nav li a {*/
-/*    font-size: 24px;*/
-/*    font-weight: 600;*/
-/*    !*border-bottom: 1px solid var(--bg-black-50);*!*/
-/*    color: var(--text-black-900);*/
-/*    padding: 5px 15px;*/
-/*}*/
-
-/*.assignment-nav li:nth-child(1) a:active {*/
-/*    color: var(--skin-color) !important;*/
-/*}*/
-
-/*.assignment-nav li:nth-child(2) a:active {*/
-/*    color: var(--skin-color) !important;*/
-/*}*/
-
-
-/*<ul class="assignment-nav">*/
-/*<li><a class="" href="#"> CSS</a></li>*/
-/*<li><a href="#"> POS</a></li>*/
-/*<li><a href="#"> Game</a></li>*/
-/*</ul>*/
-
-
-/*.seeMore {*/
-/*    !* background-color: red; *!*/
-/*    justify-content: center;*/
-/*    !* align-items: center; *!*/
-/*    !* flex: auto; *!*/
-/*    display: flex;*/
-/*}*/
-
-/*.seeMore button {*/
-/*    margin-top: 4%;*/
-/*    width: 10%;*/
-/*    height: 2rem;*/
-/*    border-radius: 14%;*/
-/*    padding-top: 0.5%;*/
-/*    border: 2px solid var(--skin-color);*/
-/*    font-size: 0.8rem;*/
-/*    align-items: center;*/
-/*    justify-content: center;*/
-/*}*/
-
-/*.seeMore button:hover {*/
-/*    width: 14%;*/
-/*    height: 2.5rem;*/
-/*    border-radius: 12%;*/
-/*    padding-top: 1%;*/
-/*    border: 2px solid var(--skin-color);*/
-/*    align-items: center;*/
-/*    justify-content: center;*/
-/*    font-size: 1rem;*/
-/*}*/
-
-/*.seeMore div{*/
-/*    width: 69%;*/
-/*    height: 181%;*/
-/*}*/
-
-/*.seeMore img{*/
-/*    width: 138%;*/
-/*    height: 160%;*/
-/*}*/
-
 
 
 /*=========================================*/
@@ -231,7 +114,6 @@
 }
 
 .card_detail p {
-    font-family: 'Poppins';
     font-size: 15px;
     color: var(--text-black-900);
     line-height: 1.5;
@@ -245,8 +127,6 @@
     transition: .5s;
 }
 .card_detail a button {
-    /*width: 15%;*/
-    /*height: 10%*/
     display: none;
 }
 
@@ -263,11 +143,6 @@
 
 /*=======media Quary========*/
 
-
-@media (max-width: 991px) {
-
-
-}
 
 @media (max-width: 375px) {
 
