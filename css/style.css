@@ -756,6 +756,10 @@ h3.my-profession {
     color: var(--text-black-700);
 }
 
+.education_company{
+    color: var(--skin-color);
+}
+
 /*==========Service===============*/
 .service .container {
     padding-bottom: 40px;
@@ -771,25 +775,6 @@ h3.my-profession {
     overflow: hidden;
     border-radius: 20px;
 
-}
-
-.service .service-item::before {
-    /*content: "";*/
-    /*position: absolute;*/
-    /*width: 150px;*/
-    /*height: 100%;*/
-    /*background: linear-gradient(#00ccff,#d400d4);*/
-    /*animation: animate 4s linear infinite;*/
-}
-
-.service .service-item::after {
-    /*content: "";*/
-    /*position: absolute;*/
-    /*background: var(--bg-black-900);*/
-    /*inset: 4px;*/
-    /*width: 150px;*/
-    /*height: 100%;*/
-    /*border-radius: 16px;*/
 }
 
 
