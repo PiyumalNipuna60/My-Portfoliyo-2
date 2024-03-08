@@ -1062,6 +1062,10 @@ h3.my-profession {
         left: 1rem;
         top: 4rem;
     }
+
+    .wrapper {
+        padding: 0 !important;
+    }
 }
 
 
