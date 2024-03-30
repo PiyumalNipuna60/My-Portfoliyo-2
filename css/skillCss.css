@@ -5,6 +5,8 @@
     --color-tertiary: #deee75;
     --color-quaternary: #9375ee;
     --color-surface: black;
+    --hexagon-size: 10vmin;
+    --gap: 0.1vmin;
     --bg: linear-gradient(
             to bottom,
             color-mix(in srgb, var(--color-quaternary), black 70%),
@@ -28,7 +30,6 @@
 @media (any-pointer: fine) {
     .vision-ui {
         --icon-filter: saturate(0.4);
-        --ripple-filter: filter(0.2rem);
     }
 }
 
@@ -41,10 +42,6 @@
     syntax: "<number>";
     initial-value: 0;
     inherits: true;
-}
-:root {
-    --hexagon-size: 10vmin;
-    --gap: 0.1vmin;
 }
 
 .container2 {
@@ -87,6 +84,17 @@
     filter: var(--icon-filter);
     font-size: 2.5vmin;
     inset: 0;
+}
+
+.hexagon>img {
+  position: relative;
+    left:0;
+    right:0;
+    margin:auto;
+    justify-content: center;
+    align-items: center;
+    width:50% ;
+    height:50%
 }
 
 @-webkit-keyframes ripple {
