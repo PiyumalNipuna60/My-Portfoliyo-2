@@ -480,8 +480,8 @@ h3.my-profession {
     width: 80px;
     border-bottom: 10px solid var(--skin-color);
     border-right: 10px solid var(--skin-color);
-    right: 20px;
-    bottom: -27vh;
+    right: 5vw;
+    bottom: -18vh;
 }
 
 .home-img::before {
@@ -491,8 +491,8 @@ h3.my-profession {
     width: 80px;
     border-top: 10px solid var(--skin-color);
     border-left: 10px solid var(--skin-color);
-    left: -10px;
-    top: -100px;
+    left: 2vw;
+    top: -6vh;
 }
 
 /* .home .home-img img {
@@ -515,8 +515,6 @@ h3.my-profession {
 #nav > div {
     width: 67px;
     height: 67px;
-    /*background: var(--text-black-700);*/
-    /*box-shadow: -3px -5px 10px #FFFFFF, 1px 0px 50px var(--text-black-700);*/
     border-radius: 15px;
     position: relative;
     left: 54%;
@@ -565,9 +563,9 @@ h3.my-profession {
     transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
-    width: 350px;
+    width: 250px;
     margin: auto;
-    height: 500px;
+    height: 400px;
     border-radius: 2rem;
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.25),
       0 15px 20px 0 rgba(0, 0, 0, 0.125);
