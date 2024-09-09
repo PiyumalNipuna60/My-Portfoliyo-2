@@ -14,6 +14,15 @@ $(document).ready(function () {
     document.head.appendChild(style);
 });*/
 
+window.onload = function () {
+    const loader = document.getElementById('loader');
+    const content = document.getElementById('content');
+
+    // Hide the loader and show the content after the page loads
+    loader.style.display = 'none';
+    content.style.display = 'block';
+};
+
 const stack = document.querySelector(".stack");
 const cards = Array.from(stack.children)
   .reverse()
