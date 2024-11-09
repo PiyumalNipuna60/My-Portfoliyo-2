@@ -1,6 +1,6 @@
 @charset "UTF-8";
 :root {
-    --color-primary: var(--skin-color);;
+    --color-primary: var(--skin-color);
     --color-secondary: #9ebbc2;
     --color-tertiary: #deee75;
     --color-quaternary: #9375ee;

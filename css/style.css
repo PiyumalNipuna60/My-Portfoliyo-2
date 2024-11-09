@@ -414,8 +414,13 @@ ul {
     padding: 5px 15px;
 }
 
-.aside .nav li a.active {
+.aside .nav li a.nav-link.active {
     color: var(--skin-color);
+}
+
+.nav-link {
+    color: var(--text-black-900);
+    text-decoration: none;
 }
 
 .aside .nav li a i {
@@ -428,115 +433,6 @@ ul {
 
 
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-
-
-#loader{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: #111;
-}
-
-    
-.loaderContainer
-{
-    
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.loaderContainer .ring
-{
-    position: relative;
-    width: 150px;
-    height: 150px;
-    margin: -30px;
-    border-radius: 50%;
-    border: 4px solid transparent;
-    border-top: 4px solid #24ecff;
-    animation: animate 4s linear infinite;
-}
-@keyframes animate
-{
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-}
-
-
-.loaderContainer .ring::before
-{
-    content: '';
-    position: absolute;
-    top: 12px;
-    right: 12px;
-    border-radius: 50%;
-    width: 15px;
-    height: 15px;
-    background: #24ecff;
-    box-shadow: 0 0 0 5px #24ecff33, 0 0 0 10px #24ecff22, 0 0 0 20px #24ecff11, 0 0 20px #24ecff, 0 0 50px #24ecff;
-}
-.loaderContainer .ring:nth-child(2)
-{
-    animation: animate2 4s linear infinite;
-    animation-delay: -1s;
-    border-top: 4px solid transparent;
-    border-left: 4px solid #93ff2d;
-}
-.loaderContainer .ring:nth-child(2)::before
-{
-    content: '';
-    position: absolute;
-    bottom: 12px;
-    left: 12px;
-    border-radius: 50%;
-    width: 15px;
-    height: 15px;
-    background: #93ff2d;
-    box-shadow: 0 0 0 5px #93ff2d33, 0 0 0 10px #93ff2d22, 0 0 0 20px #93ff2d11, 0 0 20px #93ff2d, 0 0 50px #93ff2d;
-}
-@keyframes animate2
-{
-    0% { transform: rotate(360deg); }
-    100% { transform: rotate(0deg); }
-}
-.loaderContainer .ring:nth-child(3)
-{
-    animation: animate2 4s linear infinite;
-    animation-delay: -3s;
-    position: absolute;
-  
-    border-top: 4px solid transparent;
-    border-left: 4px solid #e41cf8;
-}
-.loaderContainer .ring:nth-child(3)::before
-{
-    content: '';
-    position: absolute;
-    bottom: 12px;
-    left: 12px;
-    border-radius: 50%;
-    width: 15px;
-    height: 15px;
-    background: #e41cf8;
-    box-shadow: 0 0 0 5px #e41cf833, 0 0 0 10px #e41cf822, 0 0 0 20px #e41cf811, 0 0 20px #e41cf8, 0 0 50px #e41cf8;
-}
-.loaderContainer p
-{
-    position: absolute;
-    color: #fff;
-    font-size: 1.5em;
-    font-family: consolas;
-    bottom: -80px;
-    letter-spacing: 0.15em;
-}
-#content
-{
-    display: none;
-    color: white;
-    text-align: center;
-}
 
 
 /*=====================Home section=====================*/
@@ -607,21 +503,14 @@ h3.my-profession {
     top: -6vh;
 }
 
-/* .home .home-img img {
-    margin: auto;
-    border-radius: 8px;
-    height: 400px;
-} */
-
 /*===social media===*/
 #social_media a img {
-    width: 5rem;
-    height: 5rem;
+    width: 4rem;
+    height: 4rem;
 }
 
 #nav {
     display: flex;
-    gap: 15px;
 }
 
 #nav > div {
@@ -631,12 +520,6 @@ h3.my-profession {
     position: relative;
     left: 54%;
     top: 5rem;
-}
-
-#nav > div:hover {
-
-    /*background: var(--skin-color);*/
-
 }
 
 #nav:nth-child(2) > div > a > img {
@@ -977,11 +860,6 @@ h3.my-profession {
     flex: 0 0 50%;
     max-width: 50%;
     margin-top: 30px;
-/ / background-color: red;
-}
-
-.about .about-content .experience {
-/ / background-color: rosybrown;
 }
 
 .about .about-content h3.title {
@@ -1057,7 +935,6 @@ h3.my-profession {
 .about .about-content .timeline .timeline-text {
     line-height: 25px;
     font-size: 16px;
-/ / text-align: justify;
     color: var(--text-black-700);
 }
 
@@ -1093,15 +970,7 @@ h3.my-profession {
 
 }
 
-.service .service-item .service-item-inner:hover {
-    flex: 0 0 35.33%;
-    width: 105%;
-    height: 105%;
-    box-sizing: border-box;
-    transition: all 0.3s ease-out;
-    background-color: var(--bg-black-50);
-    border-radius: 20px;
-}
+/* Removed duplicate selector */
 
 
 .service .service-item .service-item-inner {

@@ -100,14 +100,7 @@
 <div class="main-container">
 
     <!------- Screen loader Start-------->
-   <div id="loader">
-    <div  class="loaderContainer">
-        <div class="ring"></div>
-        <div class="ring"></div>
-        <div class="ring"></div>
-        <p>Loading...</p>
-    </div>
-   </div>
+ 
     <!------- Screen loader End -------->
 
     <!------- Aside Start-------->
@@ -119,13 +112,12 @@
             <span></span>
         </div>
         <ul class="nav">
-            <li><a class="active" href="#home"><i class="fa fa-home"></i> Home</a></li>
-            <li><a href="#about"><i class="fa fa-user"></i> About</a></li>
-            <li><a href="#service"><i class="fa fa-list"></i> Services</a></li>
-            <li><a href="#portfolio"><i class="fa fa-briefcase"></i> Project</a></li>
-            <li><a href="#assignment"><i class="fa fa-clipboard"></i> Assignment</a></li>
-            <li><a href="#contact"><i class="fa fa-comments"></i> Contact</a></li>
-
+            <li><a class="nav-link active" href="#home"><i class="fa fa-home"></i> Home</a></li>
+            <li><a class="nav-link" href="#about"><i class="fa fa-user"></i> About</a></li>
+            <li><a class="nav-link" href="#service"><i class="fa fa-list"></i> Services</a></li>
+            <li><a class="nav-link" href="#portfolio"><i class="fa fa-briefcase"></i> Project</a></li>
+            <li><a class="nav-link" href="#assignment"><i class="fa fa-clipboard"></i> Assignment</a></li>
+            <li><a class="nav-link" href="#contact"><i class="fa fa-comments"></i> Contact</a></li>
         </ul>
     </div>
     <!------- Aside End-------->
@@ -153,7 +145,6 @@
                            data-aos-delay="1300" href="#contact">Hire Me</a>
                     </div>
                     <div data-aos="zoom-out-up" data-aos-duration="1000" data-aos-delay="500" class="home-img padd-15">
-                        <!-- <img src="assets/image/20210414_083713-01.jpeg" alt="profileImage"> -->
                         <div class="stack" data-aos="zoom-out-up" data-aos-duration="1000" data-aos-delay="500">
                             <div class="card1">
                               <img
@@ -256,8 +247,7 @@
                                    data-aos-delay="200"
                                    data-aos-duration="1200"
                                    data-aos-offset="0">
-                                    I'm Third year student in IJSE(Institue of
-                                    Software Engineering). I'm currently learning more about software
+                                   I'm a Software engineer. I'm currently learning more about software
                                     Engineeing,web development and internet technologies. I like to improve my
                                     skills with working on projects. Also i have knowledge about web application
                                     design,UI/Ux design and javaFX.<br>
@@ -538,7 +528,7 @@
                     <div class="container2" id="container2">
                         <div class="column" style="--column: 1">
                             <div class="hexagon"><img src="assets/icon/skill-icon/android.png" alt="android"></div>
-                            <div class="hexagon"><img src="assets/icon/skill-icon/bootstrap.png" alt="bootstrap"></div>
+                            <div class="hexagon" ><img src="assets/icon/skill-icon/bootstrap.png" alt="bootstrap"></div>
                             <div class="hexagon"><img src="assets/icon/skill-icon/canva.png" alt="canva"></div>
                             <div class="hexagon"><img src="assets/icon/skill-icon/chatGpt.png" alt="chatGpt"></div>
                         </div>
@@ -563,7 +553,7 @@
                             <div class="hexagon"><img src="assets/icon/skill-icon/mongoDb.png" alt="mongoDb"></div>
                             <div class="hexagon"><img src="assets/icon/skill-icon/mysql.png" alt="mysql"></div>
                             <div class="hexagon"><img src="assets/icon/skill-icon/nodeJs.png" alt="nodeJs"></div>
-                            <div class="hexagon"><img src="assets/icon/skill-icon/photoshop.png" alt="photoshop"></div>
+                            <div class="hexagon"><img src="assets/icon/skill-icon/photoshop.png" alt="shop"></div>
                             <div class="hexagon"><img src="assets/icon/skill-icon/php.png" alt="php"></div>
                         </div>
                         <div class="column" style="--column: 5">
@@ -1136,6 +1126,13 @@
 
 <script>
 
+    document.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', function() {
+            document.querySelectorAll('.nav-link').forEach(item => item.classList.remove('active'));
+            this.classList.add('active');
+        });
+    });
+
 
     var swiper = new Swiper('.swiper-container', {
         effect: 'coverflow',
@@ -1169,7 +1166,6 @@
             seeMoreBtn.style.display = 'none';
         }
     }
-
 </script>
 </body>
 </html>
